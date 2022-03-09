@@ -1,9 +1,10 @@
-# Grupo_2_Fence 
+# Grupo\_2\_Fence
+
 **Repositorio de proyecto integrador
 Integrantes del grupo 2:**
 
--  Faner, Claudio Esteban
--  Frisicaro, Daniela Luciana
+- Faner, Claudio Esteban
+- Frisicaro, Daniela Luciana
 - Mejias Serrano, Cristhian
 - Vicente, Marcos Hernán
 
@@ -11,7 +12,12 @@ Nuestro proyecto será la realización de un web de B2B para la comercializació
 
 La firma ficticia se llamará Fence S.A.
 
-https://seguridadglobal.com.ar/producto/vallas-plasticas/
-https://plastempack.com/categoria/vallas-plasticas
-https://www.ferax.es/es/productos/protecciones-industriales/vallas-de-seguridad
-https://www.prebecon.com/
+Algunos ejemplos de sitios web de actividades similares
+
+|     |     |
+| --- | --- |
+| Prebecon | <ins>https://www.prebecon.com/</ins> |
+| Ferax | https://www.ferax.es/es/productos/protecciones-industriales/vallas-de-seguridad |
+| Plastempack | <ins>https://plastempack.com/categoria/vallas-plasticas</ins> |
+| Seguridad Global | https://seguridadglobal.com.ar/producto/vallas-plasticas/ |
+| ¡Faltante! |     |
