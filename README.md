@@ -1,4 +1,4 @@
-# Grupo_2_nombre
+# Grupo_2_Fence
 Repositorio de proyecto integrador
 Integrantes:
 Vicente, Marcos| Faner, Claudio Esteban| Luciana Frisicaro, Daniela| Mejias Serrano, Cristhian
