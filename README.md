@@ -61,3 +61,11 @@ Considerando las conclusiones obtenidas, ajustaremos nuestra oferta brindando un
 - Medios de pago aceptados
 - Plazo y lugar de entrega de los artículos
 - Plazo de mantenimiento de oferta
+
+
+
+
+
+
+PRUEBA DANIELA 
+...
