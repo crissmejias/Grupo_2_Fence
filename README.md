@@ -14,13 +14,13 @@ La firma ficticia se llamará Fence S.A.
 
 Algunos ejemplos de sitios web de actividades similares
 
-|     |     |
-| --- | --- |
-| Prebecon | <ins>https://www.prebecon.com/</ins> |
-| Ferax | https://www.ferax.es/es/productos/protecciones-industriales/vallas-de-seguridad |
-| Plastempack | <ins>https://plastempack.com/categoria/vallas-plasticas</ins> |
-| Seguridad Global | https://seguridadglobal.com.ar/producto/vallas-plasticas/ |
-| Pronor | https://www.pronor.com.ar/valla-plastica-vial-conoflex-3701-sin-reflectivo---det--CF-3701 |
+| Sitio Referente | Acceso al sitio | ¿Por qué se eligieron los sitios? |
+| --- | --- | --- |
+| Prebecon | <ins>https://www.prebecon.com/</ins> | Tal como en el caso del sitio de Seguridad Global, el mismo se ajustó a lo que queríamos mostrar en el uso de un "Cotizador" en lugar de un "Carrito de compras" dadas las especificaciones de nuestro proyecto. |
+| Ferax | https://www.ferax.es/es/productos/protecciones-industriales/vallas-de-seguridad | Nos gustó la estructura y disposición de la página. El uso de los colores y espacios en el sitio nos resultó agradable(UI-User Interface) y asimilable a la idea que teníamos en mente. Además nos pareció de fácil acceso y navegabilidad (UX-User Experience). |
+| Plastempack | <ins>https://plastempack.com/categoria/vallas-plasticas</ins> | Observamos la forma en la que se presentaron los productos, pero le hicimos las críticas y adecuaciones pertinentes a dicho sitio para moldearlo a nuestras pretensiones. |
+| Seguridad Global | https://seguridadglobal.com.ar/producto/vallas-plasticas/ | El sitio se ajustó a lo que queriamos proporcionar nosotros en nuestro proyecto, puntualmente en el uso del "Cotizador" en reemplazo al "Carrito de compras", lo cual se adecua al producto que estamos ofreciendo con las caracteristicas ya especificadas en el README tanto respecto al producto en sí como al público al cual se apunta. |
+| Pronor | https://www.pronor.com.ar/valla-plastica-vial-conoflex-3701-sin-reflectivo---det--CF-3701 | El sitio se ajustó a lo que queriamos proporcionar nosotros en nuestro proyecto, puntualmente en el uso del "Cotizador" en reemplazo al "Carrito de compras", lo cual se adecua al producto que estamos ofreciendo con las caracteristicas ya especificadas en el README tanto respecto al producto en sí como al público al cual se apunta. |
 
 1.  ¿Qué productos o servicios brindará nuestro sitio?
 
