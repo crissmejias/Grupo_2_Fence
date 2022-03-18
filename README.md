@@ -64,10 +64,6 @@ Considerando las conclusiones obtenidas, ajustaremos nuestra oferta brindando un
 
 
 
+En la carpeta **Wireframes** pueden encontrarse los esquemas iniciales y en **Design** los logotipos que estamos considerando.
 
 
-
-PRUEBA DANIELA 
-...
-PRUEBA CLAUDIO
-...
