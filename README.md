@@ -67,5 +67,8 @@ Considerando las conclusiones obtenidas, ajustaremos nuestra oferta brindando un
 En la carpeta **Wireframes** pueden encontrarse los esquemas iniciales y en **Design** los logotipos que estamos considerando.
 
 
+El link a la plataforma/herramienta que utilizamos para organizar nuestro trabajo: 
+https://trello.com/b/M98ifgjL/proyecto-integrador-dh-grupo-2
+
 
 
