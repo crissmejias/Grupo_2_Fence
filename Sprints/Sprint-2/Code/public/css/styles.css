@@ -1,5 +1,4 @@
 @import url(/public/css/main.css);
-
 body {
   font-family: var(--primary-font);
   background-color: var(--primary-color);
@@ -9,6 +8,6 @@ body {
   padding: 10px;
 }
 /* 
-.input-register {color: var(--grey);
-    padding: 10px;
-} */
+  .input-register {color: var(--grey);
+      padding: 10px;
+  } */
