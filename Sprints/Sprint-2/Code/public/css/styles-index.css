@@ -14,7 +14,7 @@ box-sizing: border-box;
 .imagen-principal {                                    /*ok, el servidor lo aplica*/
     width: 100%;
     height: 420px;
-    background-image: url("home-peatones.jpg");
+    background-image: url("/images/home-peatones.jpg");
     filter: sepia(80%);
     background-size: cover;
     margin-bottom: 1%;
@@ -56,7 +56,7 @@ header .imagen-principal .slogan {                    /*ok, el servidor lo aplic
 article.home-boton-01 {                                    /*ok, el servidor lo aplica*/
   width: 360px;
   height: 360px;
-  background-image: url("home-peatones.jpg");
+  background-image: url("/images/home-valla en ciudad-01.jpg");
   filter: sepia(80%);
   background-size: cover;
   background-position: center;
@@ -70,7 +70,7 @@ article.home-boton-01 {                                    /*ok, el servidor lo 
 article.home-boton-02 {                                    /*ok, el servidor lo aplica*/
   width: 360px;
   height: 360px;
-  background-image: url("home-peatones.jpg");
+  background-image: url("/images/home-valla en ciudad-02.jpg");
   filter: sepia(80%);
   background-size: cover;
   background-position: center;
@@ -86,7 +86,7 @@ article.home-boton-02 {                                    /*ok, el servidor lo 
 article.home-boton-03 {                                    /*ok, el servidor lo aplica*/
   width: 360px;
   height: 360px;
-  background-image: url("home-peatones.jpg");
+  background-image: url("/images/home-valla en ciudad-03.jpg");
   filter: sepia(80%);
   background-size: cover;
   background-position: center;
@@ -101,7 +101,7 @@ article.home-boton-03 {                                    /*ok, el servidor lo 
 article.home-boton-04 {                                    /*ok, el servidor lo aplica*/
   width: 360px;
   height: 360px;
-  background-image: url("home-peatones.jpg");
+  background-image: url("/images/home-valla en ciudad-04.jpg");
   filter: sepia(80%);
   background-size: cover;
   background-position: center;
@@ -133,3 +133,96 @@ article .home-descripcion-boton {                    /*ok, el servidor lo aplica
 
 
 /* ----------------- SECCION DE PRODUCTOS DESTACADOS ---------------------*/
+
+.titulo-product-destac {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  margin-top: 50px;  
+}
+
+.subtitulo-product-destac {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;  
+}
+
+.imagen-product-destac-01 {
+  width: 200px;
+  height: 200px;
+  background-image: url("/images/home-peatones.jpg");
+  /*filter: sepia(80%);*/
+  background-size: contain;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 3px;
+  border-radius: 7%;
+  float: left;
+}
+
+.imagen-product-destac-02 {
+  width: 200px;
+  height: 200px;
+  background-image: url("/images/home-peatones.jpg");
+  /*filter: sepia(80%);*/
+  background-size: contain;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 3px;
+  border-radius: 7%;
+  float: left;
+}
+
+.imagen-product-destac-03 {
+  width: 200px;
+  height: 200px;
+  background-image: url("/images/home-peatones.jpg");
+  /*filter: sepia(80%);*/
+  background-size: contain;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 3px;
+  border-radius: 7%;
+  float: left;
+}
+
+.imagen-product-destac-04 {
+  width: 200px;
+  height: 200px;
+  background-image: url("/images/home-peatones.jpg");
+  /*filter: sepia(80%);*/
+  background-size: contain;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 3px;
+  border-radius: 7%;
+  float: left;
+}
+
+
+ul li div.contenedor-texto-product-destac {
+  width: 200px;
+  height: 60px;
+  background-color: #ff7300;
+  border: solid black 3px;
+  margin-top: 0px;
+  margin: auto;
+  border-radius: 7%;
+  float: left;
+}
+
+.texto-product-destac {
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
