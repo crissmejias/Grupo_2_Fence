@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .provisorio{background-color: var(--black);
-color: var(--white)}
+    color: var(--white)}
 
 body {
     font-family: var(--primary-font);
@@ -16,8 +16,7 @@ body {
     background-position-y: center;
     background-size: cover;
 }
-
-.input-login {
+.input-register {
     background-color: var(--grey);
     font-family: var(--primary-font);
     font-size: 24px;
@@ -25,8 +24,7 @@ body {
     border-radius: 5px;
     /* max-width: 80vw; */
 }
-
-.contenedor-login {
+.contenedor-register {
     padding: 10px;
     margin: 10px 0;
     display: flex;
@@ -34,8 +32,7 @@ body {
     /* border: 1px solid black; */
 }
 
-.contenedor-campo-login {
-    
+.contenedor-campo-register {
     padding: 10px;
     margin: 10px 0;
     display: flex;
@@ -44,18 +41,4 @@ body {
     align-items: center;
     }
 
-.boton-google-login {
-    background-color: var(--grey);
-    color: var(--black) font-size: 24px;
-    display: flex;
-    align-items:center;
-    justify-content: center; 
-    border: 3px solid var(--secondary-color);
-    border-radius: 5px;
-    width:279px;
-    max-height: 36px;
-    
-}
-
-.texto-bienvenida-login{font-size: 24px;}
-
+    .texto-bienvenida-register{font-size: 24px;}
