@@ -1,0 +1,102 @@
+
+@import url(/public/css/main.css);			
+			
+body {			
+ font-family: var(--primary-font);			
+ background-color: var(--primary-color);			
+}			
+			
+			
+ul{			
+ list-style: none;			
+ padding: 0;			
+ margin: 0;			
+}			
+#desorden li {			
+ display: inline-block;			
+ color: var(--black);			
+ width: 100px; 			
+ background-color: var(--secondary-color); 			
+ vertical-align: middle;			
+ margin: 20px ; 			
+ box-sizing: border-box;			
+}			
+			
+			
+button {			
+position: relative;			
+padding: 10px; 			
+border: none;			
+outline: none;			
+background-color: transparent;			
+color: none;			
+cursor: pointer;			
+transition: 0.8s;			
+text-transform: uppercase;			
+letter-spacing: 2px ;			
+box-sizing: border-box;			
+}			
+button:hover {			
+ color: red			
+}			
+			
+			
+.formato{			
+ color: var(--white);			
+ text-align: center			
+ }			
+			
+.titulo {			
+ text-align: center			
+}			
+			
+			
+.formato button.color-barra{			
+color: var(--white);			
+text-align: center;			
+background-color:var(--secondary-color);			
+ font-weight: bold;			
+ text-transform: lowercase;			
+ outline: solid black;			
+}			
+			
+			
+.formato02{			
+width: 100px ;			
+height: 20px;			
+empty-cells:show;			
+border: solid black 3px;			
+ } 		
+			
+.posibles-compras{			
+text-align: center;			
+margin: auto;			
+}			
+			
+.imagenes-cotizadas{			
+ margin-bottom: 25px;			
+ margin-top: 25px;			
+}			
+
+.contenedor button.x{			
+			
+ color: var(--black);			
+ text-align: center;			
+ font-weight: bold;			
+ text-transform: uppercase;			
+ outline: solid black;			
+ box-sizing: border-box;			
+background-color: transparent;			
+ }			
+			
+.fondo-footer{
+    background-color: var(--black);
+    color: var(--white)
+}
+
+@media (min-width: 320px)	 and 	(max-width: 560px)	{
+body {			
+    font-family: var(--primary-font);			
+    background-color: var(--primary-color);			
+}		
+}       
