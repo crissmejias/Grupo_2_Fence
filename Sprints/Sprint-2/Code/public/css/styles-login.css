@@ -57,5 +57,12 @@ body {
     
 }
 
-.texto-bienvenida-login{font-size: 24px;}
+.texto-bienvenida-login{font-size: 18px;}
 
+
+@media (min-width:361px) {
+    .contenedor-campo-login {
+        display: flex;
+        justify-content: flex-end; 
+                }}
+  
