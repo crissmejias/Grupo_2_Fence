@@ -3,66 +3,83 @@
 * {
     box-sizing: border-box;
 }
-.provisorio{background-color: var(--black);
-color: var(--white)}
+.provisorio{background-color: var(--secondary-color);
+color: var(--white);
+margin:10px 0}
+.provisoriofoot{background-color: var(--black);
+    color: var(--white);
+    margin:10px 0}
+img.logotipo{ width: 10%;
+color:var(--white)}
 
-body {
-    font-family: var(--primary-font);
-    /* background-color: var(--primary-color); */
-    height: 482px;
+body {display: flex;
+    flex-direction: column;
+       font-family: var(--primary-font);
+        /* background-color: var(--primary-color); */
+    /* height: 482px; */
     background-image: url("/images/vallas-de-seguridad-cat2_280x280.png");
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
 }
+main.principal{display: flex;}
+.imagen-ingreso{display:none}
 
-.input-login {
-    background-color: var(--grey);
-    font-family: var(--primary-font);
-    font-size: 24px;
-    border: 3px solid var(--secondary-color);
-    border-radius: 5px;
-    /* max-width: 80vw; */
-}
-
-.contenedor-login {
-    padding: 10px;
-    margin: 10px 0;
-    display: flex;
+form.formulario-login{display:flex;
     flex-direction: column;
-    /* border: 1px solid black; */
+    margin: 10px;}
+ /* .control-formulario{display: flex  ;
+     } */
+
+.control-formulario label{
+            display: block; 
+        /* border:dashed 1px red; */
+    text-align: center;} 
+    .control-formulario div{
+        font-size: smaller;
+        display: block; 
+    /* border:dashed 1px red; */
+text-align: center;} 
+.control{
+    background-color:var(--grey);
+    padding:5px;
+    border: solid 1px var(--secondary-color);
+    border-radius: 5px;
+    width:100%;
+    /* justify-content: center; */
+    
+}
+.button{
+    background-color:var(--grey);
+    margin-top: 10px;
+    padding:5px;
+    border: solid 1px var(--secondary-color);
+    border-radius: 5px;
+    display: block;
 }
 
-.contenedor-campo-login {
-    
-    padding: 10px;
-    margin: 10px 0;
-    display: flex;
-    justify-content: center; 
-    /* border: 1px dashed red; */
-    align-items: center;
+@media (min-width:480px){
+    /* .imagen-ingreso{display:block;
+        width:33%;
+        height:33%;} */
+    section.caja-formulario{width:33%}
+    main.principal{display: flex;
+    justify-content: flex-end;}
+        
     }
 
-.boton-google-login {
-    background-color: var(--grey);
-    color: var(--black) font-size: 24px;
-    display: flex;
-    align-items:center;
-    justify-content: center; 
-    border: 3px solid var(--secondary-color);
-    border-radius: 5px;
-    width:279px;
-    max-height: 36px;
+
+
+@media (min-width:768px){.imagen-ingreso{display:block;
+    width:66%}
+    main.principal{display: flex;
+        flex-direction: row;}
+div.texto-bienvenida {margin:5px;}}
+/* section.caja-formulario{display:inline} */
+
+
     
-}
-
-.texto-bienvenida-login{font-size: 18px;}
 
 
-@media (min-width:361px) {
-    .contenedor-campo-login {
-        display: flex;
-        justify-content: flex-end; 
-                }}
-  
+
