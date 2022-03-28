@@ -83,5 +83,7 @@ text-align: center;}
     width:66%}
     main.principal{display: flex;
         flex-direction: row;}
-div.texto-bienvenida {margin:5px;}}
+div.texto-bienvenida {margin:5px;}
+ul.menu-header{display: flex;}
+li.item-menu-header{margin:0 10px}}
 /* section.caja-formulario{display:inline} */
