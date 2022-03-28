@@ -67,6 +67,7 @@ margin-bottom: 50px;
 
 a:hover {
     color: red;
+    background-color: var(--black);
   }
 
 
@@ -143,6 +144,7 @@ min-width: 150px;
 }
 button.color-barra:hover{
     color: red;
+    background-color: var(--black)
 }	
 
 .datos-identificacion-cotizacion{			
@@ -162,6 +164,13 @@ margin-bottom:70px;
 margin-top: 50px;
 
  } 	
+ .enviar-presupuesto ::first-letter{
+    text-transform: uppercase;  
+  }
+  .acceso-a-registro ::first-letter{
+    text-transform: uppercase;  
+  }
+
 .identificacion-cotizacion{			
 width: 100px ;			
 height: 20px;			
