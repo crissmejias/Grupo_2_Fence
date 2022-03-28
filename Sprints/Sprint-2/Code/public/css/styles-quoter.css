@@ -12,7 +12,6 @@ body {
  background-color: var(--primary-color);		
 }	
 
-
 .contenedor{
 width: 90%;
 max-width: 1200px;
@@ -20,6 +19,7 @@ margin: auto;
 overflow: hidden;
 padding: 60px 0;
 }
+
 .menu-navegacion{
  padding: 0;
  display: flex;
@@ -27,27 +27,31 @@ padding: 60px 0;
  align-items: center;
  height: 70px;
 }
+
 .logo{
 display: none;
 height: 150px;
-  		
 }
+
 .logo img{
 display: none;
 height: 100%;
 }
+
 .enlaces li{
 list-style: none;
 display: flex;
 flex-direction: column;
 align-items: center;			
 }
+
 .enlaces a{
 display: flex;
 text-decoration: none;
 color: var(--white) ;
 padding-left: 100px;
 }
+
 .boton-login{
 width: 150px;
 display: none;
@@ -58,23 +62,14 @@ color:var(--white)  ;
 text-decoration: none;
 outline: solid  var( --black)  ;
 text-align: center;
+margin-bottom: 50px;
 }
 
-header{
-    margin-bottom: 100px;
-}
-header #desorden02 ul li {			
-   	
-display: inline-block;	  	
-color: var(--white);			
-width: 100px; 						
-/* vertical-align: middle;		*/
-margin: 20px ; 			
-font-display: left ;
-cursor: pointer;
-padding: auto;
-   }
-  
+a:hover {
+    color: red;
+  }
+
+
 ul{
 display: flex;
 flex-direction: column;
@@ -82,6 +77,7 @@ align-items: center;
 list-style: none;			
 padding: 0;			
 margin: 0;
+border: double 0.1px var(--black);
 		
 }
 
@@ -105,7 +101,7 @@ box-sizing: border-box;
  box-sizing: border-box;
  
 }			
-			
+		
 button {			
 position: relative;			
 padding: 10px; 			
@@ -119,22 +115,21 @@ text-transform: uppercase;
 letter-spacing: 2px ;			
 box-sizing: border-box;			
 }			
-button:hover {			
- color: red			
-}			
+		
 			
-.formato{			
+.formato-de-accesos{			
  color: var(--white);			
  text-align: center			
  }			
 			
-.titulo {	
+.peticion-de-registro {	
  display: flex;		
  text-align: center	;
  justify-content: center;
+ color: var(--white);
 }			
 			
-.formato button.color-barra{			
+.formato-de-accesos button.color-barra{			
 color: var(--white);			
 text-align: center;			
 font-weight: bold;			
@@ -145,26 +140,29 @@ padding: auto;
 width: 30%;	
 box-sizing: border-box;
 min-width: 150px;
-
+}
+button.color-barra:hover{
+    color: red;
 }	
-.formato02{			
+
+.datos-identificacion-cotizacion{			
 width: 100px ;			
 height: 20px;			
 empty-cells:show;			
 border: solid black 3px;	
 background-color:  var(--secondary-color)		
  } 		
-.formato03{			
+.acceso-a-registro{			
 margin-bottom: 170px;
 margin-top: 70px;	
 } 		
-.formato04{	
+.enviar-presupuesto{	
 		
 margin-bottom:70px;
 margin-top: 50px;
 
  } 	
-.formato05{			
+.identificacion-cotizacion{			
 width: 100px ;			
 height: 20px;			
 font-weight: bold
@@ -189,7 +187,13 @@ padding: 0;
  outline: solid black;			
  box-sizing: border-box;			
  background-color: transparent;			
- }						
+ }	
+
+.imagen-de-fondo{
+background-image: none ;
+padding: 0px;
+}
+
 .fondo-footer{
 background-color: var(--black);
 color: var(--white)
@@ -223,18 +227,15 @@ text-align: center;
 .boton-login{  
 display: block;
 } 
-              
-    }
-
-
+}             
 
 @media (min-width:768px){
-    
-    
-    
+
+
 ul{
 flex-direction: row;
 justify-content: space-around;
+border: solid 0.5px var(--black) ;
         }    
 #campo-nombres li {			
 display: inline-block;
@@ -253,7 +254,12 @@ display: block;
 .boton-login{  
 display: block;
 } 
-    
+.imagen-de-fondo{
+background-image: url("/images/valla-en-ciudad-05.jpeg")  ;
+padding: 50px;
+background-repeat: repeat;
+}
+        
 .separar-footer{
 display: flex;
 flex-direction: row;
