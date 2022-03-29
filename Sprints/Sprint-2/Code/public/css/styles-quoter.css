@@ -63,12 +63,18 @@ text-decoration: none;
 outline: solid  var( --black)  ;
 text-align: center;
 margin-bottom: 50px;
+transition: 0.8s;
+cursor: pointer
 }
 
 a:hover {
     color: red;
-    background-color: var(--black);
   }
+.boton-login:hover {
+  color: red;
+  background-color: var(--black);
+}
+
 
 
 ul{
@@ -79,6 +85,9 @@ list-style: none;
 padding: 0;			
 margin: 0;
 border: double 0.1px var(--black);
+width: 40%;      /**/
+height: auto;     /**/
+position: relative;     /**/
 		
 }
 
@@ -177,10 +186,15 @@ height: 20px;
 font-weight: bold
 } 		
 .posibles-compras {	
-		
+display: flex;        /**/
+flex-direction: column;		/**/
 text-align: center;			
 margin: auto;
 padding: 0;
+width: 90%;                  /**/             
+flex-direction: row;      /**/
+flex-wrap: wrap;               /**/
+justify-content: space-around;   /**/
 }							
 .imagenes-cotizadas{			
  margin-bottom: 25px;			
@@ -201,23 +215,30 @@ padding: 0;
 .imagen-de-fondo{
 background-image: none ;
 padding: 0px;
+margin-top: 100px;
 }
 
 .fondo-footer{
 background-color: var(--black);
-color: var(--white)
+padding: 20px;
+color: var(--white);
+/*margin-bottom: 0px;*/
+margin: auto;
+/*justify-content: end;*/
+height: auto;
+
 }
 
-#desorden-footer li{   			
+#informacion-footer li{   			
 display: flex;
     	
 }
-footer #desorden-footer li {
+footer #informacion-footer li {
 display: inline-block;	
 width: 100px; 			
 padding: 5px;		
-vertical-align: middle;			
-margin: 20px ; 			
+/*vertical-align:middle;*/			
+align-items:flex-end; 	 /* */
 box-sizing: border-box;			
    }
    
@@ -229,6 +250,7 @@ display: none
 .copyright {
 font-weight: bold;
 text-align: center;
+margin-top: 60px;
    }
 
 @media (min-width:480px){
@@ -245,6 +267,8 @@ ul{
 flex-direction: row;
 justify-content: space-around;
 border: solid 0.5px var(--black) ;
+width: auto;
+height: 100px;
         }    
 #campo-nombres li {			
 display: inline-block;
@@ -266,7 +290,9 @@ display: block;
 .imagen-de-fondo{
 background-image: url("/images/valla-en-ciudad-05.jpeg")  ;
 padding: 50px;
-background-repeat: repeat;
+background-repeat: no-repeat; /**/
+background-position: center;  /**/
+background-size: cover;  /**/
 }
         
 .separar-footer{
@@ -274,5 +300,6 @@ display: flex;
 flex-direction: row;
 justify-content: space-around;
 }			
-    
+  
+
 }
