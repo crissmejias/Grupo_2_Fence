@@ -1,0 +1,142 @@
+@import url(main.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 100px;
+  width: 100vw;
+  background-color: var(--primary-color);
+}
+main {
+  background-color: var(--grey);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+main .page-index {
+  font-size: 12px;
+  padding-top: 12px;
+}
+main .product-detail-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
+  gap: 20px;
+}
+main figure {
+  padding-top: 20px;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  margin: 12px 0;
+  border-radius: 12px;
+}
+main figure img {
+  height: 80%;
+}
+main .actions-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.share-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.share-container h3 {
+  align-self: center;
+}
+.share-container .icons {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 12px;
+}
+.icons .icon {
+  font-size: 32px;
+  color: var(--black);
+}
+.icon a {
+  color: inherit;
+}
+.add-to-cart-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+#cantidad-productos {
+  border: none;
+  width: 35%;
+  height: 40px;
+}
+#cantidad-productos:focus {
+  outline: none;
+}
+.add-to-cart-container button {
+  width: 80%;
+  border: none;
+  height: 45px;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+}
+.products-container {
+  padding-top: 45px;
+}
+.products-container .products-cards-container {
+  padding-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 12px;
+}
+.products-cards-container .product {
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 90%;
+  height: 400px;
+  margin: 10px;
+}
+.product h5 {
+  font-size: 24px;
+}
+.product-description {
+  display: flex;
+  height: 20%;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.product-add-to-cart {
+  width: 40%;
+  border: none;
+  height: 40px;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  align-self: center;
+}
+footer {
+  height: 300px;
+  width: 100vw;
+  background-color: var(--black);
+}
+@media screen and (min-width: 425px) {
+  .products-cards-container .product {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 820px) {
+  .products-cards-container .product {
+    width: 23%;
+  }
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Producto Fence</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,8 +13,86 @@
     />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/style-productDetail.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
   </head>
   <body>
-    <img src="/images/producto.PNG" alt="" />
+    <header></header>
+    <main>
+      <p class="page-index">Productos / Título de producto</p>
+      <div class="product-detail-container">
+        <h1>Título de producto</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo,
+          deserunt.
+        </p>
+      </div>
+      <figure>
+        <img src="images/valla-ejemplo.png" alt="" />
+      </figure>
+      <div class="actions-container">
+        <div class="share-container">
+          <h3>Compartir</h3>
+          <div class="icons">
+            <div class="icon">
+              <a target="_blank" href="https://facebook.com"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </div>
+            <div class="icon">
+              <a target="_blank" href="https://twitter.com">
+                <i class="fab fa-twitter"></i
+              ></a>
+            </div>
+            <div class="icon">
+              <a target="_blank" href="https://linkedin.com"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="add-to-cart-container">
+          <input type="number" name="cantidad" id="cantidad-productos" />
+          <button>Agregar</button>
+        </div>
+      </div>
+      <div class="products-container">
+        <h3>Productos Relacionados</h3>
+        <div class="products-cards-container">
+          <div class="product">
+            <img src="images/valla-ejemplo.png" alt="" class="product-image" />
+            <div class="product-description">
+              <h5 class="product-title">Título</h5>
+              <button class="product-add-to-cart">Agregar</button>
+            </div>
+          </div>
+          <div class="product">
+            <img src="images/valla-ejemplo.png" alt="" class="product-image" />
+            <div class="product-description">
+              <h5 class="product-title">Título</h5>
+              <button class="product-add-to-cart">Agregar</button>
+            </div>
+          </div>
+          <div class="product">
+            <img src="images/valla-ejemplo.png" alt="" class="product-image" />
+            <div class="product-description">
+              <h5 class="product-title">Título</h5>
+              <button class="product-add-to-cart">Agregar</button>
+            </div>
+          </div>
+          <div class="product">
+            <img src="images/valla-ejemplo.png" alt="" class="product-image" />
+            <div class="product-description">
+              <h5 class="product-title">Título</h5>
+              <button class="product-add-to-cart">Agregar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
   </body>
 </html>
