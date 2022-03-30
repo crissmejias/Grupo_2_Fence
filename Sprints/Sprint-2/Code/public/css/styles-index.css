@@ -14,16 +14,24 @@ box-sizing: border-box;
 
 /* ----------------- HEADER ---------------------*/
 
-.provisorio {
-  background-color: var(--secondary-color);
+
+.provisorio{background-color: var(--secondary-color);
   color: var(--white);
   margin:10px 0;
-  width: 100%;
-  height: 100px;
   min-width: 360px;
-  display: flex;
-  justify-content: center; 
 }
+  
+  img.logotipo{ height: 5rem;
+  }
+  nav.elementos-header{display:flex;
+  align-items: center;}
+  /* .elementos-header img{height: 30%;} */
+  ul.menu-header{
+      font-size: 0.7rem;
+  list-style-type: none;
+  margin: 0 10px};
+  li.item-menu-header{text-align: right;}
+
 
 .imagen-principal {
   display: flex;
@@ -301,7 +309,6 @@ ul li div.contenedor-texto-product-destac {
   justify-content: center;
 }
 
-
 /* ----------------- PROYECTO ADAPTATIVO ---------------------*/
 
 /* -- 
@@ -363,7 +370,6 @@ BOTON VER CATALOGO:
     justify-content: space-around;
     width: 100%;
     height: auto;
-    justify-content: space-around;
   }
 
   ul li {
