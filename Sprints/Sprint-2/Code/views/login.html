@@ -1,25 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Fence</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="stylesheet" href="/css/styles-login.css" />
-  </head>
-  <body>
-    <main>
-      <div class="input-login"><input type="text" placeholder="usuario" /></div>
-      <div class="input-login">
-        <input type="text" placeholder="contraseña" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Fence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/styles-login.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <header class="provisorio">
+    <nav class="elementos-header"><img class="logotipo" src="/images/logo-fence-white.svg">
+  <ul class="menu-header">
+    <li class="item-menu-header"><a href="/">Inicio</a></li>
+    <li class="item-menu-header"><a href="/quoter">Cotizaciones</a></li>
+    <li class="item-menu-header"><a href="/register">Registro</a></li>
+     </ul></nav>
+    </header>
+  <main class="principal">
+  <img src="/images/home-valla en ciudad-02.jpg" width=600px class="imagen-ingreso">
+
+    <!-- login-->
+  <section class="caja-formulario">
+    <div class="texto-bienvenida">Si ya está registrado ingrese con su usuario y contraseña</div>
+    <form action="" method="POST" class="formulario-login">
+      <div class="control-formulario">
+        <label>Usuario</label>
+        <input type="text" name="usuario"class="control" >
       </div>
-    </main>
-  </body>
+      <div class="control-formulario">
+        <label>Contraseña</label>
+        <input type="password" name="password" class="control">
+      </div>
+      <button type="submit" class="button">Ingresar</button>
+    </form>
+  </section>
+  
+ 
+
+  </main>
+  <footer class="provisoriofoot"><p>acá falta el footer</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut modi fugit dolorum, aperiam blanditiis magnam similique magni quidem, officia quod commodi sapiente. Ipsam cum aliquam a unde soluta nisi adipisci.</p></footer>
+</body>
+
 </html>

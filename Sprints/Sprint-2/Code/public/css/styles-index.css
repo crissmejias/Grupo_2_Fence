@@ -1,0 +1,376 @@
+@import url(/public/css/main.css);
+body {
+  font-family: var(--primary-font);
+  background-color: var(--primary-color);
+}
+
+* {
+box-sizing: border-box;
+}
+
+
+/* ----------------- BODY ---------------------*/
+
+
+/* ----------------- HEADER ---------------------*/
+
+.provisorio {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  margin:10px 0;
+  width: 100%;
+  height: 100px;
+  min-width: 360px;
+  display: flex;
+  justify-content: center; 
+}
+
+.imagen-principal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 420px;
+  background-image: url("/images/home-peatones.jpg");
+  /*filter: sepia(80%);*/
+  margin-bottom: 1%;
+  justify-content: center;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-width: 360px;
+}
+
+header .imagen-principal .slogan {                   
+  font-size: 14px;
+  color: white;
+  justify-content: flex-end;
+  margin-right: 10%;
+}
+
+.boton-catalogo {
+  display: flex;
+  width: 104px;
+  height: 35px;
+  background-color: #ff7300;
+  border: solid black 3px;
+  justify-content: center;
+  margin-right: 10%;
+}
+
+.texto-boton-catalogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+
+
+/* ----------------- SECCION DE OPCIONES PARA NAVEGAR ---------------------*/
+
+article.home-boton-01 {                         
+  width: 360px;
+  height: 360px;
+  background-image: url("/images/home-valla en ciudad-01.jpg");
+  /*filter: sepia(80%);*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 7%;
+}
+
+article.home-boton-02 {                           
+  width: 360px;
+  height: 360px;
+  background-image: url("/images/home-valla en ciudad-02.jpg");
+  /*filter: sepia(80%);*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 7%;
+}
+
+
+article.home-boton-03 {                            
+  width: 360px;
+  height: 360px;
+  background-image: url("/images/home-valla en ciudad-03.jpg");
+  /*filter: sepia(80%);*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 7%;
+}  
+
+
+article.home-boton-04 {                              
+  width: 360px;
+  height: 360px;
+  background-image: url("/images/home-valla en ciudad-04.jpg");
+  /*filter: sepia(80%);*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 7%;
+}  
+
+
+article .home-boton {
+  -webkit-text-stroke: 1px white; 
+  font-size: 24px;
+  color: greenyellow;
+  position: relative;
+  bottom: -240px;
+  text-align: center;
+}
+
+article .home-descripcion-boton {
+  -webkit-text-stroke: 1px white;           
+  font-size: 18px;
+  color: greenyellow;
+  position: relative;
+  bottom: -220px;
+  text-align: center;
+}
+
+
+/* ----------------- SECCION DE PRODUCTOS DESTACADOS ---------------------*/
+
+.titulo-product-destac {
+  font-size: 28px;
+  color: white;
+  text-align: center;
+  margin-top: 80px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.subtitulo-product-destac {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*border: solid black 5px;*/
+  width: 45%;
+  height: auto;
+  min-width: 150px;
+  margin: auto;
+}
+
+ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  /*height: 48%;*/
+  height: auto;
+  /*border: solid green 1px;*/
+  min-width: 150px;
+}
+
+.imagen-product-destac-01 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 65%;
+  min-width: 150px;
+  max-width: 150px;
+  min-height: 100px;
+  background-image: url("/images/valla-01.png");
+  /*filter: sepia(80%);*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-left: auto;
+  padding-right: auto;
+  border-radius: 7%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.imagen-product-destac-02 {
+  width: 90%;
+  height: 65%;
+  min-width: 150px;
+  max-width: 150px;
+  min-height: 100px;
+  background-image: url("/images/valla-02.png");
+  /*filter: sepia(80%);*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-left: auto;
+  padding-right: auto;
+  border-radius: 7%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.imagen-product-destac-03 {
+  width: 90%;
+  height: 65%;
+  min-width: 150px;
+  max-width: 150px;
+  min-height: 100px;
+  background-image: url("/images/valla-03.png");
+  /*filter: sepia(80%);*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-left: auto;
+  padding-right: auto;
+  border-radius: 7%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.imagen-product-destac-04 {
+  width: 90%;
+  height: 65%;
+  min-width: 150px;
+  max-width: 150px;
+  min-height: 100px;
+  background-image: url("/images/valla-04.png");
+  /*filter: sepia(80%);*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-left: auto;
+  padding-right: auto;
+  border-radius: 7%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+
+ul li div.contenedor-texto-product-destac {
+  width: 90%;
+  height: 20%;
+  min-width: 150px;
+  max-width: 150px;
+  background-color: #ff7300;
+  border: solid black 2px;
+  border-radius: 7%;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.texto-product-destac {
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px;
+}
+
+/* ----------------- FOOTER ---------------------*/
+
+.provisoriofoot {
+  background-color: var(--black);
+  color: var(--white);
+  margin:10px 0;
+  min-width: 360px;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* ----------------- PROYECTO ADAPTATIVO ---------------------*/
+
+/* -- 
+
+IMAGEN PRINCIPAL: se mantiene siempre centrada, no cambia su tamaño, 
+solo se muestra mas o menos en pantalla
+
+SLOGAN:
+
+BOTON VER CATALOGO:
+
+--*/
+
+
+
+
+@media (min-width:480px){
+  header .imagen-principal .slogan {                   
+    font-size: 18px;
+  }
+  
+  .boton-catalogo {                               
+    width: 125px;
+    height: 42px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 85%;
+    height: auto;
+    justify-content: space-around;
+  }
+
+  ul li {
+    width: 40%;
+    display: flex;
+    position: relative;
+}
+}
+
+
+@media (min-width:768px){
+
+  header .imagen-principal .slogan {                   
+    font-size: 24px;
+  }
+
+  .boton-catalogo {                               
+    width: 150px;
+    height: 50px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+  }
+
+  ul li {
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 22%;
+    display: flex;
+    position: relative;
+  } 
+}

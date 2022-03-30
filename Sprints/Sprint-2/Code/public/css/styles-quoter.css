@@ -1,0 +1,305 @@
+
+@import url(/public/css/main.css);			
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {			
+ font-family: var(--primary-font);			
+ background-color: var(--primary-color);		
+}	
+
+.contenedor{
+width: 90%;
+max-width: 1200px;
+margin: auto;
+overflow: hidden;
+padding: 60px 0;
+}
+
+.menu-navegacion{
+ padding: 0;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 70px;
+}
+
+.logo{
+display: none;
+height: 150px;
+}
+
+.logo img{
+display: none;
+height: 100%;
+}
+
+.enlaces li{
+list-style: none;
+display: flex;
+flex-direction: column;
+align-items: center;			
+}
+
+.enlaces a{
+display: flex;
+text-decoration: none;
+color: var(--white) ;
+padding-left: 100px;
+}
+
+.boton-login{
+width: 150px;
+display: none;
+margin-inline-start: auto;
+padding: 1px 0;
+background-color:var(--secondary-color); 
+color:var(--white)  ;
+text-decoration: none;
+outline: solid  var( --black)  ;
+text-align: center;
+margin-bottom: 50px;
+transition: 0.8s;
+cursor: pointer
+}
+
+a:hover {
+    color: red;
+  }
+.boton-login:hover {
+  color: red;
+  background-color: var(--black);
+}
+
+
+
+ul{
+display: flex;
+flex-direction: column;
+align-items: center;			
+list-style: none;			
+padding: 0;			
+margin: 0;
+border: double 0.1px var(--black);
+width: 40%;      /**/
+height: auto;     /**/
+position: relative;     /**/
+		
+}
+
+#campo-nombres li {			
+display: none;			
+color: var(--black);			
+width: 100px; 			
+ /*background-color: var(--secondary-color); 	*/		
+vertical-align: middle;			
+margin: 20px ; 			
+box-sizing: border-box;
+}
+
+#desorden li {			
+ display: inline-block;			
+ color: var(--black);			
+ width: 100px; 			
+ /*background-color: var(--secondary-color); 	*/		
+ vertical-align: middle;			
+ margin: 20px ; 			
+ box-sizing: border-box;
+ 
+}			
+		
+button {			
+position: relative;			
+padding: 10px; 			
+border: none;			
+outline: none;			
+background-color: transparent;			
+color: none;			
+cursor: pointer;			
+transition: 0.8s;			
+text-transform: uppercase;			
+letter-spacing: 2px ;			
+box-sizing: border-box;			
+}			
+		
+			
+.formato-de-accesos{			
+ color: var(--white);			
+ text-align: center			
+ }			
+			
+.peticion-de-registro {	
+ display: flex;		
+ text-align: center	;
+ justify-content: center;
+ color: var(--white);
+}			
+			
+.formato-de-accesos button.color-barra{			
+color: var(--white);			
+text-align: center;			
+font-weight: bold;			
+text-transform: lowercase;			
+outline: solid black ;	
+background-color: var(--secondary-color);
+padding: auto;
+width: 30%;	
+box-sizing: border-box;
+min-width: 150px;
+}
+button.color-barra:hover{
+    color: red;
+    background-color: var(--black)
+}	
+
+.datos-identificacion-cotizacion{			
+width: 100px ;			
+height: 20px;			
+empty-cells:show;			
+border: solid black 3px;	
+background-color:  var(--secondary-color)		
+ } 		
+.acceso-a-registro{			
+margin-bottom: 170px;
+margin-top: 70px;	
+} 		
+.enviar-presupuesto{	
+		
+margin-bottom:70px;
+margin-top: 50px;
+
+ } 	
+ .enviar-presupuesto ::first-letter{
+    text-transform: uppercase;  
+  }
+  .acceso-a-registro ::first-letter{
+    text-transform: uppercase;  
+  }
+
+.identificacion-cotizacion{			
+width: 100px ;			
+height: 20px;			
+font-weight: bold
+} 		
+.posibles-compras {	
+display: flex;        /**/
+flex-direction: column;		/**/
+text-align: center;			
+margin: auto;
+padding: 0;
+width: 90%;                  /**/             
+flex-direction: row;      /**/
+flex-wrap: wrap;               /**/
+justify-content: space-around;   /**/
+}							
+.imagenes-cotizadas{			
+ margin-bottom: 25px;			
+ margin-top: 25px;			
+}			
+
+.contenedor button.x{			
+			
+ color: var(--black);			
+ text-align: center;			
+ font-weight: bold;			
+ text-transform: uppercase;			
+ outline: solid black;			
+ box-sizing: border-box;			
+ background-color: transparent;			
+ }	
+
+.imagen-de-fondo{
+background-image: none ;
+padding: 0px;
+margin-top: 100px;
+}
+
+.fondo-footer{
+background-color: var(--black);
+padding: 20px;
+color: var(--white);
+/*margin-bottom: 0px;*/
+margin: auto;
+/*justify-content: end;*/
+height: auto;
+
+}
+
+#informacion-footer li{   			
+display: flex;
+    	
+}
+footer #informacion-footer li {
+display: inline-block;	
+width: 100px; 			
+padding: 5px;		
+/*vertical-align:middle;*/			
+align-items:flex-end; 	 /* */
+box-sizing: border-box;			
+   }
+   
+.separar-footer{
+
+display: none
+}			
+
+.copyright {
+font-weight: bold;
+text-align: center;
+margin-top: 60px;
+   }
+
+@media (min-width:480px){
+
+.boton-login{  
+display: block;
+} 
+}             
+
+@media (min-width:768px){
+
+
+ul{
+flex-direction: row;
+justify-content: space-around;
+border: solid 0.5px var(--black) ;
+width: auto;
+height: 100px;
+        }    
+#campo-nombres li {			
+display: inline-block;
+}
+.enlaces li{
+display: inline-block;
+flex-direction: row;
+justify-content: flex-end;	
+		
+}
+.logo{
+    display: block; }
+.logo img{
+display: block;
+}
+.boton-login{  
+display: block;
+} 
+.imagen-de-fondo{
+background-image: url("/images/valla-en-ciudad-05.jpeg")  ;
+padding: 50px;
+background-repeat: no-repeat; /**/
+background-position: center;  /**/
+background-size: cover;  /**/
+}
+        
+.separar-footer{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}			
+  
+
+}
