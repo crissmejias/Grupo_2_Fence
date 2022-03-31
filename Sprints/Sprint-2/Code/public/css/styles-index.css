@@ -23,14 +23,22 @@ box-sizing: border-box;
   
   img.logotipo{ height: 5rem;
   }
-  nav.elementos-header{display:flex;
-  align-items: center;}
+  nav.elementos-header{
+  display:flex;
+  align-items: center;
+  border: solid black 3px;
+}
   /* .elementos-header img{height: 30%;} */
+  
   ul.menu-header{
-      font-size: 0.7rem;
+  font-size: 0.7rem;
   list-style-type: none;
-  margin: 0 10px};
-  li.item-menu-header{text-align: right;}
+  margin: 0 10px;
+};
+
+  li.item-menu-header{
+    text-align: right;
+    }
 
 
 .imagen-principal {
@@ -178,7 +186,7 @@ article .home-descripcion-boton {
   margin-left: auto;
 }
 
-ul {
+.columna {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -190,7 +198,7 @@ ul {
   margin: auto;
 }
 
-ul li {
+.columna li {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -312,14 +320,10 @@ ul li div.contenedor-texto-product-destac {
 /* ----------------- PROYECTO ADAPTATIVO ---------------------*/
 
 /* -- 
-
 IMAGEN PRINCIPAL: se mantiene siempre centrada, no cambia su tamaño, 
 solo se muestra mas o menos en pantalla
-
 SLOGAN:
-
 BOTON VER CATALOGO:
-
 --*/
 
 
@@ -335,7 +339,7 @@ BOTON VER CATALOGO:
     height: 42px;
   }
 
-  ul {
+  .columna {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -344,11 +348,14 @@ BOTON VER CATALOGO:
     justify-content: space-around;
   }
 
-  ul li {
+  .columna li {
     width: 40%;
     display: flex;
     position: relative;
 }
+  nav.elementos-header {
+    justify-content: space-between;
+  }
 }
 
 
@@ -363,7 +370,7 @@ BOTON VER CATALOGO:
     height: 50px;
   }
 
-  ul {
+  .columna {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -372,11 +379,20 @@ BOTON VER CATALOGO:
     height: auto;
   }
 
-  ul li {
+  .columna li {
     margin-right: 10px;
     margin-left: 10px;
     width: 22%;
     display: flex;
     position: relative;
-  } 
+  }
+ 
+  ul.menu-header{
+    display: flex;
+  }
+  
+  li.item-menu-header{
+    margin:0 10px
+  }
+  
 }
