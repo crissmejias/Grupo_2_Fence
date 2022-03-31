@@ -3,3 +3,19 @@ body {
   font-family: var(--primary-font);
   background-color: var(--primary-color);
 }
+.cabecera{background-color: var(--secondary-color);
+  color: var(--white);
+  margin:10px 0}
+  li.item-menu-header a {text-decoration: none;
+  transition: all 450ms;}
+  li.item-menu-header a:hover {font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;}
+  li.item-menu-header a:visited{color:var(--white)
+  }
+  @media (min-width:480px){ nav.elementos-header {
+    justify-content: space-between;
+}  }
+
+  @media (min-width:768px) {ul.menu-header{display: flex;}
+  li.item-menu-header{margin:0 10px}
+  li.item-menu-header a{font-size: 14px};}
