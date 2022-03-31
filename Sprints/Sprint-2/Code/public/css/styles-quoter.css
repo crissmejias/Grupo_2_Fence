@@ -52,7 +52,7 @@ body {
   display: flex;
   text-decoration: none;
   color: var(--white) ;
-  padding-left: 100px;
+  padding-left: 10px;
   }
   a:hover {
     color: red;
@@ -389,3 +389,4 @@ justify-content: space-around;
   
 
 }
+
