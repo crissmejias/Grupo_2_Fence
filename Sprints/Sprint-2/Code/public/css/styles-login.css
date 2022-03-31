@@ -3,9 +3,7 @@
 * {
     box-sizing: border-box;
 }
-.provisorio{background-color: var(--secondary-color);
-color: var(--white);
-margin:10px 0}
+
 .provisoriofoot{background-color: var(--black);
     color: var(--white);
     margin:10px 0}
@@ -75,9 +73,7 @@ text-align: center;}
     section.caja-formulario{width:33%}
     main.principal{display: flex;
     justify-content: flex-end;}
-    nav.elementos-header {
-                justify-content: space-between;
-    }    
+   
     }
 
 
@@ -87,8 +83,7 @@ text-align: center;}
     main.principal{display: flex;
         flex-direction: row;}
 div.texto-bienvenida {margin:5px;}
-ul.menu-header{display: flex;}
-li.item-menu-header{margin:0 10px}}
+}
 /* section.caja-formulario{display:inline} */
 
 

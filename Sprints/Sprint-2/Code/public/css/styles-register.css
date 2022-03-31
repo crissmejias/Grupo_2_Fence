@@ -48,9 +48,9 @@ text-align: center;}
 /* border:dashed 1px red; */
 text-align: center;}    
 .control{
-    background-color:var(--grey);
+    /* background-color:var(--grey); */
     padding:5px;
-    border: solid 1px var(--secondary-color);
+    /* border: solid 1px var(--secondary-color); */
     border-radius: 5px;
     width:100%;
     /* justify-content: center; */
