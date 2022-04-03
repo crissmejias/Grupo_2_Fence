@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/styles-register.css" />
+    <script>
+      function validar(){
+      if(document.getElementById("password").value == document.getElementById("password-verify").value){
+          document.getElementById("password-verify").style.backgroundColor="#e6851e"
+          document.getElementById("password-error-message").innerHTML="Las contraseñas coinciden"
+  }
+  else{
+      document.getElementById("password-verify").style.backgroundColor="#fad85b"
+      document.getElementById("password-error-message").innerHTML="Las contraseñas no coinciden"
+      }
+  }</script>
   </head>
   <body>
     <header class="cabecera">
@@ -16,60 +27,61 @@
       <li class="item-menu-header"><a href="/quoter">Cotizaciones</a></li>
       <li class="item-menu-header"><a href="/register">Registro</a></li>
       <li class="item-menu-header"><a href="/login">Ingresar</a></li>
-      
+
        </ul></nav>
       </header>
     <main class="principal">
     <img src="/images/home-peatones.jpg" width=600px class="imagen-ingreso">
-  
+
       <!-- login-->
     <section class="caja-formulario">
       <div class="texto-bienvenida">Ingrese sus datos para poder utilizar nuestra plataforma</div>
       <form action="" method="POST" class="formulario-register">
         <div class="control-formulario">
-          <label>Nombre y apellido</label>
-          <input type="text" name="name"class="control" >
+          <label for="name">Nombre y apellido</label>
+          <input type="text" name="name" id="name" class="control" >
         </div>
         <div class="control-formulario">
-          <label>Empresa</label>
-          <input type="text" name="empresa" class="control">
+          <label for="empresa">Empresa</label>
+          <input type="text" name="empresa" id="empresa" class="control">
         </div>
         <div class="control-formulario">
-          <label>CUIT/RUT</label>
-          <input type="text" name="cuit" class="control">
+          <label for="cuit">CUIT/RUT</label>
+          <input type="text" name="cuit" id="cuit" class="control">
         </div>
         <div class="control-formulario">
-          <label>Teléfono</label>
-          <input type="tel" name="telefono" class="control">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" name="telefono" id="telefono" class="control">
         </div>
         <div class="control-formulario">
-          <label>Email</label>
-          <input type="email" name="email" class="control">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" class="control">
         </div>
         <div class="control-formulario">
-          <label>Contraseña</label>
-          <input type="password" name="password" class="control">
+          <label for="password">Contraseña</label>
+          <input type="password" name="password" id="password" class="control" required minlenght="8">
         </div>
         <div class="control-formulario">
-          <label>Repita la contraseña</label>
-          <input type="password" name="password" class="control">
+          <label for="password-verify">Repita la contraseña</label>
+          <input type="password" name="password-verify" id="password-verify" class="control" onkeyup="validar()">
         </div>
+        <div> <span id="password-error-message"></span></div>
         <button type="submit" class="button">Ingresar</button>
       </form>
     </section>
-    
-   
-  
-    </main> 
+
+
+
+    </main>
     <footer class="provisoriofoot"><p>acá falta el footer</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut modi fugit dolorum, aperiam blanditiis magnam similique magni quidem, officia quod commodi sapiente. Ipsam cum aliquam a unde soluta nisi adipisci.</p></footer>
- 
-    
-    
 
- 
- 
- 
-    
+
+
+
+
+
+
+
   </body>
 </html>
