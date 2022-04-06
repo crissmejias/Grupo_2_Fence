@@ -1,1 +1,1 @@
-web: Sprints/Sprint-2/Code node app.js
+web: node app.js
