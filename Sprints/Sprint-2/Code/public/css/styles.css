@@ -20,6 +20,7 @@ li.item-menu-header a:visited {
   color: var(--white);
 }
 footer {
+  font-size: 14px;
   width: 100%;
   margin-top: 12px;
   background-color: var(--black);
