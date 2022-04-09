@@ -11,48 +11,33 @@ body {
  background-color: var(--primary-color);		
 }	
 
-/*
+
 .provisorio{
   background-color: var(--secondary-color);
   color: var(--white);
   margin:30px 0;
-}*/
+ 
 
-  img.logotipo{                 
+}
+
+  img.logotipo{
      height: 5rem;
     image-rendering: left;
   }
 
-  nav.elementos-header{   
+  nav.elementos-header {
   display:flex;
-  align-items: center;
   justify-content: center;
-  border: none;
-}
+    border: none;}
+  
   
 
-img.logotipo{ height: 5rem;
-}
 
-nav.elementos-header{
-  display:flex;  
+/* /* img.logotipo{ height: 5rem;
+} */
+  nav.elementos-header{display:flex;  
 align-items: center;}
-/* .elementos-header img{height: 30%;} */
-/* ul.menu-header{
-    font-size: 0.7rem;
-list-style-type: none;
-margin: 0 10px};
-li.item-menu-header{text-align: right;} */
-  /* .elementos-header img{height: 30%;} */
-
-  /* ul .menu-header{
-  font-size: 0.7rem;
-  list-style-type:none;
-  margin: 0 10px;
-  border: none; */
  
-
-  
  li.item-menu-header {text-align: right;
 }
 
@@ -150,9 +135,10 @@ list-style: none;
 padding: 0;			
 margin: 0;
 border: double 0.1px var(--black);
-width: 40%;      /**/
+width: 30%;      /**/
 height: auto;     /**/
 position: relative;     /**/
+
 		
 }
 ul #campo-nombres {
@@ -166,7 +152,7 @@ ul #campo-nombres {
   width: 40%;      /**/
   height: auto;     /**/
   position: relative;     /**/
-      
+
   }
 
 #campo-nombres li {			
@@ -183,13 +169,24 @@ box-sizing: border-box;
  display: inline-block;			
  color: var(--black);			
  width: 100px; 			
- /*background-color: var(--secondary-color); 	*/		
+/* background-color: white; */
  vertical-align: middle;			
  margin: 20px ; 			
  box-sizing: border-box;
  
-}			
+}	
 		
+main .button-actualizar a {			
+  color: var(--secondary-color);			
+  border: gray solid 0.5px;
+  border-radius: 10px;
+  cursor: pointer;	
+  padding: 15px;
+  background-color: white;
+	text-decoration: none;
+  }	
+
+
 button {			
 position: relative;			
 padding: 10px; 			
@@ -257,8 +254,8 @@ button.color-barra:hover{
 width: 100px ;			
 height: 20px;			
 empty-cells:show;			
-border: solid black 3px;	
-background-color:  var(--secondary-color)		
+border: solid gray 1px;	
+background-color: transparent	
  } 		
 .acceso-a-registro{			
 margin-bottom: 170px;
@@ -288,11 +285,14 @@ flex-direction: column;		/**/
 text-align: center;			
 margin: auto;
 padding: 0;
-width: 90%;                  /**/             
+width: 50%;                  /**/             
 flex-direction: row;      /**/
 flex-wrap: wrap;               /**/
 justify-content: space-around;   /**/
-}							
+background-color: white;
+border-radius: 10% ;
+}	
+
 .imagenes-cotizadas{			
  margin-bottom: 25px;			
  margin-top: 25px;			
@@ -300,11 +300,11 @@ justify-content: space-around;   /**/
 
 .contenedor button.x{			
 			
- color: var(--black);			
+ color: gray;			
  text-align: center;			
  font-weight: bold;			
  text-transform: uppercase;			
- outline: solid black;			
+ outline: solid gray;			
  box-sizing: border-box;			
  background-color: transparent;			
  }	
@@ -387,13 +387,11 @@ height: 100px;
 display: inline-block;
 }
 
-ul.menu-header{
+/* ul.menu-header{
   display: flex;
   border: none;}
 li.item-menu-header{
-  margin:0 10px;
-  text-align: right;
-}
+  margin:0 10px} */
 /*
 .item-menu-header a{
 display: inline-block;
