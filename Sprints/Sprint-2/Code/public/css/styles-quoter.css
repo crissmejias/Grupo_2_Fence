@@ -40,11 +40,11 @@ li.item-menu-header {             /*ok*/
   margin: auto;
   margin-top: 60px;
   padding: 0;
-  width: 55%;                               
+  width: 100%;                               
   justify-content: space-around; 
   background-color: white;
-  border-radius: 10% ;
-/*  border: solid blue 3px;*/
+  border-radius: 3% ;
+  border-bottom: solid #fad85b 1px;
   }	
 
 
@@ -58,20 +58,22 @@ li.item-menu-header {             /*ok*/
   list-style: none;			
   padding: 0;			
   margin: 0;
-  border-bottom: solid grey 1px;
-  width: auto;      /**/
-  height: auto;     /**/
-  position: relative;     /**/
+  border-bottom: solid var(--primary-color) 1px;
+  width: auto;      
+  height: auto;    
+  position: relative;
   /*border: solid green 3px;*/
 }
 
 #campo-nombres li {   /* CONTENEDOR DE CADA UNA DE LAS PALABRAS DE TITULOS DE TABLA */			
 /*display: flex;*/
-position: relative;			
+position: relative;
+font-size: small;		
 color: var(--black);			 				
-vertical-align: middle;			
+vertical-align: middle;
+justify-content: center;
 /*margin: 20px ;*/
-font-weight: bold;
+/*font-weight: bold;*/
 text-align: center; 			
 /*border: solid red 3px;*/
 }
@@ -112,7 +114,7 @@ text-align: center;
   list-style: none;			
   padding: 0;			
   margin: 0;
-  border-bottom: solid grey 1px;
+  border-bottom: solid var(--primary-color) 1px;
   width: auto;
   height: auto;
   position: relative;
@@ -125,7 +127,7 @@ text-align: center;
 .contenedor button.x{
   display: flex;			
   color: gray;
-  width: 30px;
+  width: 10px;
   height: auto;			
   text-align: center;			
   font-weight: bold;			
@@ -145,13 +147,14 @@ text-align: center;
 
   .datos-identificacion-cotizacion{			
     display: flex;
-    width: 120px ;			
-    height: 50px;
+    width: 130px ;			
+    height: 100px;
     justify-content: center;
     align-items: center;
     empty-cells:show;			
     border: none;	
-    background-color: transparent	
+    background-color: transparent;
+    font-size: 10px;	
      }
 
   .codigo-producto{
@@ -160,13 +163,14 @@ text-align: center;
     height: 20px;			
     empty-cells: show;			
     border: solid gray 1px;	
-    background-color: transparent	
+    background-color: transparent;
+    font-size: small;
       }
 
 #cantid-prod-cotizador{
   display: flex;
   border: solid grey 1px;
-  width: 50px;
+  width: 40px;
 }
 
 
@@ -222,14 +226,14 @@ box-sizing: border-box;
  justify-content: center;
  color: var(--white);
 }			
-
+/*.......................ANIMACION....................
 h5.peticion-de-registro  {
   animation-duration: 3s;
   animation-name: slidein;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-}
-
+}*/
+/*
 @keyframes slidein {
   from {
     margin-left: 100%;
@@ -241,7 +245,7 @@ h5.peticion-de-registro  {
     width: 100%;
   }
 }
-
+*/
 .formato-de-accesos button.color-barra{			
 color: var(--white);			
 text-align: center;			
@@ -253,13 +257,21 @@ padding: auto;
 width: 30%;	
 box-sizing: border-box;
 min-width: 150px;
+
 }
+
+.formato-de-accesos button.color-barra a{
+text-decoration: none;
+color: var(--white);
+		
+}
+
 button.color-barra:hover{
-    color: red;
+   
     background-color: var(--black)
 }	
 
- 		
+  
 .acceso-a-registro{			
 margin-bottom: 170px;
 margin-top: 70px;	
@@ -321,16 +333,37 @@ margin-top: 60px;
 
 @media (min-width:480px){
 
- nav.elementos-header  {
+  nav.elementos-header  {
     justify-content: space-between;
 }
 
 ul.menu-header{ 
   border: none;}
 
+  .posibles-compras {      /* CUADRADO BLANCO */	
+    width: 65%;                               
+    }
+
+    .titulo-imagen-producto{
+      display: block;
+    }
+
+  .imagenes-cotizadas{
+    display: block;
+
+      		
+      }
+    
+
+
 }             
 
 @media (min-width:768px){
+
+  .posibles-compras {      /* CUADRADO BLANCO */	
+    width: 55%;                               
+    }
+
 
 /* ------------- CADA UNA DE LAS PALABRAS DE TITULOS DE TABLA ---------------- */
 
@@ -349,6 +382,9 @@ ul.menu-header{
   .titulo-identificacion-producto{
     display: flex;
     width: 120px ;
+    height: auto;
+    text-align: center;
+    justify-content: center;
   }
             
   .titulo-codigo-producto{
