@@ -11,31 +11,31 @@ body {
  background-color: var(--primary-color);		
 }	
 
-
+/*
 .provisorio{
   background-color: var(--secondary-color);
   color: var(--white);
   margin:30px 0;
- 
+}*/
 
-}
-
-  img.logotipo{
+  img.logotipo{                 
      height: 5rem;
     image-rendering: left;
   }
 
-  nav.elementos-header {
+  nav.elementos-header{   
   display:flex;
+  align-items: center;
   justify-content: center;
-    border: none;}
-  
+  border: none;
+}
   
 
+img.logotipo{ height: 5rem;
+}
 
-/* /* img.logotipo{ height: 5rem;
-} */
-  nav.elementos-header{display:flex;  
+nav.elementos-header{
+  display:flex;  
 align-items: center;}
 /* .elementos-header img{height: 30%;} */
 /* ul.menu-header{
@@ -387,11 +387,13 @@ height: 100px;
 display: inline-block;
 }
 
-/* ul.menu-header{
+ul.menu-header{
   display: flex;
   border: none;}
 li.item-menu-header{
-  margin:0 10px} */
+  margin:0 10px;
+  text-align: right;
+}
 /*
 .item-menu-header a{
 display: inline-block;

@@ -6,11 +6,11 @@
   font-family: Roboto;
 }
 
-header {
+/*header {
   height: 100px;
   width: 100vw;
   background-color: var(--primary-color);
-}
+}*/
 .cabecera {
   background-color: var(--secondary-color);
   color: var(--white);

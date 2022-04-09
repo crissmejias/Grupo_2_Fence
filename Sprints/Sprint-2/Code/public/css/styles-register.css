@@ -10,16 +10,17 @@
         color: var(--white);
         margin:10px 0} */
     
-    img.logotipo{ height: 5rem;
+    img.logotipo{ height: 5rem;                      /*ok*/
     }
-    nav.elementos-header{display:flex;
+    nav.elementos-header{                            /*ok*/
+    display:flex;
     align-items: center;}
     /* .elementos-header img{height: 30%;} */
-    ul.menu-header{
-        font-size: 0.7rem;
+    ul.menu-header{                                  /*ok*/
+    font-size: 0.7rem;
     list-style-type: none;
     margin: 0 10px};
-    li.item-menu-header{text-align: right;}
+    li.item-menu-header{text-align: right;}           /*ok*/
 
 body {display: flex;
     flex-direction: column;
@@ -79,7 +80,8 @@ text-align: center;}
 
 
 
-@media (min-width:768px){.imagen-ingreso{display:block;
+@media (min-width:768px){
+    .imagen-ingreso{display:block;
     width:66%}
     main.principal{display: flex;
         flex-direction: row;}
