@@ -57,9 +57,11 @@ footer {
   ul.menu-header {
     display: flex;
   }
+
   li.item-menu-header {
     margin: 0 10px;
   }
+
   li.item-menu-header a {
     font-size: 14px;
   }

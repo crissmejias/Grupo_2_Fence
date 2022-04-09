@@ -10,17 +10,17 @@
         color: var(--white);
         margin:10px 0} */
     
-    img.logotipo{ height: 5rem;                      /*ok*/
+    img.logotipo{ height: 5rem;
     }
-    nav.elementos-header{                            /*ok*/
+    nav.elementos-header{
     display:flex;
     align-items: center;}
     /* .elementos-header img{height: 30%;} */
-    ul.menu-header{                                  /*ok*/
+    ul.menu-header{
     font-size: 0.7rem;
     list-style-type: none;
     margin: 0 10px};
-    li.item-menu-header{text-align: right;}           /*ok*/
+    li.item-menu-header{text-align: right;}
 
 body {display: flex;
     flex-direction: column;

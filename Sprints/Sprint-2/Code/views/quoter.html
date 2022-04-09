@@ -28,59 +28,55 @@
     </header>
  
   <main>
-    <div class="posibles-compras">
-      <div>
-  <ul id="campo-nombres">
-  <li></li>
-  <li></li>
-   <li>
-   <div class="identificacion-cotizacion">
-              <p> Producto </p>
-            </div>
-          </li>
-          <li>
-            <div class="identificacion-cotizacion">
-              <p> Código del Producto </p>
-            </div>
-          </li>
-          <li>
-            <div class="identificacion-cotizacion">
-              <p> Cantidad </p>
-            </div>
-          </li>
+    <div class="posibles-compras">    <!-- TODO EL CUADRO BLANCO -->
+      
+  <ul id="campo-nombres">               <!-- TITULOS DE LA TABLA -->
 
-        </ul>
+    <li class="titulo-container-x"></li>
 
-      </div>
+    <li class="titulo-imagen-producto"></li>
+   
+    <li><div class="titulo-identificacion-producto"><p> Producto </p></div></li>
+          
+    <li><div class="titulo-codigo-producto"><p> Código del Producto </p></div></li>
+          
+    <li><div class="titulo-cantidad-producto"><p> Cantidad </p></div></li>
+
+    </ul>
 
 
-      <ul id="desorden">
+      <ul id="desorden">      <!-- PRIMER PRODUCTO -->
 
         <li class="contenedor"><button class="x"><i class="fas fa-times"></i></button></li>
+        
         <button class="imagenes-cotizadas">
-          <li><img src=" ./images/valla-06.png" width="50" height="50" alt=" imagen de valla 06"> </li>
+          <li><img src=" ./images/valla-06.png" width="80" height="80" alt=" imagen de valla 06"> </li>
         </button>
+        
         <li>
           <div class="datos-identificacion-cotizacion">
             <p>Valla 06  </p>
           </div>
         </li>
+      
         <li>
-          <div class="datos-identificacion-cotizacion">
+          <div class="codigo-producto">
             <p>   </p>
           </div>
         </li>
+        
         <li>
           <div >
-            <p><input type="number" name="cantidad" id="cantidad-productos">  </p>
+            <p><input type="number" name="cantidad" id="cantid-prod-cotizador">  </p>
           </div>
         </li>
       </ul>
-      <ul id="desorden">
+
+      <ul id="desorden">    <!-- SEGUNDO PRODUCTO -->
 
         <li class="contenedor"><button class="x"><i class="fas fa-times"></i></button></li>
         <button class="imagenes-cotizadas">
-          <li><img src=" ./images/valla-02.png" width="50" height="50" alt=" imagen de valla 02"></li>
+          <li><img src=" ./images/valla-02.png" width="80" height="80" alt=" imagen de valla 02"></li>
         </button>
         <li>
           <div class="datos-identificacion-cotizacion">
@@ -88,23 +84,23 @@
           </div>
         </li>
         <li>
-          <div class="datos-identificacion-cotizacion">
+          <div class="codigo-producto">
             <p> </p>
           </div>
         </li>
         <li>
           <div >
-            <p><input type="number" name="cantidad" id="cantidad-productos"> </p>
+            <p><input type="number" name="cantidad" id="cantid-prod-cotizador"> </p>
           </div>
         </li>
 
       </ul>
 
-      <ul id="desorden">
+      <ul id="desorden">    <!-- TERCER PRODUCTO -->
 
         <li class="contenedor"><button class="x"><i class="fas fa-times"></i></button></li>
         <button class="imagenes-cotizadas">
-          <li><img src=" ./images/valla-03.png" width="50" height="50" alt=" imagen de valla 03"></li>
+          <li><img src=" ./images/valla-03.png" width="80" height="80" alt=" imagen de valla 03"></li>
         </button>
         <li>
           <div class="datos-identificacion-cotizacion">
@@ -112,22 +108,22 @@
           </div>
         </li>
         <li>
-          <div class="datos-identificacion-cotizacion">
+          <div class="codigo-producto">
             <p>   </p>
           </div>
         </li>
         <li>
           <div>
-            <p><input type="number" name="cantidad" id="cantidad-productos" > </p>
+            <p><input type="number" name="cantidad" id="cantid-prod-cotizador" > </p>
           </div>
         </li>
       </ul>
 
-      <ul id="desorden">
+      <ul id="desorden">      <!-- CUARTO PRODUCTO -->
 
         <li class="contenedor"><button class="x"><i class="fas fa-times"></i></button></li>
         <button class="imagenes-cotizadas">
-          <li><img src=" ./images/valla-03.png" width="50" height="50" alt=" imagen de valla 03"></li>
+          <li><img src=" ./images/valla-03.png" width="80" height="80" alt=" imagen de valla 03"></li>
         </button>
         <li>
           <div class="datos-identificacion-cotizacion">
@@ -135,13 +131,13 @@
           </div>
         </li>
         <li>
-          <div class="datos-identificacion-cotizacion">
+          <div class="codigo-producto">
             <p>  </p>
           </div>
         </li>
         <li>
           <div >
-            <p > <input type="number" name="cantidad" id="cantidad-productos"> </p>
+            <p > <input type="number" name="cantidad" id="cantid-prod-cotizador"> </p>
           </div>
         </li>
       </ul>
@@ -149,7 +145,13 @@
 
     </div>
 
+<!-- BOTON ACTUALIZAR -->
+
     <button class="button-actualizar"><a href="#">  Actualizar Lista</a>  </button>
+   
+   
+<!-- IMAGEN DE FONDO -->
+
     <div class="imagen-de-fondo">
     <div class="enviar-presupuesto">
       <div class="formato-de-accesos">

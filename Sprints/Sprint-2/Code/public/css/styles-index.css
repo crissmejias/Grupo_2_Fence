@@ -13,15 +13,6 @@ box-sizing: border-box;
 
 
 /* ----------------- HEADER COMUN PARA TODAS LAS SECCIONES ----------------*/
-
-
-/*.provisorio{
-  background-color: var(--secondary-color);
-  color: var(--white);
-  margin:10px 0;
-  min-width: 360px;
-  border: solid red 3px;
-}*/
   
   img.logotipo{ 
     height: 5rem;       /*ok*/
@@ -29,16 +20,6 @@ box-sizing: border-box;
   nav.elementos-header{              /*ok*/
     display:flex;
     align-items: center;}
-
-
-/*
-  nav.elementos-header{
-  display:flex;
-  align-items: center;
-  border: solid green 3px;
-}
-*/
-/* .elementos-header img{height: 30%;} */
   
 ul.menu-header{                 /*ok*/
   font-size: 0.7rem;
