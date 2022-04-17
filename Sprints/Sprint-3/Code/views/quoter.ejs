@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cotizador Fence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/styles-quoter.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="cabecera">
+    <nav class="elementos-header"><img class="logotipo" src="/images/logo-fence-white.svg">
+  <ul class="menu-header">
+    <li class="item-menu-header"><a href="/">Inicio</a></li>
+    <li class="item-menu-header"><a href="/quoter">Cotizaciones</a></li>
+    <li class="item-menu-header"><a href="/register">Registro</a></li>
+    <li class="item-menu-header"><a href="/login">Ingresar</a></li>
+
+     </ul></nav>
+    </header>
+ 
+  <main>
+    <div class="posibles-compras">    <!-- TODO EL CUADRO BLANCO -->
+      
+  <ul id="campo-nombres">               <!-- TITULOS DE LA TABLA -->
+
+    <li class="titulo-container-x"></li>
+
+    <li class="titulo-imagen-producto"></li>
+   
+    <li><div class="titulo-identificacion-producto"><p> Producto </p></div></li>
+          
+    <li><div class="titulo-codigo-producto"><p> Código del Producto </p></div></li>
+          
+    <li><div class="titulo-cantidad-producto"><p> Cantidad </p></div></li>
+
+    </ul>
+
+
+      <ul id="desorden">      <!-- PRIMER PRODUCTO -->
+
+        <li class="contenedor"><button class="x"><i class="fas fa-times"></i></button></li>
+        
+        <button class="imagenes-cotizadas">
+          <li><img src=" ./images/valla-06.png" width="80" height="80" alt=" imagen de valla 06"> </li>
+        </button>
+        
+        <li>
+          <div class="datos-identificacion-cotizacion">
+            <p>Valla Plastica Vial Light 1.8m Encastrable Cian Original  </p>
+          </div>
+        </li>
+      
+        <li>
+          <div class="codigo-producto">
+            <p>   </p>
+          </div>
+        </li>
+        
+        <li>
+          <div >
+            <p><input type="number" name="cantidad" id="cantid-prod-cotizador">  </p>
+          </div>
+        </li>
+      </ul>
+
+      <ul id="desorden">    <!-- SEGUNDO PRODUCTO -->
+
+        <li class="contenedor"><button class="x"><i class="fas fa-times"></i></button></li>
+        <button class="imagenes-cotizadas">
+          <li><img src=" ./images/valla-02.png" width="80" height="80" alt=" imagen de valla 02"></li>
+        </button>
+        <li>
+          <div class="datos-identificacion-cotizacion">
+            <p> Separador / Canalizador Vial New Jersey </p>
+          </div>
+        </li>
+        <li>
+          <div class="codigo-producto">
+            <p> </p>
+          </div>
+        </li>
+        <li>
+          <div >
+            <p><input type="number" name="cantidad" id="cantid-prod-cotizador"> </p>
+          </div>
+        </li>
+
+      </ul>
+
+      <ul id="desorden">    <!-- TERCER PRODUCTO -->
+
+        <li class="contenedor"><button class="x"><i class="fas fa-times"></i></button></li>
+        <button class="imagenes-cotizadas">
+          <li><img src=" ./images/valla-03.png" width="80" height="80" alt=" imagen de valla 03"></li>
+        </button>
+        <li>
+          <div class="datos-identificacion-cotizacion">
+            <p>Valla Vial 1900x1100mm Poliprop. P/seguridad Vialplast </p>
+          </div>
+        </li>
+        <li>
+          <div class="codigo-producto">
+            <p>   </p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <p><input type="number" name="cantidad" id="cantid-prod-cotizador" > </p>
+          </div>
+        </li>
+      </ul>
+
+      <ul id="desorden">      <!-- CUARTO PRODUCTO -->
+
+        <li class="contenedor"><button class="x"><i class="fas fa-times"></i></button></li>
+        <button class="imagenes-cotizadas">
+          <li><img src=" ./images/valla-03.png" width="80" height="80" alt=" imagen de valla 03"></li>
+        </button>
+        <li>
+          <div class="datos-identificacion-cotizacion">
+            <p>Valla Vial 1900x1100mm Poliprop. P/seguridad Vialplast </p>
+          </div>
+        </li>
+        <li>
+          <div class="codigo-producto">
+            <p>  </p>
+          </div>
+        </li>
+        <li>
+          <div >
+            <p > <input type="number" name="cantidad" id="cantid-prod-cotizador"> </p>
+          </div>
+        </li>
+      </ul>
+
+
+    </div>
+
+<!-- BOTON ACTUALIZAR -->
+
+    <button class="button-actualizar"><a href="#">  Actualizar Lista</a>  </button>
+   
+   
+<!-- IMAGEN DE FONDO -->
+
+    <div class="imagen-de-fondo">
+    
+<!-- BOTONES -->
+    
+      <div class="enviar-presupuesto">
+      <div class="formato-de-accesos">
+        <button class="color-barra"> Enviar Presupuesto</button>
+      </div>
+    </div>
+    <div>
+      <h5 class="peticion-de-registro">¿No estas registrado?. Es necesario estar registrado para recibir tu cotización.
+        </h5>
+    </div>
+    <div class="acceso-a-registro">
+      <div class="formato-de-accesos">
+       
+        <button class="color-barra"> <a href="/register">Registrate</a></button>
+      
+      </div>
+    </div>
+  </div>
+  </main>
+
+ <footer>
+    <section class="informacion-container">
+      <div class="about">
+        <h3>Acerca de nosotros</h3>
+        <!-- <img src="images/logo-fence.svg" alt="" /> -->
+        <p>
+          Somos una compañía de alcance global que centra su actividad en el
+          campo de la seguridad y la prevención de riesgos y cuya misión es la
+          protección de personas, infraestructuras y bienes en espacios
+          industriales y urbanos, seguridad vial y protección peatonal,
+          seguridad para eventos.
+        </p>
+        <!-- <p>
+          ¿Eres distribuidor de suministros industriales? Tenemos una lista de
+          precios exclusiva para ti. Contactános haciendo...
+        </p> -->
+      </div>
+      <div class="productos">
+        <h3>Productos</h3>
+        <ul>
+          <li>Catálogos y descargas</li>
+          <li>Vallas Plásticas</li>
+          <li>Vallas Metálicas</li>
+          <li>Barreras de seguridad peatonal</li>
+          <li>Postes separadores delimitadores</li>
+          <li>Movilidad y equipamiento urbano</li>
+        </ul>
+      </div>
+      <div class="redes">
+        <h3>Sigue conectado</h3>
+        <div><i class="fab fa-twitter-square"></i>Twitter</div>
+        <div><i class="fab fa-facebook-square"></i>Facebook</div>
+        <div><i class="fab fa-instagram"></i>Instagram</div>
+        <div><i class="fab fa-youtube"></i>Youtube</div>
+        <div>
+          <i class="fab fa-wordpress"></i>Blog "Protecciones industriales y
+          seguridad"
+        </div>
+      </div>
+      <div class="contacto">
+        <h3>Fence S.A.</h3>
+        <ul>
+          <li>Calle Grupo 2. s/n ARGENTINA. CASA CENTRAL.</li>
+          <li>Calle Grupo 2. s/n COLOMBIA SUCURSAL.</li>
+          <li>00 12 345 67 89 99 (ARG) 00 98 765 43 21 00 (COL)</li>
+        </ul>
+      </div>
+    </section>
+    <section class="mapa-sitio-container">
+      <h3>&copy;2022 FENCE S.A. Todos los derechos reservados.</h3>
+      <ul class="categories-container">
+        <li>Mapa del sitio</li>
+        <li>Aviso Legal</li>
+        <li>Política de Privacidad</li>
+        <li>Política de Cookies</li>
+      </ul>
+    </section>
+  </footer>
+  
+</body>
+
+</html>
