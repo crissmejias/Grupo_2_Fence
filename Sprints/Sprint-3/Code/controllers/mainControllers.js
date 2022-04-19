@@ -11,14 +11,15 @@ const mainControllers={
         res.render("quoter");
       },
       register:(req, res) => {
-        res.render("register");
+        res.render("register") ;
       },
       login:(req, res) => {
-        res.render("login");
+        res.render("login"); 
       },
 
 
 }
+
 
 module.exports=mainControllers;
 

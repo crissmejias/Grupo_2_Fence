@@ -1,3 +1,4 @@
+/*
 @import url(/public/css/main.css);
 
 * {
@@ -8,14 +9,14 @@
     margin:10px 0}
     .provisoriofoot{background-color: var(--black);
         color: var(--white);
-        margin:10px 0} */
+        margin:10px 0} 
     
     img.logotipo{ height: 5rem;
     }
     nav.elementos-header{
     display:flex;
     align-items: center;}
-    /* .elementos-header img{height: 30%;} */
+    /* .elementos-header img{height: 30%;} 
     ul.menu-header{
     font-size: 0.7rem;
     list-style-type: none;
@@ -25,8 +26,8 @@
 body {display: flex;
     flex-direction: column;
     font-family: var(--primary-font);
-    /* background-color: var(--primary-color); */
-    /* height: 482px; */
+    /* background-color: var(--primary-color); 
+    /* height: 482px; 
     background-image: url("/images/barreras-de-proteccion-cat2_280x280.png");
     background-repeat: no-repeat;
     background-position-x: center;
@@ -41,20 +42,20 @@ form.formulario-register{display:flex;
 
     .control-formulario label{
         display: block; 
-    /* border:dashed 1px red; */
+    /* border:dashed 1px red; 
 text-align: center;} 
 .control-formulario div{
     font-size: smaller;
     display: block; 
-/* border:dashed 1px red; */
+/* border:dashed 1px red; 
 text-align: center;}    
 .control{
-    /* background-color:var(--grey); */
+    /* background-color:var(--grey); 
     padding:5px;
-    /* border: solid 1px var(--secondary-color); */
+    /* border: solid 1px var(--secondary-color); 
     border-radius: 5px;
     width:100%;
-    /* justify-content: center; */
+    /* justify-content: center; 
     
 }
 .button{
@@ -68,7 +69,7 @@ text-align: center;}
 @media (min-width:480px){
     /* .imagen-ingreso{display:block;
         width:33%;
-        height:33%;} */
+        height:33%;} 
     section.caja-formulario{width:33%}
     main.principal{display: flex;
     justify-content: flex-end;}
@@ -88,4 +89,5 @@ text-align: center;}
 div.texto-bienvenida {margin:5px;}
 ul.menu-header{display: flex;}
 li.item-menu-header{margin:0 10px}}
-/* section.caja-formulario{display:inline} */
+/* section.caja-formulario{display:inline} 
+*/
