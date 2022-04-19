@@ -12,11 +12,12 @@
     
     img.logotipo{ height: 5rem;
     }
-    nav.elementos-header{display:flex;
+    nav.elementos-header{
+    display:flex;
     align-items: center;}
     /* .elementos-header img{height: 30%;} */
     ul.menu-header{
-        font-size: 0.7rem;
+    font-size: 0.7rem;
     list-style-type: none;
     margin: 0 10px};
     li.item-menu-header{text-align: right;}
@@ -79,7 +80,8 @@ text-align: center;}
 
 
 
-@media (min-width:768px){.imagen-ingreso{display:block;
+@media (min-width:768px){
+    .imagen-ingreso{display:block;
     width:66%}
     main.principal{display: flex;
         flex-direction: row;}

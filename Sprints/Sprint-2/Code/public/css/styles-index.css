@@ -13,29 +13,20 @@ box-sizing: border-box;
 
 
 /* ----------------- HEADER COMUN PARA TODAS LAS SECCIONES ----------------*/
-
-
-.provisorio{background-color: var(--secondary-color);
-  color: var(--white);
-  margin:10px 0;
-  min-width: 360px;
-}
   
-  img.logotipo{ height: 5rem;
-  }
-  nav.elementos-header{
-  display:flex;
-  align-items: center;
-}
-  /* .elementos-header img{height: 30%;} */
+  img.logotipo{ 
+    height: 5rem;       /*ok*/
+  }   
+  nav.elementos-header{              /*ok*/
+    display:flex;
+    align-items: center;}
   
-  ul.menu-header{
+ul.menu-header{                 /*ok*/
   font-size: 0.7rem;
-  list-style-type: none;
-  margin: 0 10px;
-};
+list-style-type: none;
+margin: 0 10px};
 
-  li.item-menu-header{
+li.item-menu-header{                /*ok*/
     text-align: right;
     }
 
@@ -58,8 +49,8 @@ box-sizing: border-box;
   min-width: 360px;
 }
 
-header .imagen-principal .slogan {                   
-  font-size: 14px;
+.imagen-principal .slogan {                   
+  font-size: 24px;
   color: white;
   justify-content: flex-end;
   margin-right: 10%;
@@ -95,6 +86,12 @@ transition: 5ms;
 
 
 /* ----------------- SECCION DE OPCIONES PARA NAVEGAR ---------------------*/
+
+.container-botones-navegacion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
 article.home-boton-01 {                         
   width: 360px;
@@ -374,7 +371,15 @@ ul li div.contenedor-texto-product-destac {
   header .imagen-principal .slogan {                   
     font-size: 18px;
   }
-  
+
+  .container-botones-navegacion {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }  
+
   .boton-catalogo {                               
     width: 125px;
     height: 42px;
@@ -401,6 +406,17 @@ ul li div.contenedor-texto-product-destac {
 
 
 @media (min-width:768px){
+
+  ul.menu-header{display: flex;}
+li.item-menu-header{margin:0 10px}
+
+.container-botones-navegacion {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
 
   header .imagen-principal .slogan {                   
     font-size: 24px;

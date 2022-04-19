@@ -1,4 +1,8 @@
 @import url(/public/css/main.css);
+/* * {
+  box-sizing: border-box;
+} */
+
 body {
   font-family: var(--primary-font);
   background-color: var(--primary-color);
@@ -6,7 +10,8 @@ body {
 .cabecera {
   background-color: var(--secondary-color);
   color: var(--white);
-  margin: 10px 0;
+  margin: 0px 0;
+  width: 100%;
 }
 li.item-menu-header a {
   text-decoration: none;
@@ -56,9 +61,11 @@ footer {
   ul.menu-header {
     display: flex;
   }
+
   li.item-menu-header {
     margin: 0 10px;
   }
+
   li.item-menu-header a {
     font-size: 14px;
   }

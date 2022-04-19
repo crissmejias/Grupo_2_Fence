@@ -1,8 +1,8 @@
 @import url(/public/css/main.css);			
 
 *{
-    margin: 0px;
-    padding: 0px;
+    /* margin: 0px;
+    padding: 0px; */
     box-sizing: border-box;
 }
 
@@ -11,185 +11,196 @@ body {
  background-color: var(--primary-color);		
 }	
 
-
-.provisorio{
-  background-color: var(--secondary-color);
-  color: var(--white);
-  margin:30px 0;
- 
-
-}
-
-  img.logotipo{
+  img.logotipo{             /*ok*/
      height: 5rem;
-    image-rendering: left;
   }
-
-  nav.elementos-header {
-  display:flex;
-  justify-content: center;
-    border: none;}
-  
-  
-
 
 /* /* img.logotipo{ height: 5rem;
 } */
-  nav.elementos-header{display:flex;  
+  nav.elementos-header{display:flex;   /*ok*/  
 align-items: center;}
-/* .elementos-header img{height: 30%;} */
-/* ul.menu-header{
-    font-size: 0.7rem;
-list-style-type: none;
-margin: 0 10px};
-li.item-menu-header{text-align: right;} */
-  /* .elementos-header img{height: 30%;} */
-
-  /* ul .menu-header{
-  font-size: 0.7rem;
-  list-style-type:none;
-  margin: 0 10px;
-  border: none; */
  
-
-  
- li.item-menu-header {text-align: right;
-}
-
-.item-menu-header a{
-  display: flex;
-  text-decoration: none;
-  color: var(--white) ;
-  padding-left: 10px;
-  }
-  ul.menu-header{
-    font-size: 0.7rem;
+ul.menu-header{                  /*ok*/
+  font-size: 0.7rem;
 list-style-type: none;
-margin: 0 10px};
+margin: 0 10px}; 
 
 
-  /* a:hover {
-    color: red;
-    font-size: 20px;
-  } */
-
-
-  /*
-.contenedor{
-width: 90%;
-max-width: 1200px;
-margin: auto;
-overflow: hidden;
-padding: 60px 0;
+li.item-menu-header {             /*ok*/
+  text-align: right;
 }
 
-.menu-navegacion{
- padding: 0;
- display: flex;
- justify-content: space-between;
- align-items: center;
- height: 70px;
-}
 
-.logo{
-display: none;
-height: 150px;
-}
-
-.logo img{
-display: none;
-height: 100%;
-}
-
-.enlaces li{
-list-style: none;
-display: flex;
-flex-direction: column;
-align-items: center;			
-}
-
-.enlaces a{
-display: flex;
-text-decoration: none;
-color: var(--white) ;
-padding-left: 100px;
-}
-
-.boton-login{
-width: 150px;
-display: none;
-margin-inline-start: auto;
-padding: 1px 0;
-background-color:var(--secondary-color); 
-color:var(--white)  ;
-text-decoration: none;
-outline: solid  var( --black)  ;
-text-align: center;
-margin-bottom: 50px;
-transition: 0.8s;
-cursor: pointer
-}
-
-a:hover {
-    color: red;
-    font-size: 20px;
-  }
-.boton-login:hover {
-  color: red;
-  background-color: var(--black);
-  border-radius: 50%;
-}
-
-*/
-
-ul #desorden {
-display: flex;
-flex-direction: column;
-align-items: center;			
-list-style: none;			
-padding: 0;			
-margin: 0;
-border: double 0.1px var(--black);
-width: 40%;      /**/
-height: auto;     /**/
-position: relative;     /**/
-		
-}
-ul #campo-nombres {
+.posibles-compras {      /* CUADRADO BLANCO */	
   display: flex;
-  flex-direction: column;
-  align-items: center;			
+  position: relative;        
+  flex-direction: column;	
+  flex-wrap: wrap;
+  text-align: center;			
+  margin: auto;
+  margin-top: 60px;
+  padding: 0;
+  width: 100%;                               
+  justify-content: space-around; 
+  background-color: white;
+  border-radius: 3% ;
+  border-bottom: solid #fad85b 1px;
+  }	
+
+
+
+#campo-nombres {    /* CONTENEDOR DE TITULOS DE TABLA */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
   list-style: none;			
   padding: 0;			
   margin: 0;
-  border: double 0.1px var(--black);
-  width: 40%;      /**/
-  height: auto;     /**/
-  position: relative;     /**/
-      
-  }
-
-#campo-nombres li {			
-display: none;			
-color: var(--black);			
-width: 100px; 			
- /*background-color: var(--secondary-color); 	*/		
-vertical-align: middle;			
-margin: 20px ; 			
-box-sizing: border-box;
+  border-bottom: solid var(--primary-color) 1px;
+  width: auto;      
+  height: auto;    
+  position: relative;
+  /*border: solid green 3px;*/
 }
 
-#desorden li {			
- display: inline-block;			
- color: var(--black);			
- width: 100px; 			
- /*background-color: var(--secondary-color); 	*/		
- vertical-align: middle;			
- margin: 20px ; 			
- box-sizing: border-box;
+#campo-nombres li {   /* CONTENEDOR DE CADA UNA DE LAS PALABRAS DE TITULOS DE TABLA */			
+/*display: flex;*/
+position: relative;
+font-size: small;		
+color: var(--black);			 				
+vertical-align: middle;
+justify-content: center;
+/*margin: 20px ;*/
+/*font-weight: bold;*/
+text-align: center; 			
+/*border: solid red 3px;*/
+}
+
+.titulo-container-x{     /* CADA UNA DE LAS PALABRAS DE TITULOS DE TABLA */
+  display: flex;
+  width: 30px;
+  height: auto;
+}
+
+.titulo-imagen-producto{
+  display: none;
+  width: 80px;
+  height: auto;
+}
+   
+.titulo-identificacion-producto{
+  display: flex;
+  width: 120px ;
+}
+          
+.titulo-codigo-producto{
+  display: none;
+  width: 80px ;
+}
+          
+.titulo-cantidad-producto{
+  display: flex;
+}
+
+
+#desorden {    /* CONTENEDOR DE CADA UNO DE LOS PRODUCTOS, ES CADA UNO DE LOS UL */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;			
+  list-style: none;			
+  padding: 0;			
+  margin: 0;
+  border-bottom: solid var(--primary-color) 1px;
+  width: auto;
+  height: auto;
+  position: relative;
+  }
+
+
+
+/* ----------------- ELEMENTOS DE CADA PRODUCTO, ES CADA LI DE CADA UL -----------------------*/
+
+.contenedor button.x{
+  display: flex;			
+  color: gray;
+  width: 10px;
+  height: auto;			
+  text-align: center;			
+  font-weight: bold;			
+  text-transform: uppercase;			
+  outline: solid gray 1px;			
+  box-sizing: border-box;			
+  background-color: transparent;			
+  }	
  
-}			
-		
+  .imagenes-cotizadas{
+  display: none;
+  width: auto;
+  height: auto;
+  margin-bottom: 10px;			
+  margin-top: 10px;			
+  }
+
+  .datos-identificacion-cotizacion{			
+    display: flex;
+    width: 130px ;			
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    empty-cells:show;			
+    border: none;	
+    background-color: transparent;
+    font-size: 10px;	
+     }
+
+  .codigo-producto{
+    display: none;
+    width: 80px ;			
+    height: 20px;			
+    empty-cells: show;			
+    border: solid gray 1px;	
+    background-color: transparent;
+    font-size: small;
+      }
+
+#cantid-prod-cotizador{
+  display: flex;
+  border: solid grey 1px;
+  width: 40px;
+}
+
+
+/* ------------------- BOTON ACTUALIZAR -------------------*/
+
+main .button-actualizar{
+  display: flex;		
+  border: gray solid 0.5px;
+  border-radius: 10px;
+  cursor: pointer;	
+  padding: 15px;
+  background-color: white;
+  margin: auto;
+  margin-top: 20px;
+  }	
+
+  main .button-actualizar a{
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+
+/* ------------------- IMAGEN DE FONDO Y BOTONES -------------------*/
+
+  .imagen-de-fondo{
+    background-image: none ;
+    padding: 0px;
+    margin-top: 100px;
+    }
+
+
 button {			
 position: relative;			
 padding: 10px; 			
@@ -201,10 +212,9 @@ cursor: pointer;
 transition: 0.8s;			
 text-transform: uppercase;			
 letter-spacing: 2px ;			
-box-sizing: border-box;			
+box-sizing: border-box;		
 }			
-		
-			
+
 .formato-de-accesos{			
  color: var(--white);			
  text-align: center			
@@ -216,14 +226,14 @@ box-sizing: border-box;
  justify-content: center;
  color: var(--white);
 }			
-
+/*.......................ANIMACION....................
 h5.peticion-de-registro  {
   animation-duration: 3s;
   animation-name: slidein;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-}
-
+}*/
+/*
 @keyframes slidein {
   from {
     margin-left: 100%;
@@ -235,7 +245,7 @@ h5.peticion-de-registro  {
     width: 100%;
   }
 }
-
+*/
 .formato-de-accesos button.color-barra{			
 color: var(--white);			
 text-align: center;			
@@ -247,19 +257,21 @@ padding: auto;
 width: 30%;	
 box-sizing: border-box;
 min-width: 150px;
+
 }
+
+.formato-de-accesos button.color-barra a{
+text-decoration: none;
+color: var(--white);
+		
+}
+
 button.color-barra:hover{
-    color: red;
+   
     background-color: var(--black)
 }	
 
-.datos-identificacion-cotizacion{			
-width: 100px ;			
-height: 20px;			
-empty-cells:show;			
-border: solid black 3px;	
-background-color:  var(--secondary-color)		
- } 		
+  
 .acceso-a-registro{			
 margin-bottom: 170px;
 margin-top: 70px;	
@@ -277,43 +289,9 @@ margin-top: 50px;
     text-transform: uppercase;  
   }
 
-.identificacion-cotizacion{			
-width: 100px ;			
-height: 20px;			
-font-weight: bold
-} 		
-.posibles-compras {	
-display: flex;        /**/
-flex-direction: column;		/**/
-text-align: center;			
-margin: auto;
-padding: 0;
-width: 90%;                  /**/             
-flex-direction: row;      /**/
-flex-wrap: wrap;               /**/
-justify-content: space-around;   /**/
-}							
-.imagenes-cotizadas{			
- margin-bottom: 25px;			
- margin-top: 25px;			
-}			
 
-.contenedor button.x{			
-			
- color: var(--black);			
- text-align: center;			
- font-weight: bold;			
- text-transform: uppercase;			
- outline: solid black;			
- box-sizing: border-box;			
- background-color: transparent;			
- }	
 
-.imagen-de-fondo{
-background-image: none ;
-padding: 0px;
-margin-top: 100px;
-}
+/* ------------------- FOOTER ---------------------*/
 
 .fondo-footer{
 background-color: var(--black);
@@ -350,63 +328,126 @@ text-align: center;
 margin-top: 60px;
    }
 
+
+/* --------------------- MEDIA QUERIES -------------------*/
+
 @media (min-width:480px){
 
- nav.elementos-header  {
+  nav.elementos-header  {
     justify-content: space-between;
- 
 }
 
-ul.menu-header{
- 
+ul.menu-header{ 
   border: none;}
-/*
-.boton-login{  
-display: block;
-} */
+
+  .posibles-compras {      /* CUADRADO BLANCO */	
+    width: 65%;                               
+    }
+
+    .titulo-imagen-producto{
+      display: block;
+    }
+
+  .imagenes-cotizadas{
+    display: block;
+
+      		
+      }
+    
+
+
 }             
 
 @media (min-width:768px){
 
+  .posibles-compras {      /* CUADRADO BLANCO */	
+    width: 55%;                               
+    }
 
-ul #desorden{
-flex-direction: row;
-justify-content: space-around;
-border: solid 0.5px var(--black) ;
-width: auto;
-height: 100px;
-        }    
-ul #campo-nombres{
-flex-direction: row;
-justify-content: space-around;
-border: solid 0.5px var(--black) ;
-width: auto;
-height: 100px;
-                  }    
-#campo-nombres li {			
-display: inline-block;
-}
 
-/* ul.menu-header{
+/* ------------- CADA UNA DE LAS PALABRAS DE TITULOS DE TABLA ---------------- */
+
+  .titulo-container-x{     
+    display: flex;
+    width: 30px;
+    height: auto;
+  }
+  
+  .titulo-imagen-producto{
+    display: flex;
+    width: 80px;
+    height: auto;
+  }
+     
+  .titulo-identificacion-producto{
+    display: flex;
+    width: 120px ;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+  }
+            
+  .titulo-codigo-producto{
+    display: flex;
+    width: 80px ;
+  }
+            
+  .titulo-cantidad-producto{
+    display: flex;
+  }
+
+
+
+  /* ----------------- ELEMENTOS DE CADA PRODUCTO, ES CADA LI DE CADA UL -----------------------*/
+
+  .contenedor button.x{
+  display: flex;			
+  color: gray;
+  width: auto;
+  height: auto;			
+  text-align: center;			
+  font-weight: bold;			
+  text-transform: uppercase;			
+  outline: solid gray 1px;			
+  box-sizing: border-box;			
+  background-color: transparent;			
+  }	
+ 
+  .imagenes-cotizadas{
   display: flex;
-  border: none;}
-li.item-menu-header{
-  margin:0 10px} */
-/*
-.item-menu-header a{
-display: inline-block;
-flex-direction: row;
-justify-content: flex-end;	
-		
+  width: auto;
+  height: auto;
+   margin-bottom: 20px;			
+   margin-top: 20px;			
+  }
+
+  .datos-identificacion-cotizacion{			
+    display: flex;
+    width: 120px ;			
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    empty-cells:show;				
+    background-color: transparent	
+     }
+
+  .codigo-producto{
+    display: flex;
+    width: 80px ;			
+    height: 20px;			
+    empty-cells:show;			
+    border: solid gray 1px;	
+    background-color: transparent	
+      }
+
+#cantid-prod-cotizador{
+  display: flex;
+  border: solid grey 1px;
+  width: 50px;
 }
-.logo{
-    display: block; }
-.logo img{
-display: block;
-}
-.boton-login{  
-display: block;
-} */
+
+
+
 .imagen-de-fondo{
 background-image: url("/images/valla-en-ciudad-05.jpeg")  ;
 padding: 50px;
@@ -420,7 +461,7 @@ display: flex;
 flex-direction: row;
 justify-content: space-around;
 }			
-  
+
 
 }
 
