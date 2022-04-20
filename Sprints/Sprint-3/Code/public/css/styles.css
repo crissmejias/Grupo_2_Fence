@@ -45,6 +45,7 @@ footer {
 .mapa-sitio-container .categories-container {
   display: flex;
   flex-direction: column;
+  padding-left: 0;
 }
 .mapa-sitio-container .categories-container li {
   text-align: center;
