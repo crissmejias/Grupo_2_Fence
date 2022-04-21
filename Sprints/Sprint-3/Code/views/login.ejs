@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <!-- HEAD -->
 
   <%- include('./partials/head', {tituloWeb: 'Login Fence'} ) %>
 
-<body class="login">
+  <body class="login">
+    <!-- HEADER -->
 
-      <!-- HEADER -->
+    <%- include('./partials/header') %>
 
-  <%- include('./partials/header') %>
+    <main class="principal">
+      <img
+        src="/images/home-valla en ciudad-02.jpg"
+        width="600px"
+        class="imagen-ingreso"
+      />
 
-  <main class="principal">
-  <img src="/images/home-valla en ciudad-02.jpg" width=600px class="imagen-ingreso">
+      <!-- login-->
+      <section class="caja-formulario">
+        <div class="texto-bienvenida">
+          Si ya está registrado ingrese con su usuario y contraseña
+        </div>
+        <form class="formulario-login" action="/productList">
+          <div class="control-formulario">
+            <label for="name">Usuario</label>
+            <input type="text" name="usuario" name class="control" id="name" />
+          </div>
+          <div class="control-formulario">
+            <label for="password">Contraseña</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="control"
+            />
+          </div>
+          <button type="submit" class="button">Ingresar</button>
+        </form>
+      </section>
+    </main>
 
-    <!-- login-->
-  <section class="caja-formulario">
-    <div class="texto-bienvenida">Si ya está registrado ingrese con su usuario y contraseña</div>
-    <form action="" method="POST" class="formulario-login">
-      <div class="control-formulario">
-        <label for="name">Usuario</label>
-        <input type="text" name="usuario"name class="control" id="name">
-      </div>
-      <div class="control-formulario">
-        <label for="password">Contraseña</label>
-        <input type="password" name="password" id="password" class="control">
-      </div>
-      <button type="submit" class="button">Ingresar</button>
-    </form>
-  </section>
+    <!-- FOOTER -->
 
-
-
-  </main>
-
-   <!-- FOOTER -->
-    
-  <%- include('./partials/footer') %>
-
-</body>
-
+    <%- include('./partials/footer') %>
+  </body>
 </html>
