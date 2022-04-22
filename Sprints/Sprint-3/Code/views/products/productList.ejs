@@ -13,52 +13,62 @@
         </ul>
       </aside>
       <div class="pl-productos-container">
+        <% for(let i=0; i < productos.length; i++) { %>
         <article class="pl-product">
-          <img src="images/valla-ejemplo.png" alt="" class="pl-product-image" />
+          <img
+            src="<%=productos[i].imagen  %>"
+            alt=""
+            class="pl-product-image"
+          />
           <div class="pl-product-description">
-            <h5 class="pl-product-title">Título</h5>
+            <h5 class="pl-product-title"><%=productos[i].nombre %></h5>
+            <p>$<%=productos[i].precio %></p>
+            <a href="/newProduct" class="pl-product-add-to-cart">Modificar</a>
+          </div>
+        </article>
+        <% } %> <% for(let i=0; i < productos.length; i++) { %>
+        <article class="pl-product">
+          <img
+            src="<%=productos[i].imagen  %>"
+            alt=""
+            class="pl-product-image"
+          />
+          <div class="pl-product-description">
+            <h5 class="pl-product-title"><%=productos[i].nombre %></h5>
+            <p>$<%=productos[i].precio %></p>
             <a href="/newProduct" class="pl-product-add-to-cart">Modificar</a>
           </div>
         </article>
 
+        <% } %> <% for(let i=0; i < productos.length; i++) { %>
         <article class="pl-product">
-          <img src="images/valla-ejemplo.png" alt="" class="pl-product-image" />
+          <img
+            src="<%=productos[i].imagen  %>"
+            alt=""
+            class="pl-product-image"
+          />
           <div class="pl-product-description">
-            <h5 class="pl-product-title">Título</h5>
+            <h5 class="pl-product-title"><%=productos[i].nombre %></h5>
+            <p>$<%=productos[i].precio %></p>
             <a href="/newProduct" class="pl-product-add-to-cart">Modificar</a>
           </div>
         </article>
 
+        <% } %> <% for(let i=0; i < productos.length; i++) { %>
         <article class="pl-product">
-          <img src="images/valla-ejemplo.png" alt="" class="pl-product-image" />
+          <img
+            src="<%=productos[i].imagen  %>"
+            alt=""
+            class="pl-product-image"
+          />
           <div class="pl-product-description">
-            <h5 class="pl-product-title">Título</h5>
-            <a href="/newProduct" class="pl-product-add-to-cart">Modificar</a>
-          </div>
-        </article>
-        <article class="pl-product">
-          <img src="images/valla-ejemplo.png" alt="" class="pl-product-image" />
-          <div class="pl-product-description">
-            <h5 class="pl-product-title">Título</h5>
-            <a href="/newProduct" class="pl-product-add-to-cart">Modificar</a>
-          </div>
-        </article>
-
-        <article class="pl-product">
-          <img src="images/valla-ejemplo.png" alt="" class="pl-product-image" />
-          <div class="pl-product-description">
-            <h5 class="pl-product-title">Título</h5>
+            <h5 class="pl-product-title"><%=productos[i].nombre %></h5>
+            <p>$<%=productos[i].precio %></p>
             <a href="/newProduct" class="pl-product-add-to-cart">Modificar</a>
           </div>
         </article>
 
-        <article class="pl-product">
-          <img src="images/valla-ejemplo.png" alt="" class="pl-product-image" />
-          <div class="pl-product-description">
-            <h5 class="pl-product-title">Título</h5>
-            <a href="/newProduct" class="pl-product-add-to-cart"> Modificar </a>
-          </div>
-        </article>
+        <% } %>
       </div>
     </main>
 
