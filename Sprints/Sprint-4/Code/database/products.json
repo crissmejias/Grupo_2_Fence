@@ -1,0 +1,38 @@
+[
+    {
+      "id": "01",
+      "tipo": "Vallas de seguridad vial",
+      "material": "madera",
+      "nombre": "Valla De Madera Perimetral Verde 1,20 X 1.50 Seguridad Vial",
+      "precio": "1764",
+      "descripcion": "xxx",
+      "imagen": "images/valla-01.png"
+    },
+    {
+      "id": "02",
+      "tipo": "Vallas de seguridad vial",
+      "material": "plastico",
+      "nombre": "Valla Vial 1900x1100 Mm Polipropileno P/seguridad Vialplast",
+      "precio": "33619",
+      "descripcion": "yyy",
+      "imagen": "images/valla-02.png"
+    },
+    {
+      "id": "03",
+      "tipo": "Vallas de seguridad vial",
+      "material": "madera",
+      "nombre": "Valla De Madera Perimetral Verde 1,20 X 1.50 Seguridad Vial",
+      "precio": "1764",
+      "descripcion": "xxx",
+      "imagen": "images/valla-03.png"
+    },
+    {
+      "id": "04",
+      "tipo": "Vallas de seguridad vial",
+      "material": "plastico",
+      "nombre": "Valla Vial 1900x1100 Mm Polipropileno P/seguridad Vialplast",
+      "precio": "33619",
+      "descripcion": "yyy",
+      "imagen": "images/valla-04.png"
+    }
+  ]

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head", {tituloWeb: "Listado de productos"}) %>
+
+  <body class="product-list">
+    <%- include("./partials/header") %> 
+    <main class="product-List">
+        <aside class="options-container">
+          <ul>
+            <li><a href="/newProduct"> Crear producto</a></li>
+            <li><a href="/productList">Listado de productos</a></li>
+          </ul>
+        </aside>
+    <main class="np-newProduct">
+        <form action="#" class="np-new-product-form">
+          <div class="np-main-features">
+            <input type="text" placeholder="Título del producto">
+            <input type="text" name="precio" placeholder="Precio">
+            <input type="text" name="material" placeholder="Material">
+            <input type="text" name="material" placeholder="Material Base">
+            <input type="text" name="ancho" placeholder="Longitud">
+            <input type="text" name="precio" placeholder="Altura">
+            <input type="text" name="precio" placeholder="Peso">
+          </div>
+          <div class="np-add-features">
+          <textarea placeholder="Agrega características adicionales"name="" id="" cols="30" rows="10"></textarea>
+          <input type="file" name="file" id="file" class="input-file"> 
+           <label for="file">Agrega una imagen</label>
+          </div>
+          </form>
+
+    </main>
+    <%- include("./partials/footer") %>
+  </body>
+</html>

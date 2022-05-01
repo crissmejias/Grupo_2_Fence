@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head", {tituloWeb: "Listado de productos"}) %>
+
+  <body class="product-list">
+    <%- include("./partials/header") %>
+
+    <main class="product-List">
+      <aside class="options-container">
+        <ul>
+          <li><a href="/newProduct"> Crear producto</a></li>
+          <li><a href="/productList">Listado de productos</a></li>
+        </ul>
+      </aside>
+      <div class="pl-productos-container">
+        <% for(let i=0; i < productos.length; i++) { %>
+        <article class="pl-product">
+          <img
+            src="<%=productos[i].imagen  %>"
+            alt=""
+            class="pl-product-image"
+          />
+          <div class="pl-product-description">
+            <h5 class="pl-product-title"><%=productos[i].nombre %></h5>
+            <p>$<%=productos[i].precio %></p>
+            <a href="/newProduct" class="pl-product-add-to-cart">Modificar</a>
+          </div>
+        </article>
+        <% } %> <% for(let i=0; i < productos.length; i++) { %>
+        <article class="pl-product">
+          <img
+            src="<%=productos[i].imagen  %>"
+            alt=""
+            class="pl-product-image"
+          />
+          <div class="pl-product-description">
+            <h5 class="pl-product-title"><%=productos[i].nombre %></h5>
+            <p>$<%=productos[i].precio %></p>
+            <a href="/newProduct" class="pl-product-add-to-cart">Modificar</a>
+          </div>
+        </article>
+
+        <% } %> <% for(let i=0; i < productos.length; i++) { %>
+        <article class="pl-product">
+          <img
+            src="<%=productos[i].imagen  %>"
+            alt=""
+            class="pl-product-image"
+          />
+          <div class="pl-product-description">
+            <h5 class="pl-product-title"><%=productos[i].nombre %></h5>
+            <p>$<%=productos[i].precio %></p>
+            <a href="/newProduct" class="pl-product-add-to-cart">Modificar</a>
+          </div>
+        </article>
+
+        <% } %> <% for(let i=0; i < productos.length; i++) { %>
+        <article class="pl-product">
+          <img
+            src="<%=productos[i].imagen  %>"
+            alt=""
+            class="pl-product-image"
+          />
+          <div class="pl-product-description">
+            <h5 class="pl-product-title"><%=productos[i].nombre %></h5>
+            <p>$<%=productos[i].precio %></p>
+            <a href="/newProduct" class="pl-product-add-to-cart">Modificar</a>
+          </div>
+        </article>
+
+        <% } %>
+      </div>
+    </main>
+
+    <%- include("./partials/footer") %>
+  </body>
+</html>
