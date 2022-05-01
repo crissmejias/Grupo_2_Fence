@@ -67,8 +67,13 @@ Considerando las conclusiones obtenidas, ajustaremos nuestra oferta brindando un
 En la carpeta **Wireframes** pueden encontrarse los esquemas iniciales y en **Design** los logotipos que estamos considerando.
 
 
-El link a la plataforma/herramienta que utilizamos para organizar nuestro trabajo: 
+El link a la plataforma/herramienta que utilizamos para organizar nuestro trabajo : 
 https://trello.com/b/M98ifgjL/proyecto-integrador-dh-grupo-2
 
 
+El link a la plataforma/herramienta que utilizamos para organizar las "Weeklies" y plasmar el resto de los resultados de las reuniones y avance de tareas (el mismo se encuentra en Tablero de Trabajo Trello) : 
+https://miro.com/welcomeonboard/ZzhXeUZrd2xUT3VsWGNlSXhnWktiUVRjaTVTa1lFM3g3b3AxZE9UQUN4eFhoODZ6NmNrVDBQNFlPVnViOHVMNHwzNDU4NzY0NTIzODYzOTc5MjYx?share_link_id=640217731960
 
+
+El link a la plataforma/herramienta que utilizamos para realizar las Retro (el mismo se encuentra en Tablero de Trabajo Trello): 
+https://app.moqups.com/kTMlTBcvR6eUpvHueENUiaVvfiEIwgqf/edit/page/a7d3a416e
