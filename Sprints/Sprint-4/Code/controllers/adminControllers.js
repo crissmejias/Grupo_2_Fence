@@ -11,7 +11,7 @@ const fs = require('fs');
     },
     create: (req,res) =>{
         let products = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../database/products.json')));
-        res.render(path.resolve(__dirname, '../views/products/productList'));
+        res.render(path.resolve(__dirname, '../views/administradores/create'));
     },
     save: (req,res) =>{
         let products = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../database/products.json')));
@@ -48,7 +48,7 @@ const fs = require('fs');
         let products = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../database/products.json')));
         const vallasId = req.params.id;
         let vallaEditar = products.find(valla=> valla.id == vallasId);
-        res.render(path.resolve(__dirname,'../views/products/productList'), {vallaEditar});
+        res.render(path.resolve(__dirname,'../views/administradores/edit'), {vallaEditar});
     },
     update: (req,res) =>{
         let products = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../database/products.json')));
