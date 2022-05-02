@@ -5,7 +5,7 @@ const multer = require('multer');
 
 const adminControllers = require(path.resolve(__dirname,'../controllers/adminControllers'));
 
-const acceso = require(path.resolve(__dirname,'../middlewares/acceso'));
+
 
 
 var storage = multer.diskStorage({
