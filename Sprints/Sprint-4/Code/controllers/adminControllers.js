@@ -64,7 +64,7 @@ const fs = require('fs');
         fs.writeFileSync(path.resolve(__dirname,'../database/products.json'),vallaActualizar)
         res.redirect('/productList');
     },
-    destroy: (req,res) =>{
+    delete: (req,res) =>{
         let products = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../database/products.json')));
         const vallaDeleteId = req.params.id;
         const vallasStockFinal = products.filter(valla => valla.id != vallaDeleteId);

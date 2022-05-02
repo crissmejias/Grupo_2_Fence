@@ -25,6 +25,6 @@ router.post('/administradores/create', upload.single('imagen'), adminControllers
 router.get('/products/productDetail/:id', adminControllers.show);
 router.get('/administradores/edit/:id', adminControllers.edit);
 router.put('/administradores/edit/:id', upload.single('imagen'), adminControllers.update);
-router.get('/administradores/delete/:id', adminControllers.destroy);
+router.delete('/administradores/delete/:id', adminControllers.delete);
 
 module.exports = router;
