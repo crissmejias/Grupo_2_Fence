@@ -22,7 +22,7 @@ const productsControllers = {
     newProduct.id = productos.length +1;
     productos.push(newProduct);
     console.log(productos);
-    let newData = JSON.stringify(productos);
+    let newData = JSON.stringify(productos,null,2);
     fs.writeFileSync(pathToProducts,newData);
     res.redirect('/products')
   }
