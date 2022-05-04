@@ -1,51 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  
- <!-- HEAD  -->
+  <!-- HEAD  -->
 
-  <%- include('./partials/head', {tituloWeb: 'Producto Fence'}  ) %>
+  <%- include('./partials/head', {tituloWeb: 'Producto Fence'} ) %>
 
- 
   <body>
-   
-       <!-- HEADER -->
+    <!-- HEADER -->
 
     <%- include('./partials/header') %>
- 
 
     <main class="product-detail">
       <p class="page-index">Productos / Título de producto</p>
       <div class="product-detail-container">
-        <h1>Título de producto</h1>
+        <h1><%= producto.nombre  %> </h1>
+       
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo,
-          deserunt.
+         $ <%=producto.precio  %> 
         </p>
         <details class="detalles-container">
           <summary>Detalles</summary>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
-            ducimus a doloremque natus nihil iusto dolorum cum eum assumenda
-            magnam omnis iure non, minima nostrum? Asperiores quisquam officia
-            harum aperiam. Omnis debitis nisi quo sint culpa explicabo, eius
-            ducimus magnam odio quia, quam repellat asperiores! Neque at culpa
-            aliquid tempora quo, quae blanditiis vel natus, accusamus fugiat
-            porro cumque? Quia. Cupiditate aut labore id enim, nulla illo dolor
-            officia harum rerum culpa! Vel facilis, quis nemo iusto iure, omnis
-            dignissimos est blanditiis necessitatibus labore temporibus culpa
-            reprehenderit sapiente, sunt debitis!
+            <%=producto.descripcion  %> 
           </p>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
-            ducimus a doloremque natus nihil iusto dolorum cum eum assumenda
-            magnam omnis iure non, minima nostrum? Asperiores quisquam officia
-            harum aperiam. Omnis debitis nisi quo sint culpa explicabo, eius
-            ducimus magnam odio quia, quam repellat asperiores! Neque at culpa
-            aliquid tempora quo,
+           <%= producto.tipo %> 
           </p>
+          <p>
+            <%= producto.material %> 
+           </p>
         </details>
         <figure>
-          <img src="images/valla-ejemplo.png" alt="" />
+          <img src="<%= producto.imagen  %> " alt="" />
         </figure>
       </div>
 
@@ -78,41 +63,21 @@
       <div class="products-container">
         <h3>Productos Relacionados</h3>
         <div class="products-cards-container">
+          <% for(i =0; i< productos.length; i++) {%> 
           <div class="product">
-            <img src="images/valla-ejemplo.png" alt="" class="product-image" />
+            <img src="<%= productos[i].imagen  %> " alt="" class="product-image" />
             <div class="product-description">
-              <h5 class="product-title">Título</h5>
+              <h5 class="product-title"><%= productos[i].nombre  %> </h5>
               <button class="product-add-to-cart">Agregar</button>
             </div>
           </div>
-          <div class="product">
-            <img src="images/valla-ejemplo.png" alt="" class="product-image" />
-            <div class="product-description">
-              <h5 class="product-title">Título</h5>
-              <button class="product-add-to-cart">Agregar</button>
-            </div>
-          </div>
-          <div class="product">
-            <img src="images/valla-ejemplo.png" alt="" class="product-image" />
-            <div class="product-description">
-              <h5 class="product-title">Título</h5>
-              <button class="product-add-to-cart">Agregar</button>
-            </div>
-          </div>
-          <div class="product">
-            <img src="images/valla-ejemplo.png" alt="" class="product-image" />
-            <div class="product-description">
-              <h5 class="product-title">Título</h5>
-              <button class="product-add-to-cart">Agregar</button>
-            </div>
-          </div>
+          <% } %>       
         </div>
       </div>
     </main>
 
-     <!-- FOOTER -->
+    <!-- FOOTER -->
 
     <%- include('./partials/footer') %>
-
   </body>
 </html>
