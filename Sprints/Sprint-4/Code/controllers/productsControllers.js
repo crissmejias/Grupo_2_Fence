@@ -25,7 +25,44 @@ const productsControllers = {
     let newData = JSON.stringify(productos,null,2);
     fs.writeFileSync(pathToProducts,newData);
     res.redirect('/products')
-  }
+  },
+
+  editProduct: (req,res) => {
+
+    let id = req.params.idProduct;
+
+    const productoSeleccionado = productos.find((el) => el.id === parseInt(id))
+
+    res.render('editProduct',{producto:productoSeleccionado  })
+},
+putProduct : (req,res) => {
+
+  const idProduct = req.params.idProduct;
+  const tipo = req.body.tipo;
+  const  nombre= req.body.nombre;
+  const material = req.body.material;
+  const precio = req.body.precio;
+  const descripcion = req.body.descripcion;
+  const imagen = req.body.imagen;
+
+  productos.forEach(element => {
+      if(element.id === parseInt(idProduct)){
+          element.tipo = tipo;
+          element.nombre = nombre;
+          element.material = material;
+          element.precio = precio;
+          element.descripcion = descripcion;
+          element.imagen = imagen;
+      }
+    });
+
+    const newData = JSON.stringify(productos,null,2);
+
+    fs.writeFileSync(pathToProducts,newData);
+
+
+    res.redirect("/")
+}
 };
 
 module.exports = productsControllers;
