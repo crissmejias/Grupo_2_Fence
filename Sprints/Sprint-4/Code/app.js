@@ -15,7 +15,9 @@ app.set("view engine", "ejs");
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-// app.use(methodOverride('_method'));
+
+/*sprint 4
+app.use(methodOverride('_method'));*/
 
 
 app.set("views", [

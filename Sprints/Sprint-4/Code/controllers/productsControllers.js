@@ -26,6 +26,8 @@ const productsControllers = {
     fs.writeFileSync(pathToProducts,newData);
     res.redirect('/products')
   }
-};
+
+ 
+}
 
 module.exports = productsControllers;

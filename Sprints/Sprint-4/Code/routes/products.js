@@ -6,4 +6,8 @@ router.get("/", productsController.productsList);
 router.get("/createProduct", productsController.createProduct);
 router.get("/:idProduct", productsController.detalleProduct);
 router.post("/createProduct", productsController.recordProduct)
+
+
+
+
 module.exports = router;
