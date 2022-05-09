@@ -1,36 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include("./partials/head", {tituloWeb: "Listado de productos"}) %>
+<h1>todos los productos   </h1> 
+<% for(i =0; i< productos.length; i++) {%><%=JSON.stringify(productos[i])%><%}%>
 
-  <body class="product-list">
-    <%- include("./partials/header") %> 
-    <main class="product-List">
-        <aside class="options-container">
-          <ul>
-            <li><a href="/products/createProduct"> Crear producto</a></li>
-            <li><a href="/products">Listado de productos</a></li>
-          </ul>
-        </aside>
-    <main class="np-newProduct">
-        <form action="/products/<%=producto.idProduct%>/edit?_method=PUT"   method="POST"   class="np-new-product-form">
-          <div class="np-main-features">
-            <input type="text" name ="nombre" placeholder="Título del producto" value="<%=producto.nombre%>">
-            <input type="text" name="precio" placeholder="Precio"value="<%=producto.precio%>">
-            <input type="text" name="material" placeholder="Material"value="<%=producto.material%>">
-            <input type="text" name="material-base" placeholder="Material Base">
-            <input type="text" name="longitud" placeholder="Longitud">
-            <input type="text" name="altura" placeholder="Altura">
-            <input type="text" name="peso" placeholder="Peso">
-          </div>
-          <div class="np-add-features">
-          <textarea placeholder="Agrega características adicionales"name="" id="" cols="30" rows="10"></textarea>
-          <input type="file" name="file" id="file" class="input-file"> 
-           <label for="file">Agrega una imagen</label>
-          </div>
-          <input type="submit" value="Enviar">
-          </form>
-
-    </main>
-    <%- include("./partials/footer") %>
-  </body>
-</html>
+<h1>El producto a editar   </h1> 
+    <%=JSON.stringify(producto)%>
+    </html>

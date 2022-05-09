@@ -31,9 +31,9 @@ const productsControllers = {
 
     let id = req.params.idProduct;
 
-    const productoSeleccionado = productos.find((el) => el.id === parseInt(id))
+    let productoSeleccionado = productos.find((el) => el.id === id);
 
-    res.render('editProduct',{producto:productoSeleccionado  })
+    res.render('editProduct',{producto:productoSeleccionado,productos:productos})
 },
 putProduct : (req,res) => {
 

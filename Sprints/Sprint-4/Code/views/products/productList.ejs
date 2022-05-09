@@ -10,6 +10,7 @@
         <ul>
           <li><a href="/products/createProduct"> Crear producto</a></li>
           <li><a href="/products">Listado de productos</a></li>
+         
         </ul>
       </aside>
       <div class="pl-productos-container">
@@ -26,6 +27,10 @@
             <h5 class="pl-product-title"><%=productos[i].nombre %></h5>
             <p>$<%=productos[i].precio %></p>
             <a href="/newProduct" class="pl-product-add-to-cart">Modificar</a>
+
+
+            <a href="/products" class="pl-product-add-to-cart">Eliminar</a>
+           
           </div>
         </article>
       </a>
