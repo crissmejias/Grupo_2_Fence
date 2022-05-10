@@ -14,12 +14,12 @@
         <%=JSON.stringify(producto)%> 
 
         <main class="np-newProduct">
-            <form action="/products/<%=producto.Idproduct%>/edit?_method=PUT"   method="POST"   class="np-new-product-form">
+            <form action="/products/<%=producto.id%>/edit?_method=PUT"   method="POST"   class="np-new-product-form">
               <div class="np-main-features">
                 <input type="text" placeholder="Título del producto">
                 <input type="text" name="precio" placeholder="Precio" value="<%=producto.precio%>">
                 <input type="text" name="material" placeholder="Material"value="<%=producto.material%>>
-                <input type="text" name="material-base" placeholder="Material Base">
+                <!-- <input type="text" name="material-base" placeholder="Material Base"> -->
                 <input type="text" name="longitud" placeholder="Longitud">
                 <input type="text" name="altura" placeholder="Altura">
                 <input type="text" name="peso" placeholder="Peso">
