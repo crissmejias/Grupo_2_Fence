@@ -19,7 +19,7 @@ const productsControllers = {
   },
   recordProduct: (req,res)=>{
     let newProduct = req.body;
-    newProduct.id = productos.length +1;
+    newProduct.id = "0"+ (productos.length +1).toString(); //para homogeneizar los id
     productos.push(newProduct);
     console.log(productos);
     let newData = JSON.stringify(productos,null,2);
@@ -36,7 +36,7 @@ const productsControllers = {
     res.render('editProduct',{producto:productoSeleccionado,productos:productos})
 },
 putProduct : (req,res) => {
-
+console.log(productos);
   const idProduct = req.params.idProduct;
   const tipo = req.body.tipo;
   const  nombre= req.body.nombre;
@@ -44,9 +44,11 @@ putProduct : (req,res) => {
   const precio = req.body.precio;
   const descripcion = req.body.descripcion;
   const imagen = req.body.imagen;
+// console.log(req.params);
+//   console.log(req.body);
 
   productos.forEach(element => {
-      if(element.id === parseInt(idProduct)){
+      if(element.id == parseInt(idProduct)){
           element.tipo = tipo;
           element.nombre = nombre;
           element.material = material;
@@ -57,6 +59,8 @@ putProduct : (req,res) => {
     });
 
     const newData = JSON.stringify(productos,null,2);
+    // console.log(parseInt(idProduct));
+    // console.log (newData);
 
     fs.writeFileSync(pathToProducts,newData);
 
