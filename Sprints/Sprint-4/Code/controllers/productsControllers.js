@@ -19,8 +19,20 @@ const productsControllers = {
     res.render("productDetail", { producto: productoSeleccionado, productos : productos });
   },
   recordProduct: (req,res)=>{
-    let newProduct = req.body;
-    newProduct.id = (productos.length +1); //para homogeneizar los id
+   let newProduct = req.body;
+   newProduct.id = (productos.length +1); //para homogeneizar los id
+ 
+ /*prueba subida archivos
+  let newProduct = {
+    id: productos.length +1,
+    tipo : req.body.tipo,
+    material: req.body.material,
+    nombre: req.body.nombre,
+    precio: req.body.precio,
+    descripcion: req.body.descripcion,
+    imagen: req.file.imagen
+}
+    */
     productos.push(newProduct);
     console.log(productos);
     let newData = JSON.stringify(productos,null,2);
@@ -44,7 +56,9 @@ console.log(productos);
   const material = req.body.material;
   const precio = req.body.precio;
   const descripcion = req.body.descripcion;
-  const imagen = req.body.imagen;
+  const imagen = req.file.imagen;
+  //se cambió el body por el file en const imagen//
+  
 // console.log(req.params);
 //   console.log(req.body);
 
