@@ -32,7 +32,7 @@ const productsControllers = {
 
     let id = req.params.idProduct;
 
-    let productoSeleccionado = productos.find((el) => el.id === id);
+    let productoSeleccionado = productos.find((el) => el.id == id);
 
     res.render('editProduct',{producto:productoSeleccionado,productos:productos})
 },
