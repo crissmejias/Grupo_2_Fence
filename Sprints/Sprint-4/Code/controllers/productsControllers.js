@@ -1,5 +1,6 @@
 const path = require("path");
 const fs = require("fs");
+const { parse } = require("path");
 const pathToProducts = path.join(__dirname, "../database/products.json");
 const productsList = fs.readFileSync(pathToProducts);
 const productos = JSON.parse(productsList);
@@ -19,7 +20,7 @@ const productsControllers = {
   },
   recordProduct: (req,res)=>{
     let newProduct = req.body;
-    newProduct.id = "0"+ (productos.length +1).toString(); //para homogeneizar los id
+    newProduct.id = (productos.length +1); //para homogeneizar los id
     productos.push(newProduct);
     console.log(productos);
     let newData = JSON.stringify(productos,null,2);
@@ -66,6 +67,18 @@ console.log(productos);
 
 
     res.redirect("/")
+},
+deleteProduct: (req,res)=>{
+    let idProduct = parseInt(req.params.idProduct);
+   
+   nuevaLista = productos.filter( el  => el.id !== idProduct);
+      
+    let nuevosProductos = JSON.stringify(nuevaLista,null,2);
+    console.log('Funcionando el controlador');
+    console.log(nuevosProductos);
+   fs.writeFileSync(pathToProducts,nuevosProductos); 
+
+  res.redirect('/products')
 }
 };
 

@@ -28,9 +28,9 @@
             <p>$<%=productos[i].precio %></p>
             <a href="/newProduct" class="pl-product-add-to-cart">Modificar</a>
 
-
-            <a href="/products" class="pl-product-add-to-cart">Eliminar</a>
-           
+              <form action="/products/<%=productos[i].id%> ?_method=DELETE" method="POST" >
+            <button class="pl-product-add-to-cart" value="<%=productos[i].id%>">Eliminar</button>
+          </form>
           </div>
         </article>
       </a>

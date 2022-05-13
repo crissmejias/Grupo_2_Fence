@@ -1,25 +1,16 @@
 [
   {
-    "id": "01",
+    "id": 1,
     "material": "madera>                <input type=>                <input type=>                <input type=",
     "precio": "176400"
   },
   {
-    "id": "02",
+    "id": 2,
     "material": "plastico>                <input type=",
     "precio": "336190"
   },
   {
-    "id": "03",
-    "tipo": "Vallas de seguridad vial",
-    "material": "madera",
-    "nombre": "Valla De Madera Perimetral Verde 1,20 X 1.50 Seguridad Vial",
-    "precio": "1764",
-    "descripcion": "xxx",
-    "imagen": "/images/valla-03.png"
-  },
-  {
-    "id": "04",
+    "id": 4,
     "tipo": "Vallas de seguridad vial",
     "material": "plastico",
     "nombre": "Valla Vial 1900x1100 Mm Polipropileno P/seguridad Vialplast",
@@ -35,6 +26,50 @@
     "altura": "",
     "peso": "",
     "file": "",
-    "id": "05"
+    "id": 5
+  },
+  {
+    "id": 6
+  },
+  {
+    "precio": "Prueba",
+    "material": "Prueba",
+    "material-base": "Prueba",
+    "longitud": "Prueba",
+    "altura": "Prueba",
+    "peso": "Prueba",
+    "file": "",
+    "id": 8
+  },
+  {
+    "precio": "",
+    "material": "",
+    "material-base": "",
+    "longitud": "",
+    "altura": "",
+    "peso": "",
+    "file": "",
+    "id": 8
+  },
+  {
+    "precio": "",
+    "material": "",
+    "material-base": "",
+    "longitud": "",
+    "altura": "",
+    "peso": "",
+    "file": "",
+    "id": 9
+  },
+  {
+    "nombre": "Prueba 3",
+    "precio": "",
+    "material": "",
+    "material-base": "",
+    "longitud": "",
+    "altura": "",
+    "peso": "",
+    "file": "",
+    "id": 10
   }
 ]
