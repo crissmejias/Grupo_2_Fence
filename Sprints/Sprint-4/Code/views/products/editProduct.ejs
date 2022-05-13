@@ -14,15 +14,15 @@
         <%=JSON.stringify(producto)%> 
 
         <main class="np-newProduct">
-            <form action="/products/edit?_method=PUT"   method="POST"   class="np-new-product-form">
+            <form action="/products/<%=producto.id%>/edit?_method=PUT"   method="POST"   class="np-new-product-form">
               <div class="np-main-features">
-                <input type="text" placeholder="Título del producto">
-                <input type="text" name="precio" placeholder="<%=producto.precio  %> " value="">
-                <input type="text" name="material" placeholder="<%=producto.material  %> "value="">
-                <input type="text" name="material-base" placeholder="Material Base">
-                <input type="text" name="longitud" placeholder="Longitud">
-                <input type="text" name="altura" placeholder="Altura">
-                <input type="text" name="peso" placeholder="Peso">
+                <input type="text" name="nombre"placeholder="Título del producto" value="<%=producto.precio%>">
+                <input type="text" name="precio" placeholder="Precio " value="<%=producto.precio%>">
+                <input type="text" name="material" placeholder="Material"value="<%=producto.material%>">
+                <!-- <input type="text" name="material-base" placeholder="Material Base"> -->
+                <input type="text" name="tipo" placeholder="tipo" value="<%=producto.tipo%>">
+                <input type="text" name="descripcion" placeholder="descripcion" value="<%=producto.descripcion%>">
+                <!-- <input type="text" name="peso" placeholder="Peso"> -->
               </div>
               <div class="np-add-features">
               <textarea placeholder="Agrega características adicionales"name="" id="" cols="30" rows="10"></textarea>

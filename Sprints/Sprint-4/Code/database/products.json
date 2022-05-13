@@ -1,15 +1,5 @@
 [
   {
-    "id": 1,
-    "material": "madera>                <input type=>                <input type=>                <input type=",
-    "precio": "176400"
-  },
-  {
-    "id": 2,
-    "material": "plastico>                <input type=",
-    "precio": "336190"
-  },
-  {
     "id": 4,
     "tipo": "Vallas de seguridad vial",
     "material": "plastico",
@@ -17,48 +7,5 @@
     "precio": "33619",
     "descripcion": "yyy",
     "imagen": "/images/valla-04.png"
-  },
-  {
-    "precio": "10000000",
-    "material": ">                <input type=",
-    "material-base": "",
-    "longitud": "",
-    "altura": "",
-    "peso": "",
-    "file": "",
-    "id": 5
-  },
-  {
-    "id": 6
-  },
-  {
-    "precio": "Prueba",
-    "material": "Prueba",
-    "material-base": "Prueba",
-    "longitud": "Prueba",
-    "altura": "Prueba",
-    "peso": "Prueba",
-    "file": "",
-    "id": 8
-  },
-  {
-    "precio": "",
-    "material": "",
-    "material-base": "",
-    "longitud": "",
-    "altura": "",
-    "peso": "",
-    "file": "",
-    "id": 8
-  },
-  {
-    "precio": "",
-    "material": "",
-    "material-base": "",
-    "longitud": "",
-    "altura": "",
-    "peso": "",
-    "file": "",
-    "id": 9
   }
 ]

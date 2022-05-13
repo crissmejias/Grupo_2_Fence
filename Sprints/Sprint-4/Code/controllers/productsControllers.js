@@ -44,9 +44,10 @@ const productsControllers = {
 
     let id = req.params.idProduct;
 
-    let productoSeleccionado = productos.find((el) => el.id == id);
+    let productoSeleccionado = productos.find(el => el.id == id);
 
     res.render('editProduct',{producto:productoSeleccionado,productos:productos})
+    console.log(productoSeleccionado.id);
 },
 putProduct : (req,res) => {
 console.log(productos);
@@ -56,7 +57,7 @@ console.log(productos);
   const material = req.body.material;
   const precio = req.body.precio;
   const descripcion = req.body.descripcion;
-  const imagen = req.file.imagen;
+  const imagen = req.body.imagen;
   //se cambió el body por el file en const imagen//
   
 // console.log(req.params);
