@@ -34,5 +34,32 @@
     "precio": "10",
     "descripcion": "Ideal para el niño que quiere trabajar en la municipalidad cuando sea grande",
     "imagen": "\\images-multer\\valla-1652546558219.png"
+  },
+  {
+    "id": 10,
+    "tipo": "Peatonal",
+    "material": "plástico",
+    "nombre": "Valla plástica azul",
+    "precio": "10000",
+    "descripcion": "Ideal para reparaciones en la vía pública",
+    "imagen": "\\images-multer\\valla-1652549736486.PNG"
+  },
+  {
+    "id": 11,
+    "tipo": "industrial",
+    "material": "Metal",
+    "nombre": "Jaula industrial",
+    "precio": "10000",
+    "descripcion": "Ideal para que el niño no meta los dedos en una industria",
+    "imagen": "\\images-multer\\valla-1652549796273.PNG"
+  },
+  {
+    "id": 12,
+    "tipo": "Ornamental",
+    "material": "Metal",
+    "nombre": "Reja gubernamental",
+    "precio": "1000000000000000",
+    "descripcion": "Ideal para contener a ciudadanos descontentos",
+    "imagen": "\\images-multer\\valla-1652549895938.PNG"
   }
 ]
