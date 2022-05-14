@@ -57,7 +57,7 @@ console.log(productos);
   const material = req.body.material;
   const precio = req.body.precio;
   const descripcion = req.body.descripcion;
-  const imagen = req.body.imagen;
+  // const imagen = req.body.imagen;
   //se cambió el body por el file en const imagen//
   
 // console.log(req.params);
@@ -70,7 +70,7 @@ console.log(productos);
           element.material = material;
           element.precio = precio;
           element.descripcion = descripcion;
-          element.imagen = imagen;
+          // element.imagen = imagen;
       }
     });
 

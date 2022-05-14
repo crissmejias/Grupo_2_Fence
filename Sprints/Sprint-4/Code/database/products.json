@@ -1,10 +1,56 @@
 [
   {
-    "id": 1,
-    "tipo": "Vallas de seguridad vial ",
-    "material": "plastico",
-    "nombre": "Valla Vial 1900x1100 Mm Polipropileno P/seguridad Vialplas",
-    "precio": "33619",
-    "descripcion": "yyy"
+    "id": 3,
+    "tipo": "Peatonal",
+    "material": "plástico",
+    "nombre": "Valla Naranja",
+    "precio": "10000",
+    "descripcion": "xxx",
+    "imagen": "\\images-multer\\valla-1652533133119.PNG"
+  },
+  {
+    "id": 6,
+    "tipo": "Peatonal",
+    "material": "Plástico",
+    "nombre": "Valla Roja",
+    "precio": "12000",
+    "descripcion": "xxx",
+    "imagen": "\\images-multer\\valla-1652533380352.PNG"
+  },
+  {
+    "id": 7,
+    "tipo": "Vial",
+    "material": "Plástico",
+    "nombre": "Valla amarilla #2",
+    "precio": "98000",
+    "descripcion": "xxx",
+    "imagen": "\\images-multer\\valla-1652533477901.PNG"
+  },
+  {
+    "id": 8,
+    "tipo": "Vial",
+    "material": "Madera",
+    "nombre": "Valla Vial de madera",
+    "precio": "6700",
+    "descripcion": "Ideal para esa escena de la película en la que la policía corta una ruta",
+    "imagen": "\\images-multer\\valla-1652533706165.PNG"
+  },
+  {
+    "id": 9,
+    "tipo": "Vial",
+    "material": "plástico",
+    "nombre": "Valla plástica de seguridad vial",
+    "precio": "230000",
+    "descripcion": "Ideal para ordenar el tránsito durante una obra de pavimentación o similar",
+    "imagen": "\\images-multer\\valla-1652533810448.PNG"
+  },
+  {
+    "id": 10,
+    "tipo": "Peatonal",
+    "material": "Plástico",
+    "nombre": "Valla plástica azul",
+    "precio": "2000",
+    "descripcion": "Ideal para reparaciones en la vía pública",
+    "imagen": "\\images-multer\\valla-1652534561251.PNG"
   }
 ]
