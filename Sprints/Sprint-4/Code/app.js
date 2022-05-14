@@ -31,6 +31,3 @@ const rutaMain = require("./routes/main");
 app.use("/", rutaMain);
 app.use("/products", productRouter);
 
-/*sprint 4
-const adminRoutes = require('./routes/admin');
-app.use(adminRoutes);*/

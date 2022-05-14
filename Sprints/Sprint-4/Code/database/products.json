@@ -1,14 +1,5 @@
 [
   {
-    "id": 3,
-    "tipo": "Peatonal",
-    "material": "plástico",
-    "nombre": "Valla Naranja",
-    "precio": "10000",
-    "descripcion": "xxx",
-    "imagen": "\\images-multer\\valla-1652533133119.PNG"
-  },
-  {
     "id": 6,
     "tipo": "Peatonal",
     "material": "Plástico",
