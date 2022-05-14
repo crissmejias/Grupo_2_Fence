@@ -1,20 +1,10 @@
 [
   {
     "id": 1,
-    "tipo": "Vallas de seguridad vial",
+    "tipo": "Vallas de seguridad vial ",
     "material": "plastico",
-    "nombre": "Valla Vial 1900x1100 Mm Polipropileno P/seguridad Vialplast",
+    "nombre": "Valla Vial 1900x1100 Mm Polipropileno P/seguridad Vialplas",
     "precio": "33619",
-    "descripcion": "yyy",
-    "imagen": "/images/valla-04.png"
-  },
-  {
-    "id": 2,
-    "tipo": "",
-    "material": "",
-    "nombre": "Prueba",
-    "precio": "",
-    "descripcion": "",
-    "imagen": "/images-multer/valla-1652490737629.png"
+    "descripcion": "yyy"
   }
 ]
