@@ -29,7 +29,7 @@
             <a href="/products/<%= productos[i].id %>/edit" class="pl-product-add-to-cart">Modificar</a>
 
               <form action="/products/<%=productos[i].id%> ?_method=DELETE" method="POST" >
-            <button class="pl-product-add-to-cart" value="<%=productos[i].id%>">Eliminar</button>
+            <button type="submit" class="pl-product-add-to-cart" value="<%=productos[i].id%>">Eliminar</button>
           </form>
           </div>
         </article>

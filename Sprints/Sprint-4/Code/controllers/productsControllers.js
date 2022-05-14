@@ -93,7 +93,7 @@ deleteProduct: (req,res)=>{
     console.log(nuevosProductos);
    fs.writeFileSync(pathToProducts,nuevosProductos); 
 
-  res.redirect('/products')
+  res.redirect('/')
 }
 };
 
