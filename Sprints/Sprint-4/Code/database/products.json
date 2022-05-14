@@ -7,5 +7,14 @@
     "precio": "33619",
     "descripcion": "yyy",
     "imagen": "/images/valla-04.png"
+  },
+  {
+    "id": 2,
+    "tipo": "",
+    "material": "",
+    "nombre": "Prueba",
+    "precio": "",
+    "descripcion": "",
+    "imagen": "/images-multer/valla-1652490737629.png"
   }
 ]

@@ -9,8 +9,9 @@ const productsControllers = {
   productsList: (req, res) => {
     res.render("productList", { productos: productos });
   },
-  createProduct: (req, res) => {
+  createProduct: (req, res) => {    
     res.render("newProduct");
+
   },
   detalleProduct: (req, res) => {
     let id = req.params.idProduct;
@@ -19,10 +20,12 @@ const productsControllers = {
     res.render("productDetail", { producto: productoSeleccionado, productos : productos });
   },
   recordProduct: (req,res)=>{
-  //  let newProduct = req.body;
-  //  newProduct.id = (productos.length +1); //para homogeneizar los id
+  let listadoIds = productos.map(el=>{return el.id});
+    let maxId = listadoIds.reduce((previous,current)=>{
+      return (current > previous) ? current : previous
+    });
   let newProduct = {
-    id: productos.length +1,
+    id: maxId +1,
     tipo : req.body.tipo,
     material: req.body.material,
     nombre: req.body.nombre,
@@ -30,7 +33,7 @@ const productsControllers = {
     descripcion: req.body.descripcion,
     imagen: path.join('/images-multer/', req.file.filename) ,
   }
-    console.log(newProduct.imagen);
+    
     productos.push(newProduct);
     let newData = JSON.stringify(productos,null,2);
     fs.writeFileSync(pathToProducts,newData);
