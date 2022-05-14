@@ -9,25 +9,58 @@
     "imagen": "\\images-multer\\valla-1652533380352.PNG"
   },
   {
-    "id": 7,
-    "tipo": "Vial",
-    "material": "Plástico",
-    "nombre": "Valla amarilla #2",
-    "precio": "98000",
-    "descripcion": "xxx",
-    "imagen": "\\images-multer\\valla-1652533477901.PNG"
-  },
-  {
-    "id": 8,
-    "tipo": "Vial",
-    "material": "Madera",
-    "nombre": "Valla Vial de madera",
-    "precio": "6700",
-    "descripcion": "Ideal para esa escena de la película en la que la policía corta una ruta",
-    "imagen": "\\images-multer\\valla-1652533706165.PNG"
-  },
-  {
     "id": 9,
+    "tipo": "Vial",
+    "material": "plástico",
+    "nombre": "Valla plástica de seguridad vial",
+    "precio": "230000",
+    "descripcion": "Ideal para ordenar el tránsito durante una obra de pavimentación o similar",
+    "imagen": "\\images-multer\\valla-1652533810448.PNG"
+  },
+  {
+    "id": 10,
+    "tipo": "Peatonal",
+    "material": "Plástico",
+    "nombre": "Valla plástica azul",
+    "precio": "2000",
+    "descripcion": "Ideal para reparaciones en la vía pública",
+    "imagen": "\\images-multer\\valla-1652534561251.PNG"
+  },
+  {
+    "id": 11,
+    "tipo": "Eventos",
+    "material": "Metálica",
+    "nombre": "Valla de metal-Amarilla",
+    "precio": "200.000",
+    "descripcion": "Vallas para eventos",
+    "imagen": "\\images-multer\\valla-1652545628853.png"
+  },
+  {
+    "id": 12,
+    "tipo": "Eventos-Peatonal",
+    "material": "Metálica",
+    "nombre": "Valla de metal fina",
+    "precio": "105.000",
+    "descripcion": "Vallas para eventos",
+    "imagen": "\\images-multer\\valla-1652545754680.png"
+  },
+  {
+    "id": 13,
+    "tipo": "Peatonal",
+    "material": "Plástico",
+    "nombre": "Valla Amarilla Gruesa",
+    "precio": "100.000",
+    "descripcion": "Ideal para reparaciones en la vía pública",
+    "imagen": "\\images-multer\\valla-1652545829381.PNG"
+  },
+  {
+    "id": 14,
+    "tipo": "Peatonal",
+    "material": "Plástico",
+    "nombre": "Valla Amarilla",
+    "precio": "120.000",
+    "descripcion": "Ideal para reparaciones en la vía pública",
+    "imagen": "\\images-multer\\valla-1652547285595.PNG",
     "tipo": "Juguete",
     "material": "Madera",
     "nombre": "Garabato",
