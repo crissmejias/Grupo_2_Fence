@@ -28,20 +28,11 @@
   },
   {
     "id": 9,
-    "tipo": "Vial",
-    "material": "plástico",
-    "nombre": "Valla plástica de seguridad vial",
-    "precio": "230000",
-    "descripcion": "Ideal para ordenar el tránsito durante una obra de pavimentación o similar",
-    "imagen": "\\images-multer\\valla-1652533810448.PNG"
-  },
-  {
-    "id": 10,
-    "tipo": "Peatonal",
-    "material": "Plástico",
-    "nombre": "Valla plástica azul",
-    "precio": "2000",
-    "descripcion": "Ideal para reparaciones en la vía pública",
-    "imagen": "\\images-multer\\valla-1652534561251.PNG"
+    "tipo": "Juguete",
+    "material": "Madera",
+    "nombre": "Garabato",
+    "precio": "10",
+    "descripcion": "Ideal para el niño que quiere trabajar en la municipalidad cuando sea grande",
+    "imagen": "\\images-multer\\valla-1652546558219.png"
   }
 ]
