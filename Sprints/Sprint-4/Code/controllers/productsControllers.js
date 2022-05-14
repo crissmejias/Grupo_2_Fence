@@ -14,15 +14,13 @@ const productsControllers = {
   },
   detalleProduct: (req, res) => {
     let id = req.params.idProduct;
-    let productoSeleccionado = productos.find((el) => el.id === id);
-    console.log(productoSeleccionado);
+    let productoSeleccionado = productos.find( el => el.id == id);
+    
     res.render("productDetail", { producto: productoSeleccionado, productos : productos });
   },
   recordProduct: (req,res)=>{
-   let newProduct = req.body;
-   newProduct.id = (productos.length +1); //para homogeneizar los id
- 
- /*prueba subida archivos
+  //  let newProduct = req.body;
+  //  newProduct.id = (productos.length +1); //para homogeneizar los id
   let newProduct = {
     id: productos.length +1,
     tipo : req.body.tipo,
@@ -30,11 +28,10 @@ const productsControllers = {
     nombre: req.body.nombre,
     precio: req.body.precio,
     descripcion: req.body.descripcion,
-    imagen: req.file.imagen
-}
-    */
+    imagen: path.join('/images-multer/', req.file.filename) ,
+  }
+    console.log(newProduct.imagen);
     productos.push(newProduct);
-    console.log(productos);
     let newData = JSON.stringify(productos,null,2);
     fs.writeFileSync(pathToProducts,newData);
     res.redirect('/products')
