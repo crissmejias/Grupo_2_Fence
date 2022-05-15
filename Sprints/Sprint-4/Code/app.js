@@ -21,7 +21,6 @@ app.use(methodOverride('_method')); //Para  habilitar peticion http PUT y DELETE
 app.set("views", [
   path.join(__dirname, "views/products"),
   path.join(__dirname, "views/users"),
-  path.join(__dirname, "views/administradores"), //sprint 4//
   path.join(__dirname, "views/"),
 ]);
 app.listen(process.env.PORT || 3000, () =>
