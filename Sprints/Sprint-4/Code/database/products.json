@@ -3,17 +3,17 @@
     "id": 6,
     "tipo": "Peatonal",
     "material": "Plástico",
-    "nombre": "Valla Roja",
-    "precio": "12000",
+    "nombre": "Valla Roja modif 25",
+    "precio": "15000",
     "descripcion": "xxx",
-    "imagen": "\\images-multer\\valla-1652533380352.PNG"
+    "imagen": "\\images-multer\\valla-1652549736486.PNG"
   },
   {
     "id": 9,
     "tipo": "Vial",
     "material": "plástico",
-    "nombre": "Valla plástica de seguridad vial",
-    "precio": "230000",
+    "nombre": "Valla plástica de seguridad vial nueva serie",
+    "precio": "150000",
     "descripcion": "Ideal para ordenar el tránsito durante una obra de pavimentación o similar",
     "imagen": "\\images-multer\\valla-1652533810448.PNG"
   },
@@ -55,12 +55,6 @@
   },
   {
     "id": 14,
-    "tipo": "Peatonal",
-    "material": "Plástico",
-    "nombre": "Valla Amarilla",
-    "precio": "120.000",
-    "descripcion": "Ideal para reparaciones en la vía pública",
-    "imagen": "\\images-multer\\valla-1652547285595.PNG",
     "tipo": "Juguete",
     "material": "Madera",
     "nombre": "Garabato",
@@ -69,30 +63,12 @@
     "imagen": "\\images-multer\\valla-1652546558219.png"
   },
   {
-    "id": 10,
-    "tipo": "Peatonal",
-    "material": "plástico",
-    "nombre": "Valla plástica azul",
-    "precio": "10000",
-    "descripcion": "Ideal para reparaciones en la vía pública",
-    "imagen": "\\images-multer\\valla-1652549736486.PNG"
-  },
-  {
-    "id": 11,
-    "tipo": "industrial",
-    "material": "Metal",
-    "nombre": "Jaula industrial",
-    "precio": "10000",
-    "descripcion": "Ideal para que el niño no meta los dedos en una industria",
-    "imagen": "\\images-multer\\valla-1652549796273.PNG"
-  },
-  {
-    "id": 12,
-    "tipo": "Ornamental",
-    "material": "Metal",
-    "nombre": "Reja gubernamental",
-    "precio": "1000000000000000",
-    "descripcion": "Ideal para contener a ciudadanos descontentos",
-    "imagen": "\\images-multer\\valla-1652549895938.PNG"
+    "id": 15,
+    "tipo": "tipo ",
+    "material": "plastico",
+    "nombre": "prod prueba 1",
+    "precio": "120",
+    "descripcion": "para la via publica",
+    "imagen": "\\images-multer\\valla-1652533133119.PNG"
   }
 ]

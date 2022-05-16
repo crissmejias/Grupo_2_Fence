@@ -47,21 +47,22 @@ const productsControllers = {
     let productoSeleccionado = productos.find(el => el.id == id);
 
     res.render('editProduct',{producto:productoSeleccionado,productos:productos})
-    console.log(productoSeleccionado.id);
+    console.log(productoSeleccionado.id+ ' => ID DEL PRODUCTO A EDITAR - VIENE POR PARAMS');
 },
 putProduct : (req,res) => {
-console.log(productos);
   const idProduct = req.params.idProduct;
   const tipo = req.body.tipo;
   const  nombre= req.body.nombre;
   const material = req.body.material;
   const precio = req.body.precio;
   const descripcion = req.body.descripcion;
-  // const imagen = req.body.imagen;
-  //se cambió el body por el file en const imagen//
-  
-// console.log(req.params);
-//   console.log(req.body);
+
+let newImage = path.join('/images-multer/', req.body.newImage);
+let oldImage = req.body.oldImage;
+const imagen = newImage;
+
+console.log(newImage);
+console.log(oldImage);
 
   productos.forEach(element => {
       if(element.id == parseInt(idProduct)){
@@ -70,7 +71,7 @@ console.log(productos);
           element.material = material;
           element.precio = precio;
           element.descripcion = descripcion;
-          // element.imagen = imagen;
+          element.imagen = imagen;
       }
     });
 

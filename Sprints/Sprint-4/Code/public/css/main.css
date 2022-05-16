@@ -1530,7 +1530,7 @@ form.formulario-login {
 @media (min-width: 768px) {
   .np-new-product-form {
     display: flex;
-    height: 600px;
+    height: 800px;
     flex-direction: column;
     width: 100%;
     align-items: center;
