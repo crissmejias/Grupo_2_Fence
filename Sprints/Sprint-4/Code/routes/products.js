@@ -31,7 +31,7 @@ router.post("/createProduct", upload.single('file'), productsController.recordPr
 
 router.get("/:idProduct/edit", productsController.editProduct);
 //multer paso 5 
-router.put("/:idProduct/edit", upload.single('file'), productsController.putProduct);
+router.put("/:idProduct/edit", upload.single('newImage'), productsController.putProduct); //No coincidia con el name del input en el FORM 
 
 router.delete("/:idProduct", productsController.deleteProduct);
     

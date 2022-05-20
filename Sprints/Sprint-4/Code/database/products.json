@@ -60,7 +60,7 @@
     "nombre": "Garabato",
     "precio": "10",
     "descripcion": "Ideal para el niño que quiere trabajar en la municipalidad cuando sea grande",
-    "imagen": "\\images-multer\\valla-1652546558219.png"
+    "imagen": "\\images-multer\\valla-1653076640899.png"
   },
   {
     "id": 15,
@@ -69,6 +69,6 @@
     "nombre": "prod prueba 1",
     "precio": "120",
     "descripcion": "para la via publica",
-    "imagen": "\\images-multer\\valla-1652533133119.PNG"
+    "imagen": "\\images-multer\\valla-1653076822336.PNG"
   }
 ]

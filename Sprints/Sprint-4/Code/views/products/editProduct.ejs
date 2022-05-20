@@ -10,9 +10,9 @@
       </aside>
   <main class="np-newProduct">
    
-<!--    enctype="multipart/form-data" -->
+<!--  Faltababa el   enctype="multipart/form-data"  para que el PUT pase por el middleware de Multer-->
 
-      <form action="/products/<%=producto.id%>/edit?_method=PUT" method="POST"   class="np-new-product-form" >
+      <form action="/products/<%=producto.id%>/edit?_method=PUT" method="POST"   class="np-new-product-form" enctype="multipart/form-data">
         <div class="np-main-features">
           <input type="text" name="nombre" value="<%=producto.nombre%>">
           <input type="text" name="precio" value="<%=producto.precio%>">

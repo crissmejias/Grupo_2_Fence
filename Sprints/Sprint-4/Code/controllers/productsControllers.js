@@ -33,7 +33,7 @@ const productsControllers = {
     descripcion: req.body.descripcion,
     imagen: path.join('/images-multer/', req.file.filename) ,
   }
-    
+    console.log(req.file);
     productos.push(newProduct);
     let newData = JSON.stringify(productos,null,2);
     fs.writeFileSync(pathToProducts,newData);
@@ -57,10 +57,11 @@ putProduct : (req,res) => {
   const precio = req.body.precio;
   const descripcion = req.body.descripcion;
 
-let newImage = path.join('/images-multer/', req.body.newImage);
-let oldImage = req.body.oldImage;
+// let newImage = path.join('/images-multer/', req.body.newImage); acá se aramaba mal path porque sacaba el mombre del archivo del body y hay que sacarlo der file del multer
+let newImage= path.join("/images-multer/",req.file.filename); 
+let oldImage = req.body.oldImage; 
 const imagen = newImage;
-
+console.log(req.file);
 console.log(newImage);
 console.log(oldImage);
 
