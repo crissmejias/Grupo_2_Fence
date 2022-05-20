@@ -1510,6 +1510,10 @@ form.formulario-login {
   border-radius: 8px;
   text-align: center;
 }
+.ep-add-features{
+  width:60%;
+  text-align: center;
+}
 @media (min-width: 480px) {
   .np-new-product-form {
     display: flex;
@@ -1526,24 +1530,31 @@ form.formulario-login {
     justify-self: center;
     flex-wrap: wrap;
   }
+  .ep-add-features{
+    width:50%;
+    
+  }
 }
 @media (min-width: 768px) {
   .np-new-product-form {
     display: flex;
-    height: 800px;
-    flex-direction: column;
+    height:900px;
+    flex-direction: row;
     width: 100%;
     align-items: center;
-    gap:24px;
+    gap:20px;
+    flex-wrap: wrap;
   }
   .np-new-product-form .np-main-features {
     padding-top:24px;
     display: flex;
     flex-direction: row;
     gap: 32px;
-
     flex-wrap: wrap;
-    width: 45%;
+    width: 40%;
+  }
+  .form-edit-image{
+    width:45%;
   }
   .np-new-product-form .np-add-features {
     width: 45%;
@@ -1559,7 +1570,20 @@ form.formulario-login {
     border-radius: 8px;
     width: 80%;
   }
+  .ep-prev-image-container{
+    width:500px;
+  }
+  .ep-prev-image{
+    width:100%;
+    object-fit: cover;
+  }
   .np-new-product-form label {
     width: 80%;
+  }
+  .ep-add-features{
+    width:40%;
+    position:static;
+    text-align: center;
+    align-self: flex-start;
   }
 }
