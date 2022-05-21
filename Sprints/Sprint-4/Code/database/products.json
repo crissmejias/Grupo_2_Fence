@@ -70,5 +70,14 @@
     "precio": "120",
     "descripcion": "para la via publica",
     "imagen": "\\images-multer\\valla-1653076822336.PNG"
+  },
+  {
+    "id": 16,
+    "tipo": "Ferroviaria",
+    "material": "Plástico",
+    "nombre": "Garabato",
+    "precio": "336190",
+    "descripcion": "Para el paso a nivel",
+    "imagen": "\\images-multer\\valla-1653082025381.png"
   }
 ]

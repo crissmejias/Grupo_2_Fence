@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HEAD  -->
+
+  <%- include('./partials/head', {tituloWeb: 'Producto Fence'} ) %>
+
+  <body>
+    <!-- HEADER -->
+
+    <%- include('./partials/header') %>
+
+    <main class="product-detail">
+      <p class="page-index">Productos / Título de producto</p>
+      <div class="product-detail-container">
+        <h1><%=producto.nombre%> </h1>
+       
+        <p>
+         $ <%=producto.precio%> 
+        </p>
+        <details class="detalles-container">
+          <summary>Detalles</summary>
+          <p>
+            <%=producto.descripcion  %> 
+          </p>
+          <p>
+           <%= producto.tipo %> 
+          </p>
+          <p>
+            <%= producto.material %> 
+           </p>
+        </details>
+        <figure>
+          <img src="<%= producto.imagen  %> " alt="" />
+        </figure>
+      </div>
+
+      <div class="actions-container">
+        <div class="share-container">
+          <h3>Compartir</h3>
+          <div class="icons">
+            <div class="icon">
+              <a target="_blank" href="https://facebook.com"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </div>
+            <div class="icon">
+              <a target="_blank" href="https://twitter.com">
+                <i class="fab fa-twitter"></i
+              ></a>
+            </div>
+            <div class="icon">
+              <a target="_blank" href="https://linkedin.com"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="add-to-cart-container">
+          <input type="number" name="cantidad" id="cantidad-productos" />
+          <button>Agregar</button>
+        </div>
+      </div>
+      <div class="products-container">
+        <h3>Productos Relacionados</h3>
+        <div class="products-cards-container">
+          <% for(i =0; i< productos.length; i++) {%> 
+          <div class="product">
+            <img src="<%= productos[i].imagen  %> " alt="" class="product-image" />
+            <div class="product-description">
+              <h5 class="product-title"><%= productos[i].nombre  %> </h5>
+              <button class="product-add-to-cart">Agregar</button>
+            </div>
+          </div>
+          <% } %>       
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+
+    <%- include('./partials/footer') %>
+  </body>
+</html>
