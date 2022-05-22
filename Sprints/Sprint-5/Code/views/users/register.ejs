@@ -42,27 +42,32 @@
       <!-- login-->
     <section class="caja-formulario">
       <div class="texto-bienvenida">Ingrese sus datos para poder utilizar nuestra plataforma</div>
-      <form action="" method="POST" class="formulario-register">
+      <form action="/users/createUser" method="POST" class="formulario-register" enctype="multipart/form-data">
         <div class="control-formulario">
-          <label for="name">Nombre y apellido</label>
-          <input type="text" name="name" id="name" class="control" >
+          <label for="name">Nombre</label>
+          <input type="text" name="nombre" id="name" class="control" >
+        </div>
+       
+        <div class="control-formulario">
+          <label for="empresa">Apellido</label>
+          <input type="text" name="apellido" id="empresa" class="control">
         </div>
         <div class="control-formulario">
-          <label for="empresa">Empresa</label>
-          <input type="text" name="empresa" id="empresa" class="control">
+          <label for="cuit">Categoria</label>
+          <input type="text" name="categoria" id="cuit" class="control">
         </div>
-        <div class="control-formulario">
-          <label for="cuit">CUIT/RUT</label>
-          <input type="text" name="cuit" id="cuit" class="control">
-        </div>
-        <div class="control-formulario">
+        <!-- <div class="control-formulario">
           <label for="telefono">Teléfono</label>
           <input type="tel" name="telefono" id="telefono" class="control">
-        </div>
+        </div> -->
         <div class="control-formulario">
           <label for="email">Email</label>
           <input type="email" name="email" id="email" class="control">
         </div>
+        <div class="control-formulario">
+          <input type="file" name="file" id="file" class="input-file"> 
+             <label for="file">Agrega una imagen</label>
+                      </div>
         <div class="control-formulario">
           <label for="password">Contraseña</label>
           <input type="password" name="password" id="password" class="control" required minlenght="8">
@@ -72,6 +77,8 @@
           <input type="password" name="password-verify" id="password-verify" class="control" onkeyup="validar()">
         </div>
         <div> <span id="password-error-message"></span></div>
+
+
         <button type="submit" class="button">Ingresar</button>
       </form>
     </section>
