@@ -1,11 +1,26 @@
 const express = require('express');
 const router = express.Router();
+// multer paso 2//
+const path = require('path');
+const multer = require('multer');
 
 //A continuación el código del ejemplo para pensarlo como guia
 // // Controller
 const usersController = require('../controllers/usersControllers');
 
 // // Middlewares
+//multer paso 3
+var storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+      cb(null, path.resolve(__dirname, '../public/images/users'));
+    },
+    filename: function (req, file, cb) {
+      cb(null, 'avatar-'+Date.now()+path.extname(file.originalname))
+    }
+  })
+
+//multer paso 4
+  const upload = multer({ storage })
 // const uploadFile = require('../middlewares/multerMiddleware');
 // const validations = require('../middlewares/validateRegisterMiddleware');
 // const guestMiddleware = require('../middlewares/guestMiddleware');
