@@ -24,7 +24,12 @@ const usersController = require('../controllers/usersControllers');
 // router.post('/login', usersController.loginProcess);
 
 // // Perfil de Usuario
-// router.get('/profile/', authMiddleware, usersController.profile);
+router.get('/profile/', usersController.profile);
+
+//Ruta Lista usuarios
+router.get('/userList',usersController.userList);
+
+
 
 // // Logout
 // router.get('/logout/', usersController.logout);
