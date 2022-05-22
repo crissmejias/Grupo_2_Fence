@@ -1,6 +1,9 @@
 const path = require("path");
 const fs = require("fs");
 const { parse } = require("path");
+const {
+	validationResult
+} = require('express-validator');// para empezar a implementar validación en el CRUD de Productos
 const pathToProducts = path.join(__dirname, "../database/products.json");
 const productsList = fs.readFileSync(pathToProducts);
 const productos = JSON.parse(productsList);
