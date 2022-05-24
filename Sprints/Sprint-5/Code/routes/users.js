@@ -20,7 +20,7 @@ var storage = multer.diskStorage({
   })
 
 //multer paso 4
-  const upload = multer({ storage })
+  const upload = multer({ storage });
 // const uploadFile = require('../middlewares/multerMiddleware');
 // const validations = require('../middlewares/validateRegisterMiddleware');
 // const guestMiddleware = require('../middlewares/guestMiddleware');
@@ -28,10 +28,11 @@ var storage = multer.diskStorage({
 
 // // Formulario de registro
 // router.get('/register', guestMiddleware, usersController.register);
+router.get('/register',usersController.register);
 
 // // Procesar el registro
 // router.post('/register', uploadFile.single('avatar'), validations, usersController.processRegister);
-
+router.post('/register',upload.single("file"),usersController.recordUser);
 // // Formulario de login
 // router.get('/login', guestMiddleware, usersController.login);
 
