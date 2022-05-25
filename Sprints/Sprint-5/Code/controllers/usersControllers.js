@@ -49,7 +49,7 @@ const usersController = {
 		  nombre : req.body.nombre,
 		  apellido: req.body.apellido,
 		  email: req.body.email,
-		  password: req.body.password,
+		  password: bcryptjs.hashSync(req.body.password, 10),
 		  categoria: req.body.categoria,
 		  imagen: path.join('/images/users/', req.file.filename) ,
 		}

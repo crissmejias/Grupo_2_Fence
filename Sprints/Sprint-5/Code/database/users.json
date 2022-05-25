@@ -97,5 +97,41 @@
     "password": "1234",
     "categoria": "hhh",
     "imagen": "\\images\\users\\avatar-1653513101184.png"
+  },
+  {
+    "id": 12,
+    "nombre": "name prueba",
+    "apellido": "last name prueba",
+    "email": "maildeprueba@gmail.com",
+    "password": "123456789",
+    "categoria": "prueba",
+    "imagen": "\\images\\users\\avatar-1653515214593.webp"
+  },
+  {
+    "id": 13,
+    "nombre": "Saul",
+    "apellido": "Goodman",
+    "email": "saulgoodman@gmail.com",
+    "password": "123456789",
+    "categoria": "lawyer",
+    "imagen": "\\images\\users\\avatar-1653515491227.webp"
+  },
+  {
+    "id": 14,
+    "nombre": "Walter",
+    "apellido": "White",
+    "email": "ww@gmail.com",
+    "password": "123456789",
+    "categoria": "desconocido",
+    "imagen": "\\images\\users\\avatar-1653515591720.webp"
+  },
+  {
+    "id": 15,
+    "nombre": "Clay",
+    "apellido": "Morrow",
+    "email": "prueba@gmail.com",
+    "password": "$2a$10$pLmhHIe21oPGL1YCAQ3iFeNObo4.nDEABZQIbVGQAKiL93o0ITu0C",
+    "categoria": "soa",
+    "imagen": "\\images\\users\\avatar-1653516607812.jpg"
   }
 ]
