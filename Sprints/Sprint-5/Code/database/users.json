@@ -1,39 +1,38 @@
 [
-    {
-      "id": "01", 
-      "nombre": "Marcos",
-      "apellido": "Vicente",
-      "email": "yyyy@gmail.com",
-      "password": "",
-      "categoria": "",
-      "imagen": "foto-yyyy.png"
-    },
-    {
-        "id": "02", 
-        "nombre": "Cristhian",
-        "apellido": "Mejias Serrano",
-        "email": "yyyy@gmail.com",
-        "password": "",
-        "categoria": "",
-        "imagen": "foto-yyyy.png" 
-    },
-    {
-        "id": "03", 
-        "nombre": "Claudio",
-        "apellido": "Faner",
-        "email": "yyyy@gmail.com",
-        "password": "",
-        "categoria": "",
-        "imagen": "foto-yyyy.png" 
-    },
-    {
-        "id": "04", 
-        "nombre": "Daniela",
-        "apellido": "Frisicaro",
-        "email": "yyyy@gmail.com",
-        "password": "",
-        "categoria": "",
-        "imagen": "foto-yyyy.png" 
-    }
-
-  ]
+ {
+  "id": 1,
+  "nombre": "Marcos",
+  "apellido": "Vicente",
+  "email": "yyyy@gmail.com",
+  "password": "",
+  "categoria": "",
+  "imagen": "foto-yyyy.png"
+ },
+ {
+  "id": 2,
+  "nombre": "Cristhian",
+  "apellido": "Mejias Serrano",
+  "email": "yyyy@gmail.com",
+  "password": "",
+  "categoria": "",
+  "imagen": "foto-yyyy.png"
+ },
+ {
+  "id": 3,
+  "nombre": "Claudio",
+  "apellido": "Faner",
+  "email": "yyyy@gmail.com",
+  "password": "",
+  "categoria": "",
+  "imagen": "foto-yyyy.png"
+ },
+ {
+  "id": 4,
+  "nombre": "Daniela",
+  "apellido": "Frisicaro",
+  "email": "yyyy@gmail.com",
+  "password": "",
+  "categoria": "",
+  "imagen": "foto-yyyy.png"
+ }
+]
