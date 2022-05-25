@@ -12,7 +12,7 @@ const usersController = require('../controllers/usersControllers');
 //multer paso 3
 var storage = multer.diskStorage({
     destination: function (req, file, cb) {
-      cb(null, path.resolve(__dirname, '../public/images/users'));
+      cb(null, path.resolve(__dirname, '../public/images-multer'));
     },
     filename: function (req, file, cb) {
       cb(null, 'avatar-'+Date.now()+path.extname(file.originalname))
@@ -20,24 +20,25 @@ var storage = multer.diskStorage({
   })
 
 //multer paso 4
-  const upload = multer({ storage });
+const upload = multer({ storage });
 // const uploadFile = require('../middlewares/multerMiddleware');
-// const validations = require('../middlewares/validateRegisterMiddleware');
-// const guestMiddleware = require('../middlewares/guestMiddleware');
-// const authMiddleware = require('../middlewares/authMiddleware');
+const validations = require('../middlewares/validateRegisterMiddleware');
+const guestMiddleware = require('../middlewares/guestMiddleware');
+const authMiddleware = require('../middlewares/authMiddleware');
 
 // // Formulario de registro
-// router.get('/register', guestMiddleware, usersController.register);
-router.get('/register',usersController.register);
+router.get('/register', guestMiddleware, usersController.register);
+//router.get('/register',usersController.register);
 
-// // Procesar el registro
+// // Procesar el registro             // FALTA MIDDLEWARE DE VALIDACION EN VISTAS
 // router.post('/register', uploadFile.single('avatar'), validations, usersController.processRegister);
-router.post('/register',upload.single("file"),usersController.recordUser);
+router.post('/register',upload.single("file"), validations, usersController.recordUser);
+
 // // Formulario de login
-// router.get('/login', guestMiddleware, usersController.login);
+router.get('/login', guestMiddleware, usersController.login);
 
 // // Procesar el login
-// router.post('/login', usersController.loginProcess);
+//router.post('/login', usersController.loginProcess);
 
 // // Perfil de Usuario
 router.get('/profile/', usersController.profile);

@@ -7,13 +7,13 @@ const productRouter = require("./routes/products");
 const usersRouter=require ("./routes/users");//requerir ruta
 const methodOverride = require('method-override'); //Para  habilitar peticion http PUT y DELETE
 
-const router = require("./routes/main");
 const app = express();
 const session = require('express-session'); // para poder utilizar Session como pide el Sprint 5
 const cookies = require('cookie-parser'); // para el reqeurimiento opcional del Srint 5
+const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware'); // VER PARA Q ES
 const publicPath = path.resolve(__dirname, "./public");
 app.use(express.static(publicPath));
-app.set("view engine", "ejs");
+app.set("view engine", "ejs"); // Template Engine
 
 
 app.use(express.urlencoded({ extended: false }));
@@ -25,6 +25,7 @@ app.use(session({
 	saveUninitialized: false,
 })); //para implementar Session según requerimiento de Sprint 5
 app.use(cookies());
+app.use(userLoggedMiddleware);
 app.set("views", [
   path.join(__dirname, "views/products"),
   path.join(__dirname, "views/users"),

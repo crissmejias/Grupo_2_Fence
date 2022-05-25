@@ -42,42 +42,108 @@
       <!-- login-->
     <section class="caja-formulario">
       <div class="texto-bienvenida">Ingrese sus datos para poder utilizar nuestra plataforma</div>
+
       <form action="/users/register" method="POST" class="formulario-register" enctype="multipart/form-data">
+
         <div class="control-formulario">
           <label for="name">Nombre</label>
-          <input type="text" name="nombre" id="name" class="control" >
+          <input  type="text" 
+                  name="nombre" 
+                  id="name" 
+                  class="control"
+                  value="<%= locals.oldData ? oldData.name : null %>" 
+                  >
+          <% if (locals.errors && errors.name) { %>
+            <div class="text-danger">
+              <%= errors.name.msg %> 
+            </div>
+          <% } %>
         </div>
        
         <div class="control-formulario">
           <label for="empresa">Apellido</label>
-          <input type="text" name="apellido" id="empresa" class="control">
+          <input  type="text" 
+                  name="apellido" 
+                  id="empresa" 
+                  class="control"
+                  value="<%= locals.oldData ? oldData.apellido : null %>"
+                  >
+                  <% if (locals.errors && errors.apellido) { %>
+                    <div class="text-danger">
+                      <%= errors.apellido.msg %> 
+                    </div>
+                  <% } %>
         </div>
+
         <div class="control-formulario">
           <label for="cuit">Categoria</label>
-          <input type="text" name="categoria" id="cuit" class="control">
+          <input  type="text" 
+                  name="categoria" 
+                  id="cuit" 
+                  class="control"
+                  value="<%= locals.oldData ? oldData.categoria : null %>"
+                  >
+                  <% if (locals.errors && errors.categoria) { %>
+                    <div class="text-danger">
+                      <%= errors.categoria.msg %> 
+                    </div>
+                  <% } %>
         </div>
-        <!-- <div class="control-formulario">
-          <label for="telefono">Teléfono</label>
-          <input type="tel" name="telefono" id="telefono" class="control">
-        </div> -->
+
         <div class="control-formulario">
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" class="control">
-        </div>
+          <input  type="email" 
+                  name="email" 
+                  id="email" 
+                  class="control"
+                  value="<%= locals.oldData ? oldData.email : null %>"
+                  >
+                  <% if (locals.errors && errors.email) { %>
+                    <div class="text-danger">
+                      <%= errors.email.msg %>
+                    </div>
+                  <% } %>
+                </div>
+        
         <div class="control-formulario">
-          <input type="file" name="file" id="file" class="input-file"> 
-             <label for="file">Agrega una imagen</label>
+          <label for="file">Agrega una imagen</label>
+          <input  type="file" 
+                  name="file" 
+                  id="file" 
+                  class="form-control <%= locals.errors && errors.file ? 'is-invalid' : null %>"
+                  >
+                  <% if (locals.errors && errors.file) { %>
+                    <div class="text-danger">
+                      <%= errors.file.msg %>
+                    </div>
+                  <% } %> 
                       </div>
+
         <div class="control-formulario">
           <label for="password">Contraseña</label>
-          <input type="password" name="password" id="password" class="control" required minlenght="8">
+          <input  type="password" 
+                  name="password" 
+                  id="password" 
+                  class="control" 
+                  required minlenght="8"
+                  >
+                  <% if (locals.errors && errors.password) { %>
+                    <div class="text-danger">
+                      <%= errors.password.msg %>
+                    </div>
+                  <% } %>
         </div>
+
         <div class="control-formulario">
           <label for="password-verify">Repita la contraseña</label>
-          <input type="password" name="password-verify" id="password-verify" class="control" onkeyup="validar()">
+          <input  type="password" 
+                  name="password-verify" 
+                  id="password-verify" 
+                  class="control" 
+                  onkeyup="validar()">
         </div>
-        <div> <span id="password-error-message"></span></div>
 
+        <div> <span id="password-error-message"></span></div>
 
         <button type="submit" class="button">Ingresar</button>
       </form>
