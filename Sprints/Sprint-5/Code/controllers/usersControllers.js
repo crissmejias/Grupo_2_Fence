@@ -31,14 +31,14 @@ const usersController = {
 	  // para registrar nuevo usuario desde register
 	  recordUser: (req,res)=>{
 
-//		const resultValidation = validationResult(req);
+		const resultValidation = validationResult(req);
 
-//		if (resultValidation.errors.length > 0) {
-//			return res.render('userRegisterForm', {
-//				errors: resultValidation.mapped(),
-//				oldData: req.body
-//			});
-//		}
+		if (resultValidation.errors.length > 0) {
+			return res.render('register', {
+				errors: resultValidation.mapped(),
+				oldData: req.body
+			});
+		}
 
 		let listadoIds = usuarios.map(el=>{return el.id});
 		  let maxId = listadoIds.reduce((previous,current)=>{
