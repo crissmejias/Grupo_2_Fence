@@ -53,4 +53,10 @@ router.get('/userList',usersController.userList);
 // // Logout
 // router.get('/logout/', usersController.logout);
 
+//edicion de usuarios
+router.get("/:idUser/edit", usersController.editUser);
+
+router.put("/:idUser/edit", upload.single('newImage'), usersController.putUser);  
+
+
 module.exports = router;

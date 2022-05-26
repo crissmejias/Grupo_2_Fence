@@ -1,36 +1,36 @@
-<%- include('../partials/head', {tituloWeb: 'Detalle de Usuario'})%>
+<%- include('../partials/head', {tituloWeb: 'Editar producto'})%>
 <body>
   <%- include('../partials/header')  %> 
   
     <main class="product-List">
       <aside class="options-container">
         <ul>
-          <li><a href="">Edición de usuario</a></li>
-          <li><a href="/users/userList">Regresar a listado</a></li>
+        <!--   <li><a href="/products/createProduct"> Crear producto</a></li>
+          <li><a href="/products">Listado de productos</a></li>-->
+         <li> <a href="/users/userDetail" class="pl-product-add-to-cart">Modificar</a></li>
         </ul>
       </aside>
   <main class="np-newProduct">
    
 <!--  Faltababa el   enctype="multipart/form-data"  para que el PUT pase por el middleware de Multer-->
 
-      <form action="" method="POST"   class="np-new-product-form" enctype="multipart/form-data">
+      <form action="/users/<%=usuario.id%>/edit?_method=PUT" method="POST"   class="np-new-product-form" enctype="multipart/form-data">
         <div class="np-main-features">
-          <input type="text" name="nombre" value="<%= user.nombre %> ">
-          <input type="text" name="apellido" value="Apellido">
-          <input type="email" name="email" value="Email">
+          <input type="text" name="nombre" value="<%=usuario.nombre%>">
+          <input type="text" name="apellido" value="<%=usuario.apellido%>">
+          <input type="email" name="email" value="<%=usuario.email%>">
           <!-- <input type="text" name="material-base" placeholder="Material Base"> -->
-          <input type="password" name="password" value="Password">
-          <input type="text" name="categoria" value="Categoria">
+          <input type="password" name="password" value="<%=usuario.password%>">
+          <input type="text" name="categoria" value="<%=usuario.categoria%>">
         </div>
 
         <div class="form-image-edit">
           <figure class="ep-prev-image-container">
-            <img class="image-edit ep-prev-image" src="" alt="imagen a editar" width="150" height="150">
+            <img class="image-edit ep-prev-image" src="<%=usuario.imagen%>" alt="imagen a editar" width="150" height="150">
             </figure>
-            <input type="hidden" name="oldImage" value="">
+            <input type="hidden" name="oldImage" value="<%=usuario.imagen%>">
             <!--De esta forma logro conservar y que viaje la imagen anterior de esta forma evito que el usuario seleccione una imagen nuevamente, ( si no lo desea) -->
-            <input type="file" name="file" id="file" class="input-file" hidden> 
-           <label for="file">Agrega una imagen</label>
+            <input type="file" name="newImage" id="file" >
             <!--<input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" name="imagen" required value=""> 
             
             <label class="custom-file-label" for="inputGroupFile01">Seleccione una imagen...</label>-->

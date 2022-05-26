@@ -59,6 +59,52 @@ const usersController = {
 		  fs.writeFileSync(pathToUsers,newData);
 		  res.redirect('/')
 		},
+        editUser: (req,res) => {
+
+			let id = req.params.idUser;
+		
+			let usuarioSeleccionado = usuarios.find(el => el.id == id);
+		
+			res.render('editUser',{usuario:usuarioSeleccionado,usuarios:usuarios})
+			console.log(usuarioSeleccionado.id+ ' => ID DEL PRODUCTO A EDITAR - VIENE POR PARAMS');
+		},
+		putUser : (req,res) => {
+		  const idUser = req.params.idUser;
+		  const nombre = req.body.nombre;
+		  const apellido = req.body.apellido;
+		  const email = req.body.email;
+		  const password =  bcryptjs.hashSync(req.body.password, 10);
+		  const categoria = req.body.categoria;
+		
+		// let newImage = path.join('/images-multer/', req.body.newImage); acá se aramaba mal path porque sacaba el mombre del archivo del body y hay que sacarlo der file del multer
+		let newImage= path.join("/images-multer/",req.file.filename); 
+		let oldImage = req.body.oldImage; 
+		const imagen = newImage;
+		console.log(req.file);
+		console.log(newImage);
+		console.log(oldImage);
+		
+		  usuarios.forEach(element => {
+			  if(element.id == parseInt(idUser)){
+				  element.nombre = nombre;
+				  element.apellido = apellido;
+				  element.email = email;
+				  element.password = password;
+				  element.categoria = categoria;
+				  element.imagen = imagen;
+			  }
+			});
+		
+			const newData = JSON.stringify(usuarios,null,2);
+			// console.log(parseInt(idProduct));
+			// console.log (newData);
+		
+			fs.writeFileSync(pathToUsers,newData);
+		
+		
+			res.redirect("/")
+		},
+
 
 		loginProcess: (req, res) => {
 			let userToLogin = User.findByField('email', req.body.email);
