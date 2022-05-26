@@ -133,5 +133,14 @@
     "password": "$2a$10$pLmhHIe21oPGL1YCAQ3iFeNObo4.nDEABZQIbVGQAKiL93o0ITu0C",
     "categoria": "soa",
     "imagen": "\\images\\users\\avatar-1653516607812.jpg"
+  },
+  {
+    "id": 16,
+    "nombre": "Cristhian",
+    "apellido": "Mejias",
+    "email": "cristhianmejias495@gmail.com",
+    "password": "$2a$10$vfJ4g072/7BhefYt/58yUeMxBhb/OTqgQ5epLN.66v7dxvOYHrQVi",
+    "categoria": "prueba",
+    "imagen": "/images/users/avatar-1653523030051.png"
   }
 ]

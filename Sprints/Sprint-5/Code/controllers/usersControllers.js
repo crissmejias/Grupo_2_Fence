@@ -68,14 +68,17 @@ const usersController = {
 				if (isOkThePassword) {
 					delete userToLogin.password;
 					req.session.userLogged = userToLogin;
-
-//							RECORDAR MI CUENTA					
-//					if(req.body.remember_user) {
-//						res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
-					}
+			
+					return res.render('userDetail', { user: userToLogin}); 
+					  // si el login da ok, redirecciona al inicio
+							// RECORDAR MI CUENTA					
+					// if(req.body.remember_user) {
+					// 	res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
+					// }
 	
-					return res.redirect('/');   // si el login da ok, redirecciona al inicio
 				} 
+				else
+				{
 				return res.render('login', {		// si el login NO da ok, muestra errores en login
 					errors: {
 						email: {
@@ -84,15 +87,24 @@ const usersController = {
 					}
 				});
 			}
+		}
+			
+			
 	
 //			return res.render('userLoginForm', {
 //				errors: {
 //					email: {
 //						msg: 'No se encuentra este email en nuestra base de datos'
 //					}
-				}
+	
 //			});
 //		},
 
 // }
+	},
+	userDetail: (req,res) => {
+		
+		res.render('userDetail');
+	}
+}
 module.exports = usersController;

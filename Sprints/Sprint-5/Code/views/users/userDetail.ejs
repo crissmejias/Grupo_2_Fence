@@ -5,7 +5,7 @@
     <main class="product-List">
       <aside class="options-container">
         <ul>
-          <li><a href="#">Edición de usuario</a></li>
+          <li><a href="">Edición de usuario</a></li>
           <li><a href="/users/userList">Regresar a listado</a></li>
         </ul>
       </aside>
@@ -15,7 +15,7 @@
 
       <form action="" method="POST"   class="np-new-product-form" enctype="multipart/form-data">
         <div class="np-main-features">
-          <input type="text" name="nombre" value="Nombre">
+          <input type="text" name="nombre" value="<%= user.nombre %> ">
           <input type="text" name="email" value="Email">
           <input type="text" name="telefono" value="Teléfono">
           <!-- <input type="text" name="material-base" placeholder="Material Base"> -->

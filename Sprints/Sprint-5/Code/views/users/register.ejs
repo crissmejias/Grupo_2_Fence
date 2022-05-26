@@ -55,7 +55,7 @@
                   >
           <% if (locals.errors && errors.nombre) { %>
             <div class="text-danger">
-              <%= errors.name.msg %> 
+              <%= errors.nombre.msg %> 
             </div>
           <% } %>
         </div>
@@ -140,7 +140,7 @@
                   name="password-verify" 
                   id="password-verify" 
                   class="control" 
-                  onkeyup="validar()">
+                  onblur="validarPassword()">
         </div>
 
         <div> <span id="password-error-message"></span></div>
@@ -156,6 +156,14 @@
      <!-- FOOTER -->
 
     <%- include('./partials/footer') %>
-
+    <script>
+      function validarPassword(){
+       let firstPassword = document.getElementById('password').value;
+       let passwordVerify = document.getElementById('password-verify').value;
+       if(firstPassword != passwordVerify){
+         alert('Las contraseñas no coinciden');
+       } 
+      }
+    </script>
   </body>
 </html>

@@ -38,14 +38,16 @@ router.post('/register',upload.single("file"), validations, usersController.reco
 router.get('/login', guestMiddleware, usersController.login);
 
 // // Procesar el login
-//router.post('/login', usersController.loginProcess);
+router.post('/userDetail', usersController.loginProcess);
 
-// // Perfil de Usuario
-router.get('/profile/', usersController.profile);
+
+
 
 //Ruta Lista usuarios
 router.get('/userList',usersController.userList);
 
+// Ruta de edición de perfil
+// router.get('/userDetail', authMiddleware, usersController.userDetail);
 
 
 // // Logout
