@@ -13,22 +13,22 @@
         </ul>
       </aside>
       <div class="pl-productos-container">
-        <% for(let i=0; i < 4; i++) { %>
+        <% for(let i=0; i < user.length; i++) { %>
           <a href="">
             
         <article class="pl-product">
           <img
-            src=""
+            src="<%=user[i].imagen  %> "
             alt=""
-            class="pl-product-image"
+            class="pl-product-image avatar-image"
           />
           <div class="pl-product-description">
             <h5 class="pl-product-title"></h5>
             <p></p>
-            <a href="/users/userDetail" class="pl-product-add-to-cart">Modificar</a>
+            <a href="<%= user[i].id%> /edit" class="pl-product-add-to-cart">Modificar</a>
 
-              <form action="" method="POST" >
-            <button type="submit" class="pl-product-add-to-cart" value="">Eliminar</button>
+              <form action="/users/<%=user[i].id %>/delete?_method=DELETE" method="POST" >
+            <button type="submit" class="pl-product-add-to-cart" value="<%=user[i].id %> ">Eliminar</button>
           </form>
           </div>
         </article>

@@ -7,12 +7,11 @@ const usuarios = JSON.parse(usersList);// parseo del JSON
 const bcryptjs = require('bcryptjs');// para poder encriptar
 const { validationResult } = require('express-validator');// para poder implementar validación en el CRUD de usuarios
 const User = require('../models/User');// se requiere models
-
 const usersController = {
 
 // para renderizar userList
 	userList: (req,res)=>{
-		res.render("userList");
+		res.render("userList", { user: usuarios});
 	},
 // para renderizar userDetail
 	profile: (req,res)=>{
@@ -115,12 +114,7 @@ const usersController = {
 					delete userToLogin.password;
 					req.session.userLogged = userToLogin;
 			
-					return res.render('userDetail', { user: userToLogin}); 
-					  // si el login da ok, redirecciona al inicio
-							// RECORDAR MI CUENTA					
-					// if(req.body.remember_user) {
-					// 	res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
-					// }
+					return res.render('userList', { user: userToLogin, user: usuarios}); 
 	
 				} 
 				else
@@ -151,6 +145,13 @@ const usersController = {
 	userDetail: (req,res) => {
 		
 		res.render('userDetail');
+	},
+	deleteUser: (req,res) => {
+		let userDelete = req.params.idUser;
+		let nuevosUsuarios = usuarios.filter( u => u.id != userDelete);
+		let baseActualizada = JSON.stringify(nuevosUsuarios, null, 2);
+		fs.writeFileSync(pathToUsers, baseActualizada);
+		res.redirect('/');
 	}
 }
 module.exports = usersController;

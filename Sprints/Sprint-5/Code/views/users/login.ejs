@@ -20,8 +20,11 @@
       <section class="caja-formulario">
         <div class="texto-bienvenida">
           Si ya está registrado ingrese con su usuario y contraseña
+          <% if (locals.errors && errors.email) { %>
+              <div> <%= errors.email.msg %> </div>
+            <% } %> 
         </div>
-        <form class="formulario-login" action="/users/userDetail" method="POST">
+        <form class="formulario-login" action="/users/userList" method="POST">
 
           <div class="control-formulario">
             <label for="name">Correo electrónico</label>

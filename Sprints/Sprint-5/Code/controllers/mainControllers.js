@@ -29,13 +29,13 @@ const productos = JSON.parse(productsList);
 
 const mainControllers = {
   index: (req, res) => {
-    res.render("index");
+    res.render("index", {user: req.session.userLogged});
   },
   productdetail: (req, res) => {
-    res.render("productDetail");
+    res.render("productDetail", {user: req.session.userLogged});
   },
   quoter: (req, res) => {
-    res.render("quoter");
+    res.render("quoter", {user: req.session.userLogged});
   },
   register: (req, res) => {
     res.render("register");
@@ -44,10 +44,10 @@ const mainControllers = {
     res.render("login");
   },
   products: (req, res) => {
-    res.render("productList", { productos});
+    res.render("productList", { productos},{user: req.session.userLogged});
   },
   newProduct: (req, res) => {
-    res.render("newProduct");
+    res.render("newProduct",{user: req.session.userLogged}  );
   },
 };
 

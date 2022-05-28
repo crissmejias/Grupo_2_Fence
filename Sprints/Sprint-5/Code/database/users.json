@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "nombre": "Marcos",
+    "nombre": "Marcos editado otra vez",
     "apellido": "Vicente",
     "email": "yyyy@gmail.com",
-    "password": "",
+    "password": "$2a$10$fkrma4PvloXaes5PH5SutuGLkz5YQ4eUZZAPNYwkOjaI8OQC0FyTm",
     "categoria": "",
-    "imagen": "foto-yyyy.png"
+    "imagen": "/images-multer/avatar-1653697921128.png"
   },
   {
     "id": 2,
@@ -141,7 +141,8 @@
     "email": "cristhianmejias495@gmail.com",
     "password": "$2a$10$vfJ4g072/7BhefYt/58yUeMxBhb/OTqgQ5epLN.66v7dxvOYHrQVi",
     "categoria": "prueba",
-    "imagen": "/images/users/avatar-1653523030051.png"
+    "imagen": "/images/users/avatar-1653523030051.png",
+    "admin": 1
   },
   {
     "id": 17,

@@ -10,7 +10,7 @@ const productos = JSON.parse(productsList);
 
 const productsControllers = {
   productsList: (req, res) => {
-    res.render("productList", { productos: productos });
+    res.render("productList", { productos: productos, user: req.session.userLogged});
   },
   createProduct: (req, res) => {    
     res.render("newProduct");

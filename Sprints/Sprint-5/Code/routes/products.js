@@ -8,6 +8,7 @@ const multer = require('multer');
 
 
 const productsController = require("../controllers/productsControllers");
+const authMiddleware = require("../middlewares/authMiddleware");
 
 //multer paso 3
 var storage = multer.diskStorage({
@@ -23,13 +24,13 @@ var storage = multer.diskStorage({
   const upload = multer({ storage })
 
 
-router.get("/", productsController.productsList);
+router.get("/", authMiddleware,productsController.productsList);
 router.get("/createProduct", productsController.createProduct);
 router.get("/:idProduct", productsController.detalleProduct);
 //multer paso 5
 router.post("/createProduct", upload.single('file'), productsController.recordProduct)
 
-router.get("/:idProduct/edit", productsController.editProduct);
+router.get("/:idProduct/edit",authMiddleware,productsController.editProduct);
 //multer paso 5 
 router.put("/:idProduct/edit", upload.single('newImage'), productsController.putProduct); //No coincidia con el name del input en el FORM 
 

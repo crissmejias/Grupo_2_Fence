@@ -38,7 +38,7 @@ router.post('/register',upload.single("file"), validations, usersController.reco
 router.get('/login', guestMiddleware, usersController.login);
 
 // // Procesar el login
-router.post('/userDetail', usersController.loginProcess);
+router.post('/userList', usersController.loginProcess);
 
 
 
@@ -57,6 +57,9 @@ router.get('/userList',usersController.userList);
 router.get("/:idUser/edit", usersController.editUser);
 
 router.put("/:idUser/edit", upload.single('newImage'), usersController.putUser);  
+
+// borrar usuario
+router.delete('/:idUser/delete', usersController.deleteUser);
 
 
 module.exports = router;
