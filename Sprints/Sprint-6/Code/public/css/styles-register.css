@@ -1,0 +1,93 @@
+/*
+@import url(/public/css/main.css);
+
+* {
+    box-sizing: border-box;
+}
+/* .provisorio{background-color: var(--secondary-color);
+    color: var(--white);
+    margin:10px 0}
+    .provisoriofoot{background-color: var(--black);
+        color: var(--white);
+        margin:10px 0} 
+    
+    img.logotipo{ height: 5rem;
+    }
+    nav.elementos-header{
+    display:flex;
+    align-items: center;}
+    /* .elementos-header img{height: 30%;} 
+    ul.menu-header{
+    font-size: 0.7rem;
+    list-style-type: none;
+    margin: 0 10px};
+    li.item-menu-header{text-align: right;}
+
+body {display: flex;
+    flex-direction: column;
+    font-family: var(--primary-font);
+    /* background-color: var(--primary-color); 
+    /* height: 482px; 
+    background-image: url("/images/barreras-de-proteccion-cat2_280x280.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    }
+    main.principal{display: flex;}
+.imagen-ingreso{display:none}
+form.formulario-register{display:flex;
+    flex-direction: column;
+    margin: 10px;}
+
+    .control-formulario label{
+        display: block; 
+    /* border:dashed 1px red; 
+text-align: center;} 
+.control-formulario div{
+    font-size: smaller;
+    display: block; 
+/* border:dashed 1px red; 
+text-align: center;}    
+.control{
+    /* background-color:var(--grey); 
+    padding:5px;
+    /* border: solid 1px var(--secondary-color); 
+    border-radius: 5px;
+    width:100%;
+    /* justify-content: center; 
+    
+}
+.button{
+    background-color:var(--grey);
+    margin-top: 10px;
+    padding:5px;
+    border: solid 1px var(--secondary-color);
+    border-radius: 5px;
+    display: block;
+}
+@media (min-width:480px){
+    /* .imagen-ingreso{display:block;
+        width:33%;
+        height:33%;} 
+    section.caja-formulario{width:33%}
+    main.principal{display: flex;
+    justify-content: flex-end;}
+    nav.elementos-header {
+        justify-content: space-between;
+} 
+        
+    }
+
+
+
+@media (min-width:768px){
+    .imagen-ingreso{display:block;
+    width:66%}
+    main.principal{display: flex;
+        flex-direction: row;}
+div.texto-bienvenida {margin:5px;}
+ul.menu-header{display: flex;}
+li.item-menu-header{margin:0 10px}}
+/* section.caja-formulario{display:inline} 
+*/
