@@ -10,4 +10,5 @@ router.get("/register", guestMiddleware, mainControllers.register);
 router.get("/productList", mainControllers.products);
 router.get("/newProduct", mainControllers.newProduct);
 
+
 module.exports = router;

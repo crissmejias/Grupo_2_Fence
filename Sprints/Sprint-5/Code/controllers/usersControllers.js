@@ -7,19 +7,20 @@ const usuarios = JSON.parse(usersList);// parseo del JSON
 const bcryptjs = require('bcryptjs');// para poder encriptar
 const { validationResult } = require('express-validator');// para poder implementar validación en el CRUD de usuarios
 const User = require('../models/User');// se requiere models
+const cookie = require("cookie-parser");
 const usersController = {
 
 // para renderizar userList
 	userList: (req,res)=>{
-		res.render("userList", { user: usuarios});
+		res.render("userList", { user: usuarios, userLogged: req.session.userLogged});
 	},
 // para renderizar userDetail
 	profile: (req,res)=>{
-		res.render('userDetail');
+		res.render('userDetail',{userLogged: req.session.userLogged});
 	},
 // para renderizar register
 	register: (req, res) => {    
-		res.render("register");
+		res.render("register",{userLogged: req.session.userLogged});
 	},
 
 // para renderizar login
@@ -64,7 +65,7 @@ const usersController = {
 		
 			let usuarioSeleccionado = usuarios.find(el => el.id == id);
 		
-			res.render('editUser',{usuario:usuarioSeleccionado,usuarios:usuarios})
+			res.render('editUser',{usuario:usuarioSeleccionado,usuarios:usuarios,userLogged: req.session.userLogged})
 			console.log(usuarioSeleccionado.id+ ' => ID DEL PRODUCTO A EDITAR - VIENE POR PARAMS');
 		},
 		putUser : (req,res) => {
@@ -113,8 +114,10 @@ const usersController = {
 				if (isOkThePassword) {
 					delete userToLogin.password;
 					req.session.userLogged = userToLogin;
-			
-					return res.render('userList', { user: userToLogin, user: usuarios}); 
+					if(req.body.recordar != undefined){
+						res.cookie('user', userToLogin.email, {maxAge: 60000})	;
+					}
+					return res.render('userList', { userLogged: userToLogin, user: usuarios}); 
 	
 				} 
 				else
@@ -152,6 +155,17 @@ const usersController = {
 		let baseActualizada = JSON.stringify(nuevosUsuarios, null, 2);
 		fs.writeFileSync(pathToUsers, baseActualizada);
 		res.redirect('/');
+	},
+	logout: (req,res)=> {
+		res.clearCookie('user');
+		req.session.destroy(err => {
+			if(err) {
+				console.log(err)
+			}else{
+				return res.redirect('/');
+			}
+		});
+		
 	}
 }
 module.exports = usersController;

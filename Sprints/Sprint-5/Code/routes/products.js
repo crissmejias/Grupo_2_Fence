@@ -25,16 +25,16 @@ var storage = multer.diskStorage({
 
 
 router.get("/", authMiddleware,productsController.productsList);
-router.get("/createProduct", productsController.createProduct);
-router.get("/:idProduct", productsController.detalleProduct);
+router.get("/createProduct",authMiddleware, productsController.createProduct);
+router.get("/:idProduct",authMiddleware, productsController.detalleProduct);
 //multer paso 5
-router.post("/createProduct", upload.single('file'), productsController.recordProduct)
+router.post("/createProduct",authMiddleware, upload.single('file'), productsController.recordProduct)
 
 router.get("/:idProduct/edit",authMiddleware,productsController.editProduct);
 //multer paso 5 
-router.put("/:idProduct/edit", upload.single('newImage'), productsController.putProduct); //No coincidia con el name del input en el FORM 
+router.put("/:idProduct/edit",authMiddleware, upload.single('newImage'), productsController.putProduct); //No coincidia con el name del input en el FORM 
 
-router.delete("/:idProduct", productsController.deleteProduct);
+router.delete("/:idProduct",authMiddleware ,productsController.deleteProduct);
     
     
 

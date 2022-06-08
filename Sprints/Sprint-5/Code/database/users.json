@@ -143,14 +143,5 @@
     "categoria": "prueba",
     "imagen": "/images/users/avatar-1653523030051.png",
     "admin": 1
-  },
-  {
-    "id": 17,
-    "nombre": "prueba",
-    "apellido": "prueba",
-    "email": "prueba@gmail.com",
-    "password": "$2a$10$PwxurQXURmjPeekKDHOgHO5rwpCMKyzq5Kjx/sKgXTOJvr8XAugSS",
-    "categoria": "de prueba",
-    "imagen": "\\images\\users\\avatar-1653573864207.jpg"
   }
 ]

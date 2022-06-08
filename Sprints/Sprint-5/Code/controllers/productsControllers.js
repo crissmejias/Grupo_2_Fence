@@ -10,7 +10,7 @@ const productos = JSON.parse(productsList);
 
 const productsControllers = {
   productsList: (req, res) => {
-    res.render("productList", { productos: productos, user: req.session.userLogged});
+    res.render("productList", { productos: productos, userLogged: req.session.userLogged});
   },
   createProduct: (req, res) => {    
     res.render("newProduct");
@@ -20,7 +20,7 @@ const productsControllers = {
     let id = req.params.idProduct;
     let productoSeleccionado = productos.find( el => el.id == id);
     
-    res.render("productDetail", { producto: productoSeleccionado, productos : productos });
+    res.render("productDetail", { producto: productoSeleccionado, productos : productos, userLogged: req.session.userLogged });
   },
   recordProduct: (req,res)=>{
   let listadoIds = productos.map(el=>{return el.id});
@@ -49,7 +49,7 @@ const productsControllers = {
 
     let productoSeleccionado = productos.find(el => el.id == id);
 
-    res.render('editProduct',{producto:productoSeleccionado,productos:productos})
+    res.render('editProduct',{producto:productoSeleccionado,productos:productos, userLogged: req.session.userLogged})
     console.log(productoSeleccionado.id+ ' => ID DEL PRODUCTO A EDITAR - VIENE POR PARAMS');
 },
 putProduct : (req,res) => {

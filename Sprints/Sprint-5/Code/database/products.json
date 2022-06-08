@@ -75,9 +75,9 @@
     "id": 16,
     "tipo": "Ferroviaria",
     "material": "Plástico",
-    "nombre": "Garabato",
+    "nombre": "Garabato modificado",
     "precio": "336190",
     "descripcion": "Para el paso a nivel",
-    "imagen": "\\images-multer\\valla-1653082025381.png"
+    "imagen": "/images-multer/valla-1654649121230.png"
   }
 ]

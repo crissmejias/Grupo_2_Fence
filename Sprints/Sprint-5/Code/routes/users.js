@@ -32,7 +32,7 @@ router.get('/register', guestMiddleware, usersController.register);
 
 // // Procesar el registro             // FALTA MIDDLEWARE DE VALIDACION EN VISTAS
 // router.post('/register', uploadFile.single('avatar'), validations, usersController.processRegister);
-router.post('/register',upload.single("file"), validations, usersController.recordUser);
+router.post('/register',guestMiddleware,upload.single("file"), validations, usersController.recordUser);
 
 // // Formulario de login
 router.get('/login', guestMiddleware, usersController.login);
@@ -44,7 +44,7 @@ router.post('/userList', usersController.loginProcess);
 
 
 //Ruta Lista usuarios
-router.get('/userList',usersController.userList);
+router.get('/userList',authMiddleware,usersController.userList);
 
 // Ruta de edición de perfil
 // router.get('/userDetail', authMiddleware, usersController.userDetail);
@@ -54,12 +54,14 @@ router.get('/userList',usersController.userList);
 // router.get('/logout/', usersController.logout);
 
 //edicion de usuarios
-router.get("/:idUser/edit", usersController.editUser);
+router.get("/:idUser/edit",authMiddleware, usersController.editUser);
 
-router.put("/:idUser/edit", upload.single('newImage'), usersController.putUser);  
+router.put("/:idUser/edit",authMiddleware, upload.single('newImage'), usersController.putUser);  
 
 // borrar usuario
-router.delete('/:idUser/delete', usersController.deleteUser);
+router.delete('/:idUser/delete',authMiddleware, usersController.deleteUser);
 
+//logout
+router.get('/logout', usersController.logout);
 
 module.exports = router;
