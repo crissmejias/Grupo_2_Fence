@@ -1,39 +1,39 @@
 [
   {
     "id": 1,
-    "nombre": "Marcos editado otra vez",
+    "nombre": "Marcos ",
     "apellido": "Vicente",
     "email": "yyyy@gmail.com",
-    "password": "$2a$10$fkrma4PvloXaes5PH5SutuGLkz5YQ4eUZZAPNYwkOjaI8OQC0FyTm",
+    "password": "$2a$10$ODrth1ULVwESrGvd8NoXJeXMHfaWag0csPvtMFFsH8aHfNmA4BpQK",
     "categoria": "",
-    "imagen": "/images-multer/avatar-1653697921128.png"
+    "imagen": "\\images-multer\\avatar-1654727712603.svg"
   },
   {
     "id": 2,
     "nombre": "Cristhian",
     "apellido": "Mejias Serrano",
     "email": "yyyy@gmail.com",
-    "password": "",
+    "password": "$2a$10$E9roYxSfAgyouOQ/oV18oOkOeQ.APE4Pb4pwZj62yIMZMz7orHH2.",
     "categoria": "",
-    "imagen": "foto-yyyy.png"
+    "imagen": "\\images-multer\\avatar-1654727691696.svg"
   },
   {
     "id": 3,
     "nombre": "Claudio",
     "apellido": "Faner",
     "email": "yyyy@gmail.com",
-    "password": "",
+    "password": "$2a$10$a7YbScRCmcviKbCpRpeZoeiudgcf8ZFFWrtMU9fJyoCoD5wTJz2Lm",
     "categoria": "",
-    "imagen": "foto-yyyy.png"
+    "imagen": "\\images-multer\\avatar-1654727724678.svg"
   },
   {
     "id": 4,
     "nombre": "Daniela",
     "apellido": "Frisicaro",
     "email": "yyyy@gmail.com",
-    "password": "",
+    "password": "$2a$10$y0Gh3X63enmLX6hzCJD4JOBU0z1fng1sNnaVLGdoR/A8VXcxaIY4S",
     "categoria": "",
-    "imagen": "foto-yyyy.png"
+    "imagen": "\\images-multer\\avatar-1654727736974.svg"
   },
   {
     "id": 5,
@@ -55,30 +55,30 @@
   },
   {
     "id": 7,
-    "nombre": "aaa",
-    "apellido": "bbb",
-    "email": "ddd@eee.com",
-    "password": "1234",
-    "categoria": "ccc",
-    "imagen": "\\images\\users\\avatar-1653509771160.png"
+    "nombre": "Walter",
+    "apellido": "White",
+    "email": "prueba3@gmail.com",
+    "password": "$2a$10$1Mm.bNc5oE7o41.uIRC7Wuk1RozDytqpMpYmJXspLJReaTNg8vvza",
+    "categoria": "",
+    "imagen": "\\images-multer\\avatar-1654727315540.webp"
   },
   {
     "id": 8,
-    "nombre": "EEE",
-    "apellido": "RRR",
-    "email": "YYY@UUU",
-    "password": "1234",
-    "categoria": "TTT",
-    "imagen": "\\images\\users\\avatar-1653510179967.docx"
+    "nombre": "Saul ",
+    "apellido": "Goodman",
+    "email": "prueba2@gmail.com",
+    "password": "$2a$10$8U5oJ3yuCjGPHtc2HWqKDuSmcAk1HbXXslNAFgwx4k6x21xgwMwc.",
+    "categoria": "",
+    "imagen": "\\images-multer\\avatar-1654727267026.webp"
   },
   {
     "id": 9,
-    "nombre": "",
-    "apellido": "sss",
-    "email": "fff@ggg.com",
-    "password": "1233",
-    "categoria": "ddd",
-    "imagen": "\\images\\users\\avatar-1653511186507.png"
+    "nombre": "Erik",
+    "apellido": "Cartman",
+    "email": "prueba4@gmail.com",
+    "password": "$2a$10$h2WYdPWH36azMNyQoHOiv.lhC0Blqf/o.3icrVVEu.9CSN2jH5VDe",
+    "categoria": "",
+    "imagen": "\\images-multer\\avatar-1654727603044.webp"
   },
   {
     "id": 10,
@@ -130,9 +130,9 @@
     "nombre": "Clay",
     "apellido": "Morrow",
     "email": "prueba@gmail.com",
-    "password": "$2a$10$pLmhHIe21oPGL1YCAQ3iFeNObo4.nDEABZQIbVGQAKiL93o0ITu0C",
+    "password": "$2a$10$YKJuwKQh3S8C043a1BEhMeJv0WhpuW3kI6ZMeNypd3EbCGK3uCL06",
     "categoria": "soa",
-    "imagen": "\\images\\users\\avatar-1653516607812.jpg"
+    "imagen": "\\images-multer\\avatar-1654727563153.jpg"
   },
   {
     "id": 16,
