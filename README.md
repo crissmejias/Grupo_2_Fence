@@ -82,3 +82,5 @@ https://app.moqups.com/kTMlTBcvR6eUpvHueENUiaVvfiEIwgqf/edit/page/a7d3a416e
 El link a la Presentación de avance de página, para mostrar la estructura básica de las vistas iniciales (el mismo se encuentra en Tablero de Trabajo Trello): 
 https://trello.com/1/cards/624dd7fb1b8e580b97e738bb/attachments/624dd8719fea8a1a43f4213b/download/Fence_SA_..mp4
 
+Link a Diagrama de Entity Relation
+https://app.diagrams.net/?libs=general;er#
