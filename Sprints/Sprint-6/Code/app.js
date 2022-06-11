@@ -4,6 +4,10 @@ const { dirname } = require("path");
 const path = require("path");
 const userCookie = require('./middlewares/userCookie');
 const productRouter = require("./routes/products");
+//sprint 6
+
+//const productRouterDb = require("./routes/productsDb");
+
 // /*sprint 4
 const usersRouter=require ("./routes/users");//requerir ruta
 const methodOverride = require('method-override'); //Para  habilitar peticion http PUT y DELETE
@@ -40,3 +44,4 @@ app.use("/", rutaMain);
 app.use("/products", productRouter);
 app.use("/users",usersRouter); //Endpoint apuntando a la ruta de usuarios - Sprint 5
 app.use(userCookie);
+//app.use("/products", productRouterDb);
