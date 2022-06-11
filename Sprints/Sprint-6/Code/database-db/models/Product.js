@@ -8,17 +8,17 @@
 module.exports = (sequelize, dataTypes) => {
     let alias = 'Product';
     let cols = {
-        id: {
+        id_products: {
             type: dataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true
         },
-        tipo: {
-            type: dataTypes.STRING
-        },
-        material: {
-            type: dataTypes.STRING
-        },
+        // id_tipo: {
+        //     type: dataTypes.INTEGER
+        // },
+        // id_material: {
+        //     type: dataTypes.INTEGER
+        // },
         nombre: {
             type: dataTypes.STRING(400)
         },
@@ -28,10 +28,10 @@ module.exports = (sequelize, dataTypes) => {
         descripcion: {
             type: dataTypes.TEXT
         },
-       /* imagen: {
-            type: dataTypes.
-        }*/
-    };
+    //    imagen: {
+    //         type: dataTypes.TEXT
+    //    }
+    }
     let config = {
         tableName: 'products',
         timestamps: false

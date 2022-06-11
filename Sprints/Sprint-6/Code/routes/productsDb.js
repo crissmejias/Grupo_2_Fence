@@ -1,4 +1,4 @@
-/*const { Router } = require("express");
+const { Router } = require("express");
 const express = require("express");
 const productsControllersDb = require("../controllers/productsControllersDb");
 const router = express.Router();
@@ -24,20 +24,20 @@ var storage = multer.diskStorage({
   const upload = multer({ storage })
 
 
-router.get("/", authMiddleware,productsControllersDb.productsList);
-router.get("/createProduct",authMiddleware, productsControllersDb.createProduct);
-router.get("/:idProduct",authMiddleware, productsControllersDb.detalleProduct);
+router.get("/",productsControllersDb.productsList);
+router.get("/createProduct", productsControllersDb.createProduct);
+router.get("/:idProduct", productsControllersDb.detalleProduct);
 //multer paso 5
-router.post("/createProduct",authMiddleware, upload.single('file'), productsControllersDb.recordProduct)
+router.post("/createProduct", productsControllersDb.recordProduct)
 
 router.get("/:idProduct/edit",authMiddleware,productsControllersDb.editProduct);
 //multer paso 5 
-router.post("/:idProduct/edit",authMiddleware, upload.single('newImage'), productsControllersDb.putProduct); 
+router.put("/:idProduct/edit", productsControllersDb.putProduct); 
 
-router.post("/:idProduct",authMiddleware ,productsControllersDb.deleteProduct);
+router.delete("/delete/:idProduct",productsControllersDb.deleteProduct);
     
     
 
 module.exports = router;
 
-*/
+

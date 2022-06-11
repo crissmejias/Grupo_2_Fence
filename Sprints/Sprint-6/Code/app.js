@@ -11,7 +11,7 @@ const productRouter = require("./routes/products");
 // /*sprint 4
 const usersRouter=require ("./routes/users");//requerir ruta
 const methodOverride = require('method-override'); //Para  habilitar peticion http PUT y DELETE
-
+const productsdb = require('./routes/productsDb');
 const app = express();
 const session = require('express-session'); // para poder utilizar Session como pide el Sprint 5
 const cookieParser = require('cookie-parser'); // para el reqeurimiento opcional del Srint 5
@@ -42,6 +42,7 @@ app.listen(process.env.PORT || 3000, () =>
 const rutaMain = require("./routes/main");
 app.use("/", rutaMain);
 app.use("/products", productRouter);
+app.use('/productsdb', productsdb);
 app.use("/users",usersRouter); //Endpoint apuntando a la ruta de usuarios - Sprint 5
 app.use(userCookie);
 //app.use("/products", productRouterDb);
