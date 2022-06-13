@@ -3,10 +3,10 @@
     "id": 6,
     "tipo": "Peatonal",
     "material": "Plástico",
-    "nombre": "Valla Roja modif 25",
+    "nombre": "Valla vial amarilla",
     "precio": "15000",
     "descripcion": "xxx",
-    "imagen": "\\images-multer\\valla-1652549736486.PNG"
+    "imagen": "\\images-multer\\valla-1655076179806.jpg"
   },
   {
     "id": 9,
@@ -21,7 +21,7 @@
     "id": 10,
     "tipo": "Peatonal",
     "material": "Plástico",
-    "nombre": "Valla plástica azul",
+    "nombre": "Valla plástica azul-cian",
     "precio": "2000",
     "descripcion": "Ideal para reparaciones en la vía pública",
     "imagen": "\\images-multer\\valla-1652534561251.PNG"
@@ -39,7 +39,7 @@
     "id": 12,
     "tipo": "Eventos-Peatonal",
     "material": "Metálica",
-    "nombre": "Valla de metal fina",
+    "nombre": "Valla peatonal de metal",
     "precio": "105.000",
     "descripcion": "Vallas para eventos",
     "imagen": "\\images-multer\\valla-1652545754680.png"
@@ -48,7 +48,7 @@
     "id": 13,
     "tipo": "Peatonal",
     "material": "Plástico",
-    "nombre": "Valla Amarilla Gruesa",
+    "nombre": "Valla Amarilla Publicitaria",
     "precio": "100.000",
     "descripcion": "Ideal para reparaciones en la vía pública",
     "imagen": "\\images-multer\\valla-1652545829381.PNG"
@@ -57,7 +57,7 @@
     "id": 14,
     "tipo": "Juguete",
     "material": "Madera",
-    "nombre": "Garabato",
+    "nombre": "Valla amarilla reforzada",
     "precio": "10",
     "descripcion": "Ideal para el niño que quiere trabajar en la municipalidad cuando sea grande",
     "imagen": "\\images-multer\\valla-1653076640899.png"
@@ -66,18 +66,9 @@
     "id": 15,
     "tipo": "tipo ",
     "material": "plastico",
-    "nombre": "prod prueba 1",
+    "nombre": "Valla encastrable",
     "precio": "120",
     "descripcion": "para la via publica",
     "imagen": "\\images-multer\\valla-1653076822336.PNG"
-  },
-  {
-    "id": 16,
-    "tipo": "Ferroviaria",
-    "material": "Plástico",
-    "nombre": "Garabato modificado",
-    "precio": "336190",
-    "descripcion": "Para el paso a nivel",
-    "imagen": "/images-multer/valla-1654649121230.png"
   }
 ]

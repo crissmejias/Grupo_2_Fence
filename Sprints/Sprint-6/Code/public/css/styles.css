@@ -3,6 +3,14 @@
   box-sizing: border-box;
 } */
 
+nav.elementos-header {
+  justify-content: space-between;
+  /*border: solid red 3px;*/
+  /*position: fixed;
+  top: 0;
+  z-index: 999;*/
+}
+
 body {
   font-family: var(--primary-font);
   background-color: var(--primary-color);
@@ -15,20 +23,22 @@ body {
 }
 li.item-menu-header a {
   text-decoration: none;
-  transition: all 450ms;
+  /*transition: all 450ms;*/
 }
 li.item-menu-header a:hover {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 14px;
+  /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+  font-size: 16px;
+  color: #fad85b;
 }
+/*
 li.item-menu-header a:visited {
   color: var(--white);
-}
+}*/
 footer {
-  font-size: 14px;
+  font-size: 11px;
   width: 100%;
   margin-top: 12px;
-  background-color: var(--black);
+  background-color: var(--secondary-color);
 }
 .informacion-container {
   display: none;

@@ -8,7 +8,7 @@
     <main class="product-List">
       <aside class="options-container">
         <ul>
-          <li>Panel de Control para Usuarios</li>
+          <li class="button">Panel de Control para Usuarios</li>
          
         </ul>
       </aside>
@@ -21,13 +21,19 @@
             src="<%=user[i].imagen  %> "
             alt=""
             class="pl-product-image avatar-image"
+            width="150"
+            height="150"
           />
           <div class="pl-product-description">
             <h5 class="pl-product-title"></h5>
             <p></p>
-            <a href="<%= user[i].id%> /edit" class="pl-product-add-to-cart">Modificar</a>
+            
+            <div class="button-modificar"><a href="<%= user[i].id%> /edit" class="pl-product-add-to-cart">Modificar</a></div>
+            
+            <br>
+            <br>
 
-              <form action="/users/<%=user[i].id %>/delete?_method=DELETE" method="POST" >
+              <form class="button-eliminar" action="/users/<%=user[i].id %>/delete?_method=DELETE" method="POST" >
             <button type="submit" class="pl-product-add-to-cart" value="<%=user[i].id %> ">Eliminar</button>
           </form>
           </div>

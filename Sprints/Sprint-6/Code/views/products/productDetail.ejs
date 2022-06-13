@@ -57,7 +57,7 @@
         </div>
         <div class="add-to-cart-container">
           <input type="number" name="cantidad" id="cantidad-productos" />
-          <button>Agregar</button>
+          <button class="button">Agregar</button>
         </div>
       </div>
       <div class="products-container">
@@ -65,10 +65,11 @@
         <div class="products-cards-container">
           <% for(i =0; i< productos.length; i++) {%> 
           <div class="product">
-            <img src="<%= productos[i].imagen  %> " alt="" class="product-image" />
+            <img src="<%= productos[i].imagen  %> " alt="" class="product-image" width="200" height="150" />
             <div class="product-description">
-              <h5 class="product-title"><%= productos[i].nombre  %> </h5>
-              <button class="product-add-to-cart">Agregar</button>
+              <h7 class="product-title"><%= productos[i].nombre  %> </h5>
+                <br>
+              <button class="button">Agregar</button>
             </div>
           </div>
           <% } %>       
