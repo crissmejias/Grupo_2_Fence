@@ -26,11 +26,11 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.INTEGER
         },
         descripcion: {
-            type: dataTypes.TEXT
+            type: dataTypes.TEXT    
         },
-    //    imagen: {
-    //         type: dataTypes.TEXT
-    //    }
+    imagen: {
+            type: dataTypes.TEXT
+        }
     }
     let config = {
         tableName: 'products',

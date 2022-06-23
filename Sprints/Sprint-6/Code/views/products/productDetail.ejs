@@ -2,7 +2,7 @@
 <html lang="en">
   <!-- HEAD  -->
 
-  <%- include('./partials/head', {tituloWeb: 'Producto Fence'} ) %>
+  <%- include('./partials/head', {tituloWeb: 'productos Fence'} ) %>
 
   <body>
     <!-- HEADER -->
@@ -10,27 +10,27 @@
     <%- include('./partials/header') %>
 
     <main class="product-detail">
-      <p class="page-index">Productos / Título de producto</p>
+      <p class="page-index">Productos / Título de productos</p>
       <div class="product-detail-container">
-        <h1><%=producto.nombre%> </h1>
+        <h1><%=productos.nombre%> </h1>
        
         <p>
-         $ <%=producto.precio%> 
+         $ <%=productos.precio%> 
         </p>
         <details class="detalles-container">
           <summary>Detalles</summary>
           <p>
-            <%=producto.descripcion  %> 
+            <%=productos.descripcion  %> 
           </p>
           <p>
-           <%= producto.tipo %> 
+           <%= productos.tipo %> 
           </p>
           <p>
-            <%= producto.material %> 
+            <%= productos.material %> 
            </p>
         </details>
         <figure>
-          <img src="<%= producto.imagen  %> " alt="" />
+          <img src="<%= productos.imagen  %> " alt="" />
         </figure>
       </div>
 

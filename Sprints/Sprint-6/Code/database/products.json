@@ -70,5 +70,14 @@
     "precio": "120",
     "descripcion": "para la via publica",
     "imagen": "\\images-multer\\valla-1653076822336.PNG"
+  },
+  {
+    "id": 16,
+    "tipo": "prueba",
+    "material": "prueba",
+    "nombre": "Prueba",
+    "precio": "prueba",
+    "descripcion": "prueba",
+    "imagen": "/images-multer/valla-1655945240850.png"
   }
 ]

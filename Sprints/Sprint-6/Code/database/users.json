@@ -79,5 +79,14 @@
     "password": "$2a$10$C5FQXUy2GwdPINK.f5Z/JO2RqCdIcoiWEuAyqICEy9dD3mLF3YZi2",
     "categoria": "eee",
     "imagen": "\\images-multer\\avatar-1655075643328.jpg"
+  },
+  {
+    "id": 17,
+    "nombre": "Cristhian",
+    "apellido": "Mejias",
+    "email": "cristhianmejias495@gmail.com",
+    "password": "$2a$10$kbFRXpEIqG.3Q/yZ5//NcOEVv.8k6unmggqTAiPL5tCv8P7LZfGqW",
+    "categoria": "prueba",
+    "imagen": "/images/users/avatar-1655941875784.png"
   }
 ]

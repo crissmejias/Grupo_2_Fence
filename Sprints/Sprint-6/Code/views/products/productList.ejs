@@ -18,7 +18,7 @@
 
       <div class="pl-productos-container">
         <% for(let i=0; i < productos.length; i++) { %>
-          <a href="/products/<%=productos[i].id  %> ">
+          <a href="/products/<%=productos[i].id_products %> ">
             
         <article class="pl-product">
           
@@ -36,11 +36,11 @@
             
             <p>$<%=productos[i].precio %></p>
             
-            <div class="button-modificar"><a href="/products/<%= productos[i].id %>/edit" class="pl-product-add-to-cart">Modificar</a></div>
+            <div class="button-modificar"><a href="/products/<%= productos[i].id_products %>/edit" class="pl-product-add-to-cart">Modificar</a></div>
             
           <br>
 
-              <form class="button-eliminar" action="/products/<%=productos[i].id%> ?_method=DELETE" method="POST" >
+              <form class="button-eliminar" action="/products/<%=productos[i].id_products%> ?_method=DELETE" method="POST" >
             <button type="submit" class="pl-product-add-to-cart" value="<%=productos[i].id%>">Eliminar</button>
           </form>
 

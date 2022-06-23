@@ -7,7 +7,7 @@ const multer = require('multer');
 //A continuación el código del ejemplo para pensarlo como guia
 // // Controller
 const usersController = require('../controllers/usersControllers');
-
+const userControllers = require('../controllers/usersControllersDb');
 // // Middlewares
 //multer paso 3
 var storage = multer.diskStorage({

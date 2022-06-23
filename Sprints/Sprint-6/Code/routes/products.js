@@ -1,6 +1,6 @@
 const { Router } = require("express");
 const express = require("express");
-const productsControllers = require("../controllers/productsControllers");
+const productsControllers = require("../controllers/productsControllersDb");
 const router = express.Router();
 // multer paso 2//
 const path = require('path');
@@ -24,17 +24,17 @@ var storage = multer.diskStorage({
   const upload = multer({ storage })
 
 
-router.get("/", authMiddleware,productsController.productsList);
-router.get("/createProduct",authMiddleware, productsController.createProduct);
-router.get("/:idProduct",authMiddleware, productsController.detalleProduct);
+router.get("/", authMiddleware,productsControllers.productsList);
+router.get("/createProduct",authMiddleware, productsControllers.createProduct);
+router.get("/:idProduct",authMiddleware, productsControllers.detalleProduct);
 //multer paso 5
-router.post("/createProduct",authMiddleware, upload.single('file'), productsController.recordProduct)
+router.post("/createProduct",authMiddleware, upload.single('file'), productsControllers.recordProduct)
 
-router.get("/:idProduct/edit",authMiddleware,productsController.editProduct);
+router.get("/:idProduct/edit",authMiddleware,productsControllers.editProduct);
 //multer paso 5 
-router.put("/:idProduct/edit",authMiddleware, upload.single('newImage'), productsController.putProduct); //No coincidia con el name del input en el FORM 
+router.put("/:idProduct/edit",authMiddleware, upload.single('newImage'), productsControllers.putProduct); //No coincidia con el name del input en el FORM 
 
-router.delete("/:idProduct",authMiddleware ,productsController.deleteProduct);
+router.delete("/:idProduct",authMiddleware ,productsControllers.deleteProduct);
     
     
 
