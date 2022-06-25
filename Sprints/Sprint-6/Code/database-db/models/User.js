@@ -29,10 +29,10 @@ module.exports = (sequelize, dataTypes) => {
         categoria: {
             type: dataTypes.TEXT
         },
+        imagen:{
+            type: dataTypes.TEXT
+        }
 
-    //    imagen: {
-    //         type: dataTypes.TEXT
-    //    }
     }
     let config = {
         tableName: 'users',

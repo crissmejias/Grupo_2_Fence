@@ -25,22 +25,22 @@
             height="150"
           />
           <div class="pl-product-description">
-            <h5 class="pl-product-title"></h5>
+            <h5 class="pl-product-title"><%=user[i].nombre  %> </h5>
             <p></p>
             
-            <div class="button-modificar"><a href="<%= user[i].id%> /edit" class="pl-product-add-to-cart">Modificar</a></div>
+            <div class="button-modificar"><a href="<%= user[i].id_users%> /edit" class="pl-product-add-to-cart">Modificar</a></div>
             
             <br>
             <br>
 
-              <form class="button-eliminar" action="/users/<%=user[i].id %>/delete?_method=DELETE" method="POST" >
-            <button type="submit" class="pl-product-add-to-cart" value="<%=user[i].id %> ">Eliminar</button>
+              <form class="button-eliminar" action="/users/<%=user[i].id_users %>/delete?_method=DELETE" method="POST" >
+            <button type="submit" class="pl-product-add-to-cart" value="<%=user[i].id_users %> ">Eliminar</button>
           </form>
           </div>
         </article>
       </a>
         <% } %> 
-      </div>
+      </div> 
     </main>
 
     <%- include("./partials/footer") %>

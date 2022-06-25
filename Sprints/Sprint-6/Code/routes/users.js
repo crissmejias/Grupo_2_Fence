@@ -32,19 +32,19 @@ router.get('/register', guestMiddleware, usersController.register);
 
 // // Procesar el registro             // FALTA MIDDLEWARE DE VALIDACION EN VISTAS
 // router.post('/register', uploadFile.single('avatar'), validations, usersController.processRegister);
-router.post('/register',guestMiddleware,upload.single("file"), validations, usersController.recordUser);
+router.post('/register',guestMiddleware,upload.single("file"), validations, userControllers.recordUser);
 
 // // Formulario de login
 router.get('/login', guestMiddleware, usersController.login);
 
 // // Procesar el login
-router.post('/userList', usersController.loginProcess);
+router.post('/userList', userControllers.loginProcess);
 
 
 
 
 //Ruta Lista usuarios
-router.get('/userList',authMiddleware,usersController.userList);
+router.get('/userList',authMiddleware,userControllers.userList);
 
 // Ruta de edición de perfil
 // router.get('/userDetail', authMiddleware, usersController.userDetail);
@@ -54,12 +54,12 @@ router.get('/userList',authMiddleware,usersController.userList);
 // router.get('/logout/', usersController.logout);
 
 //edicion de usuarios
-router.get("/:idUser/edit",authMiddleware, usersController.editUser);
+router.get("/:idUser/edit",authMiddleware, userControllers.editUser);
 
-router.put("/:idUser/edit",authMiddleware, upload.single('newImage'), usersController.putUser);  
+router.put("/:idUser/edit",authMiddleware, upload.single('newImage'), userControllers.putUser);  
 
 // borrar usuario
-router.delete('/:idUser/delete',authMiddleware, usersController.deleteUser);
+router.delete('/:idUser/delete',authMiddleware, userControllers.deleteUser);
 
 //logout
 router.get('/logout', usersController.logout);

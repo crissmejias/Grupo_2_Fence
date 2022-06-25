@@ -14,13 +14,13 @@
    
 <!--  Faltababa el   enctype="multipart/form-data"  para que el PUT pase por el middleware de Multer-->
 
-      <form action="/users/<%=usuario.id%>/edit?_method=PUT" method="POST"   class="np-new-product-form" enctype="multipart/form-data">
+      <form action="/users/<%=usuario.id_users%>/edit?_method=PUT" method="POST"   class="np-new-product-form" enctype="multipart/form-data">
         <div class="np-main-features">
           <input type="text" name="nombre" value="<%=usuario.nombre%>">
           <input type="text" name="apellido" value="<%=usuario.apellido%>">
           <input type="email" name="email" value="<%=usuario.email%>">
           <!-- <input type="text" name="material-base" placeholder="Material Base"> -->
-          <input type="password" name="password" value="<%=usuario.password%>">
+          <input type="password" name="password">
           <input type="text" name="categoria" value="<%=usuario.categoria%>">
         </div>
 

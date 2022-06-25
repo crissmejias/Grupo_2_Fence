@@ -31,8 +31,6 @@ const productsControllersDb = {
         recordProduct: (req, res) => {
        
         db.Product.create({ 
-
-            // id: req.params.id,
             tipo: req.body.tipo,
             material: req.body.material,
             nombre: req.body.nombre,
