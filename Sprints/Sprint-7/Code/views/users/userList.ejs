@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head", {tituloWeb: "Listado de productos"}) %>
+
+  <body class="product-list">
+    <%- include("./partials/header") %>
+
+    <main class="product-List">
+      <aside class="options-container">
+        <ul>
+          <li class="button">Panel de Control para Usuarios</li>
+         
+        </ul>
+      </aside>
+      <div class="pl-productos-container">
+        <% for(let i=0; i < user.length; i++) { %>
+          <a href="">
+            
+        <article class="pl-product">
+          <img
+            src="<%=user[i].imagen  %> "
+            alt=""
+            class="pl-product-image avatar-image"
+            width="150"
+            height="150"
+          />
+          <div class="pl-product-description">
+            <h5 class="pl-product-title"><%=user[i].nombre  %> </h5>
+            <p></p>
+            
+            <div class="button-modificar"><a href="<%= user[i].id_users%> /edit" class="pl-product-add-to-cart">Modificar</a></div>
+            
+            <br>
+            <br>
+
+              <form class="button-eliminar" action="/users/<%=user[i].id_users %>/delete?_method=DELETE" method="POST" >
+            <button type="submit" class="pl-product-add-to-cart" value="<%=user[i].id_users %> ">Eliminar</button>
+          </form>
+          </div>
+        </article>
+      </a>
+        <% } %> 
+      </div> 
+    </main>
+
+    <%- include("./partials/footer") %>
+  </body>
+</html>
