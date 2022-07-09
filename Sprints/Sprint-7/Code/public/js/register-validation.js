@@ -14,6 +14,7 @@ let inputs = document.querySelectorAll('input');
             if(el.value.length < 1){
             createMessage(el);
             }
+            validateValue(el);
         }
       })
       function createMessage(el){
@@ -25,5 +26,11 @@ let inputs = document.querySelectorAll('input');
       mensajeError.innerText = "El campo está vacío";
       el.parentElement.append(mensajeError); 
     }
-
+    function validateValue(el){
+      let div = el.parentElement;
+      if(el.value.length >= 1){
+        let errorMessage = div.querySelector('span');
+        errorMessage.remove();
+      }
+    }
     })
