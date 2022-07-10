@@ -25,7 +25,7 @@
             <% } %> 
         </div>
         <form class="formulario-login" action="/users/userList" method="POST">
-
+<div>
           <div class="control-formulario">
             <label for="name">Correo electrónico</label>
             <input  type="email" 
@@ -34,6 +34,7 @@
                     id="email" />
           </div>
           <br>
+         
           <br>
 
           <div class="control-formulario">
@@ -43,17 +44,23 @@
               name="password"
               id="password"
               class="control"
-            />
-          <br>
-          <br>
+          
+          </div>
+            <br>
+            <!-- <div> <span id="password-error-message"></span></div>    -->
+           <br>
+          </div>        
+         
+          
+
           <div class="remember-container">
             <label for="recordar">Recordar usuario</label>
             <input type="checkbox" name="recordar" id="">
           </div>
-          </div>
           <br>
           <br>
-          <button type="submit" class="button">Ingresar</button>
+          
+          <button type="submit" class="button" id="btn-form">Ingresar</button>
         </form>
       </section>
     </main>
@@ -61,5 +68,7 @@
     <!-- FOOTER -->
 
     <%- include('./partials/footer') %>
+  </script>
+  <script src="js/login-validation.js"></script>
   </body>
 </html>
