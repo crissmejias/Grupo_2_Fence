@@ -1425,10 +1425,11 @@ form.formulario-login {
 }
 
 .remember-container{
- /*border: solid red;*/
+ /* border: solid red; */
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: line;
+  /* align-items: center; */
+
 }
 
 .remember-container label{
