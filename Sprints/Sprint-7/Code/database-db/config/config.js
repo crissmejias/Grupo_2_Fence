@@ -1,10 +1,10 @@
 module.exports =
 {
   "development": {
-    "username": "1xiMF7UOCa",
-    "password": '18iaLCvufT',
-    "database": "1xiMF7UOCa",
-    "host": "remotemysql.com",
+    "username": "admin_fence",
+    "password": '1Peatonal',
+    "database": "fence_db",
+    "host": "db4free.net",
     "dialect": "mysql"
   },
   "test": {
