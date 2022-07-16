@@ -1,3 +1,4 @@
+// configuración de base de datos nueva
 module.exports =
 {
   "development": {
