@@ -1,14 +1,19 @@
 window.addEventListener('load',() => {
+  
+
     // Evento submit
 const formBtn = document.querySelector('#btn-form');
     formBtn.addEventListener('click', (evento)=> {
-    evento.preventDefault();     
-    inputs.map(el => {
-      createMessage(el);
-    })
-    if(errores < 1){
-      formBtn.submit();
-    }
+      const formulario = document.querySelector('.formulario-login');
+      evento.preventDefault();     
+      inputs.map(el => {
+        if(el.value.length < 1){
+          createMessage(el) 
+          }
+        })
+        if(errores < 1){
+      formulario.submit();
+      }
 
 });
 // Map de inputs con evento onblur
@@ -43,7 +48,9 @@ function validateValue(el){
   let div = el.parentElement;
   if(el.value.length >= 1){
     let errorMessage = div.querySelector('span');
-    errorMessage.remove();
+    errorMessage?
+    errorMessage.remove() 
+    : null; 
     errores--;
   }
 }
