@@ -1673,7 +1673,7 @@ img.pl-product-image:hover {
   align-items: center;
   flex-wrap: wrap;
 }
-.np-new-product-form input {
+.np-new-product-form .control-formulario div input {
   padding: 10px;
   border-radius: 8px;
   width: 80%;
