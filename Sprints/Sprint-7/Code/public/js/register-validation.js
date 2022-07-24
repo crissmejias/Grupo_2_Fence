@@ -2,12 +2,15 @@ window.addEventListener('load',() => {
     // Evento submit
 const formBtn = document.querySelector('#btn-form');
     formBtn.addEventListener('click', (evento)=> {
-    evento.preventDefault();     
+    const formulario = document.querySelector('.formulario-register')
+    evento.preventDefault();    
     inputs.map(el => {
+      if(el.value.length < 1){
       createMessage(el);
+      }
     })
     if(errores < 1){
-      formBtn.submit();
+      formulario.submit()
     }
 
 });
@@ -43,10 +46,9 @@ function validateValue(el){
   let div = el.parentElement;
   if(el.value.length >= 1){
     let errorMessage = div.querySelector('span');
-    errorMessage.remove();
-    errores--;
+    errorMessage?
+    errorMessage.remove() 
+    : null; 
   }
 }
-errores = Object.keys(errores);
-console.log(errores);
 })
