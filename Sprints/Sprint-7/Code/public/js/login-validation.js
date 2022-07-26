@@ -6,20 +6,10 @@ const formBtn = document.querySelector('#btn-form');
       const formulario = document.querySelector('.formulario-login');
       evento.preventDefault();     
 
-      document.getElementById('email').addEventListener('input', function() {
-        campo = e.target;
-        valido = document.getElementById('emailOK');
-        console.log("válido",valido);
-            
-        emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
-        //Se muestra un texto a modo de ejemplo, luego va a ser un icono
-        if (emailRegex.test(campo.value)) {
-                    valido.innerText = "válido";
-          errores--
-        } else {
-          valido.innerText = "incorrecto";
-          errores++  }
-    })
+      // document.getElementById('email').addEventListener('input', function() {
+      //   campo = e.target;
+        
+    // })
 
       inputs.map(el => {
         if(el.value.length < 1){
@@ -45,7 +35,18 @@ el.onblur = () => {
 
 }
 // if(errores.length >=1){
-  
+  campo=inputs[0]
+  valido = document.getElementById('emailOK');
+        console.log("válido",valido);
+            
+        emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+        //Se muestra un texto a modo de ejemplo, luego va a ser un icono
+        campo.addEventListener("input", ()=>{if (emailRegex.test(campo.value)) {
+          valido.innerText = "válido";
+errores=errores-2
+} else {
+valido.innerText = "incorrecto";
+errores++  }}); 
 // }
 })
 function createMessage(el){
@@ -69,5 +70,5 @@ function validateValue(el){
   }
 }
 errores = Object.keys(errores);
-// console.log(errores);
+console.log(errores);
 })
