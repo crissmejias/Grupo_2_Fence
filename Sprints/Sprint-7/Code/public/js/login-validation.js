@@ -7,19 +7,18 @@ const formBtn = document.querySelector('#btn-form');
       evento.preventDefault();     
 
       document.getElementById('email').addEventListener('input', function() {
-        campo = eventito.target;
+        campo = e.target;
         valido = document.getElementById('emailOK');
         console.log("válido",valido);
             
         emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
         //Se muestra un texto a modo de ejemplo, luego va a ser un icono
         if (emailRegex.test(campo.value)) {
-          valido.innerText = "válido";
+                    valido.innerText = "válido";
           errores--
         } else {
           valido.innerText = "incorrecto";
-          errores++
-        }
+          errores++  }
     })
 
       inputs.map(el => {
