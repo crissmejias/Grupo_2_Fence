@@ -41,6 +41,8 @@ window.addEventListener('load',() => {
      createMessage(el);
      }
      validateValue(el);
+     validateValueShort5(el);
+     validateValueShort20(el);
     // console.log(errores);
      console.log(erroresText);
      }
@@ -62,6 +64,35 @@ window.addEventListener('load',() => {
      erroresText.push('error')
     }
     
+
+    function createMessageShort5(el){
+        let div = el.parentElement;
+        if(div.querySelector('span')){
+        return;
+        }
+        let mensajeError = document.createElement('span');
+        mensajeError.innerText = "El campo debe contener al menos 5 caracteres";
+        el.parentElement.append(mensajeError);
+       // errores++;
+        //erroresText.push("El campo <<" + el.name + ">> está vacío") 
+        erroresText.push('error')
+       }
+
+    
+       function createMessageShort20(el){
+        let div = el.parentElement;
+        if(div.querySelector('span')){
+        return;
+        }
+        let mensajeError = document.createElement('span');
+        mensajeError.innerText = "El campo debe contener al menos 20 caracteres";
+        el.parentElement.append(mensajeError);
+       // errores++;
+        //erroresText.push("El campo <<" + el.name + ">> está vacío") 
+        erroresText.push('error')
+       }
+
+
     // Funcion q en caso de identificar q el campo no esta vacio, borra el
     // mensaje de error del span en el div; y borra el error en la variable
     // errores
@@ -78,6 +109,36 @@ window.addEventListener('load',() => {
     : null
      }
     }
+
+    function validateValueShort5(el){
+    let div = el.parentElement;
+    if(el.value.length >= 5){
+    let errorMessage = div.querySelector('span');
+    errorMessage?
+    errorMessage.remove() 
+    : null;
+    // errores--;
+    erroresText?
+    erroresText.pop() 
+    : null
+    }
+    }
+
+    function validateValueShort20(el){
+    let div = el.parentElement;
+    if(el.value.length >= 20){
+    let errorMessage = div.querySelector('span');
+    errorMessage?
+    errorMessage.remove() 
+    : null;
+    // errores--;
+    erroresText?
+    erroresText.pop() 
+    : null
+    }
+    }
+
+
    // errores = Object.keys(errores);
    // console.log(errores);
     console.log(erroresText);
