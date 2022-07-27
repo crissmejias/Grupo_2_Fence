@@ -14,25 +14,38 @@
     <main class="np-newProduct">
         <form action="/products/createProduct"   method="POST"     class="np-new-product-form" enctype="multipart/form-data" >
           <div class="np-main-features">
-            <input type="text" name="nombre"placeholder="Título del producto" >
-            <input type="text" name="precio" placeholder="Precio " >
-            <input type="text" name="material" placeholder="Material">
+            
+            <div class="control-formulario"><input type="text" name="nombre"placeholder="Título del producto" ></div>
+            
+            <div class="control-formulario"><input type="text" name="precio" placeholder="Precio " ></div>
+            
+            <div class="control-formulario"><input type="text" name="material" placeholder="Material"></div>
+            
             <!-- <input type="text" name="material-base" placeholder="Material Base"> -->
-            <input type="text" name="tipo" placeholder="Tipo">
-            <input type="text" name="descripcion" placeholder="Descripción">
-          </div>
-          <div class="np-add-features">
-          <!-- <textarea placeholder="Agrega características adicionales"name="" id="" cols="30" rows="10"></textarea> -->
-          <input type="file" name="file" id="file" class="input-file"> 
-           <label class="button" for="file">Agrega una imagen</label>
-           <input class="button" type="submit" value="Crear">
+            <div class="control-formulario"><input type="text" name="tipo" placeholder="Tipo"></div>
+            
+            <div class="control-formulario"><input type="text" name="descripcion" placeholder="Descripción"></div>
+          
           </div>
           
+          <div class="np-add-features" color="red">
+          
+            <!-- <textarea placeholder="Agrega características adicionales"name="" id="" cols="30" rows="10"></textarea> -->
+            <div class="control-formulario">
+            <input type="file" name="file" id="file" class="input-file"> 
+          
+          <label class="button" for="file">Agrega una imagen</label></div>
+
+          <input class="button" id="btn-form" type="submit" value="Crear"> 
+          
+          
+        </div>
          
 
           </form>
 
     </main>
     <%- include("./partials/footer") %>
+        <script src="/js/products-validation.js"></script>
   </body>
 </html>

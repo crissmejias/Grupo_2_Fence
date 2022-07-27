@@ -1654,6 +1654,15 @@ img.pl-product-image:hover {
   }
 }
 /* NEW PRODUCT */
+
+.np-newProduct .np-new-product-form .np-main-features .control-formulario {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--primary-font);
+  font-size: 11px;
+}  
+
 .np-newProduct {
   background-color: (var(--white));
   padding: 70px;
@@ -1675,6 +1684,10 @@ img.pl-product-image:hover {
   flex-wrap: wrap;
 }
 .np-new-product-form input {
+  padding: 10px;
+  border-radius: 8px;
+}
+.np-new-product-form .button {
   padding: 10px;
   border-radius: 8px;
   width: 80%;
@@ -1784,4 +1797,18 @@ img.pl-product-image:hover {
   .avatar-image{
     height: 100px !important;
   }
+}
+
+/*.np-newProduct .np-new-product-form .np-main-features {
+  border: solid yellow 3px;
+}*/
+
+.np-newProduct .np-new-product-form .np-main-features input {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--primary-font);
+  font-size: 11px;
+  /*border: solid red 3px;*/
+  width: 100%;
 }
