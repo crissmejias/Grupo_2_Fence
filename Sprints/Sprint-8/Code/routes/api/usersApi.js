@@ -55,7 +55,7 @@ router.get('/',userControllersApi.userList);
 // router.get('/logout/', usersController.logout);
 
 //Ruta detalle de usuario
-// router.get("/:idUser", userControllersApi.profile);
+router.get("/:idUser", userControllersApi.profile);
 
 // router.put("/:idUser/edit",authMiddleware, upload.single('newImage'), userControllers.putUser);  
 
