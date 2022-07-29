@@ -18,13 +18,30 @@ const productsControllersApi = {
             })
     },
     
-    detalleProduct: (req, res) => {
-        db.Product.findByPk(req.params.idProduct)
-            .then(productos => {
-                res.render('productDetail',{productos});
+
+// SPRINT 8-API///
+detalleProduct: (req, res) => {
+        db.Product.findByPk(req.params.idProduct,
+         
+            )
+            .then(products => {
+                let respuesta = {
+                    meta: {
+                        status: 200,
+                        total: products.length,
+                        url: "api/products/:idProduct"
+                    },
+                    data: products
+                }
+                res.json(respuesta);
             });
+           
     },
 
+//
+
+	
+	
     createProduct: (req, res) => {
         db.Product.findAll({
           //
