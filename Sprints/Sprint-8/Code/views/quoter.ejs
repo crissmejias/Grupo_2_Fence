@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <!-- HEAD -->
+
+  <%- include('./partials/head',{tituloWeb: 'Cotizador Fence'}  ) %>
+  
+<body>
+
+   <!-- HEADER -->
+
+  <%- include('./partials/header') %>
+ 
+  <main>
+    <div class="posibles-compras">    <!-- TODO EL CUADRO BLANCO -->
+      
+  <ul id="campo-nombres">               <!-- TITULOS DE LA TABLA -->
+
+    <li class="titulo-container-x"></li>
+
+    <li class="titulo-imagen-producto"></li>
+   
+    <li><div class="titulo-identificacion-producto"><p> Producto </p></div></li>
+          
+    <li><div class="titulo-codigo-producto"><p> Código del Producto </p></div></li>
+          
+    <li><div class="titulo-cantidad-producto"><p> Cantidad </p></div></li>
+
+    </ul>
+
+
+      <ul id="desorden">      <!-- PRIMER PRODUCTO -->
+
+        <li class="contenedor"><button class="x"><i class="fas fa-times"></i></button></li>
+        
+        <button class="imagenes-cotizadas">
+          <li><img src=" ./images/valla-06.png" width="80" height="80" alt=" imagen de valla 06"> </li>
+        </button>
+        
+        <li>
+          <div class="datos-identificacion-cotizacion">
+            <p>Valla Plastica Vial Light 1.8m Encastrable Cian Original  </p>
+          </div>
+        </li>
+      
+        <li>
+          <div class="codigo-producto">
+            <p>   </p>
+          </div>
+        </li>
+        
+        <li>
+          <div >
+            <p><input type="number" name="cantidad" id="cantid-prod-cotizador">  </p>
+          </div>
+        </li>
+      </ul>
+
+      <ul id="desorden">    <!-- SEGUNDO PRODUCTO -->
+
+        <li class="contenedor"><button class="x"><i class="fas fa-times"></i></button></li>
+        <button class="imagenes-cotizadas">
+          <li><img src=" ./images/valla-02.png" width="80" height="80" alt=" imagen de valla 02"></li>
+        </button>
+        <li>
+          <div class="datos-identificacion-cotizacion">
+            <p> Separador / Canalizador Vial New Jersey </p>
+          </div>
+        </li>
+        <li>
+          <div class="codigo-producto">
+            <p> </p>
+          </div>
+        </li>
+        <li>
+          <div >
+            <p><input type="number" name="cantidad" id="cantid-prod-cotizador"> </p>
+          </div>
+        </li>
+
+      </ul>
+
+      <ul id="desorden">    <!-- TERCER PRODUCTO -->
+
+        <li class="contenedor"><button class="x"><i class="fas fa-times"></i></button></li>
+        <button class="imagenes-cotizadas">
+          <li><img src=" ./images/valla-03.png" width="80" height="80" alt=" imagen de valla 03"></li>
+        </button>
+        <li>
+          <div class="datos-identificacion-cotizacion">
+            <p>Valla Vial 1900x1100mm Poliprop. P/seguridad Vialplast </p>
+          </div>
+        </li>
+        <li>
+          <div class="codigo-producto">
+            <p>   </p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <p><input type="number" name="cantidad" id="cantid-prod-cotizador" > </p>
+          </div>
+        </li>
+      </ul>
+
+      <ul id="desorden">      <!-- CUARTO PRODUCTO -->
+
+        <li class="contenedor"><button class="x"><i class="fas fa-times"></i></button></li>
+        <button class="imagenes-cotizadas">
+          <li><img src=" ./images/valla-03.png" width="80" height="80" alt=" imagen de valla 03"></li>
+        </button>
+        <li>
+          <div class="datos-identificacion-cotizacion">
+            <p>Valla Vial 1900x1100mm Poliprop. P/seguridad Vialplast </p>
+          </div>
+        </li>
+        <li>
+          <div class="codigo-producto">
+            <p>  </p>
+          </div>
+        </li>
+        <li>
+          <div >
+            <p > <input type="number" name="cantidad" id="cantid-prod-cotizador"> </p>
+          </div>
+        </li>
+      </ul>
+
+
+    </div>
+
+<!-- BOTON ACTUALIZAR -->
+
+    <div class="button-container">
+    <button class="button"><a href="#">  Actualizar Lista</a>  </button>
+    <button class="button"> Enviar Presupuesto</button>
+    
+    <div>
+      <h5 class="peticion-de-registro">¿No estás registrado? Es necesario estar registrado para recibir tu cotización.
+        </h5>
+    </div>
+    
+    <button class="button"> <a href="/register">Registrate</a></button>
+
+  </div>
+
+<!-- IMAGEN DE FONDO -->
+
+    <div class="imagen-de-fondo">
+    
+    
+    <div class="acceso-a-registro">
+      <div class="formato-de-accesos">
+       
+        
+      
+      </div>
+    </div>
+  </div>
+  </main>
+
+ <!-- FOOTER -->
+
+  <%- include('./partials/footer') %>
+  
+</body>
+
+</html>

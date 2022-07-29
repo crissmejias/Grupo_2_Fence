@@ -1,0 +1,48 @@
+<%- include('../partials/head', {tituloWeb: 'Editar product'})%>
+<body>
+  <%- include('../partials/header')  %> 
+  
+    <main class="product-List">
+      <aside class="options-container">
+        <ul>
+          <li class="button"><a href="/products/createProduct"> Crear product</a></li>
+          <li class="button"><a href="/products">Listado de productos</a></li>
+        </ul>
+      </aside>
+  <main class="np-newProduct">
+   
+<!--  Faltababa el   enctype="multipart/form-data"  para que el PUT pase por el middleware de Multer-->
+      <% console.log(product) %> 
+      <form action="/products/<%=product.id_products %>/edit?_method=PUT" method="POST"   class="np-new-product-form" enctype="multipart/form-data">
+        <div class="np-main-features">
+          <input type="text" name="nombre" value="<%=product.nombre%>">
+          <input type="text" name="precio" value="<%=product.precio%>">
+          <input type="text" name="material" value="<%=product.material%>">
+          <!-- <input type="text" name="material-base" placeholder="Material Base"> -->
+          <input type="text" name="tipo" value="<%=product.tipo%>">
+          <input type="text" name="descripcion" value="<%=product.descripcion%>">
+        </div>
+
+        <div class="form-image-edit">
+          <figure class="ep-prev-image-container">
+            <img class="image-edit ep-prev-image" src="<%=product.imagen%>" alt="imagen a editar" width="150" height="150">
+            </figure>
+            <input type="hidden" name="oldImage" value="<%=product.imagen%>">
+            <!--De esta forma logro conservar y que viaje la imagen anterior de esta forma evito que el usuario seleccione una imagen nuevamente, ( si no lo desea) -->
+            <input type="file" name="newImage" id="file" >
+            <!--<input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" name="imagen" required value=""> 
+            
+            <label class="custom-file-label" for="inputGroupFile01">Seleccione una imagen...</label>-->
+            </div>
+
+        <div class="ep-add-features">
+         <input type="submit" value="Editar" class="ep-edit-btn">
+        </div>
+      </form>
+  </main>
+  
+<%- include('../partials/footer')  %> 
+</body>
+</html>
+
+    

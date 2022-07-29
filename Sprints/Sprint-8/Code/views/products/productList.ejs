@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head", {tituloWeb: 'Listado de productos'}) %>
+
+  <body class="product-list">
+    <%- include("./partials/header") %>
+
+    <main class="product-List">
+      <aside class="options-container">
+        <ul>
+          <li class="button"><a href="/products/createProduct"> Crear producto</a></li>
+          <li class="button"><a href="/products">Listado de productos</a></li>
+          <li class="button"><a href="/users/userList"> Usuarios</a></li>
+         
+         
+        </ul>
+      </aside>
+
+      <div class="pl-productos-container">
+        <% for(let i=0; i < productos.length; i++) { %>
+          <a href="/products/<%=productos[i].id_products %> ">
+            
+        <article class="pl-product">
+          
+          <img
+            src="<%=productos[i].imagen  %>"
+            alt=""
+            class="pl-product-image"
+            width="180px"
+            height="150px"
+          />
+
+          <div class="pl-product-description">
+            
+            <h5 class="pl-product-title"><%=productos[i].nombre %></h5>
+            
+            <p>$<%=productos[i].precio %></p>
+            
+            <div class="button-modificar"><a href="/products/<%= productos[i].id_products %>/edit" class="pl-product-add-to-cart">Modificar</a></div>
+            
+          <br>
+
+              <form class="button-eliminar" action="/products/<%=productos[i].id_products%> ?_method=DELETE" method="POST" >
+            <button type="submit" class="pl-product-add-to-cart" value="<%=productos[i].id%>">Eliminar</button>
+          </form>
+
+          </div>
+        </article>
+      </a>
+        <% } %> 
+      </div>
+    </main>
+
+    <%- include("./partials/footer") %>
+  </body>
+</html>
