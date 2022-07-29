@@ -26,7 +26,7 @@ const path = require('path');
 
 router.get("/",productsControllersApi.productsList);
 // router.get("/createProduct", productsControllersDb.createProduct);
-// router.get("/:idProduct", productsControllersDb.detalleProduct);
+router.get("/:idProduct", productsControllersApi.detalleProduct);
 // //multer paso 5
 // router.post("/createProduct", productsControllersDb.recordProduct)
 
