@@ -37,18 +37,27 @@ window.addEventListener('load',() => {
     // errores
     inputs.map(el => {
      el.onblur = () => {
-
-        if(el.value.length < 1){
-            createMessage(el);
-            }
-       else if(el.name == 'nombre') {
-            if(el.value.length < 5) { createMessageShort5(el) }
+            if(el.name == 'nombre') {
+            if(el.value.length < 5) { createMessage(el, "El campo debe contener 5 caracteres") }
             else { validateValueShort5(el) }
             }
         else if (el.name == 'descripcion') {
-            if(el.value.length < 20) { createMessageShort20(el) }
+            if(el.value.length < 20) { createMessage(el, "El campo debe contener 20 caracteres") }
             else { validateValueShort20(el) }
+            }  
+            else if (el.name == 'file'){ 
+            if(el.files.length == 0){
+                createMessage(el, "Se debe agregar un archivo de tipo .png o .jpeg")
             }
+            else if(el.files[0].type !== 'image/png'){
+                createMessage(el, "Se debe agregar un archivo de tipo .png o .jpeg")
+            }
+            }
+            else{
+            el.value.length < 1
+            ? createMessage(el,"El campo no puede estar vacío")
+            : validateValue(el);}          
+
 
 //     validateValue(el);
      //validateValueShort5(el);
@@ -61,13 +70,13 @@ window.addEventListener('load',() => {
     // Funcion q en caso de identificar q el campo esta vacio, inserta el
     // error como span en el div; y coloca el error en la variable
     // errores
-    function createMessage(el){
+    function createMessage(el, mensaje){
      let div = el.parentElement;
      if(div.querySelector('span')){
      return;
      }
      let mensajeError = document.createElement('span');
-     mensajeError.innerText = "El campo está vacío";
+     mensajeError.innerText = mensaje;
      el.parentElement.append(mensajeError);
     // errores++;
      //erroresText.push("El campo <<" + el.name + ">> está vacío") 
