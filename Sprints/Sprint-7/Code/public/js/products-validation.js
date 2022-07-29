@@ -37,12 +37,22 @@ window.addEventListener('load',() => {
     // errores
     inputs.map(el => {
      el.onblur = () => {
-     if(el.value.length < 1){
-     createMessage(el);
-     }
-     validateValue(el);
-     validateValueShort5(el);
-     validateValueShort20(el);
+
+        if(el.value.length < 1){
+            createMessage(el);
+            }
+       else if(el.name == 'nombre') {
+            if(el.value.length < 5) { createMessageShort5(el) }
+            else { validateValueShort5(el) }
+            }
+        else if (el.name == 'descripcion') {
+            if(el.value.length < 20) { createMessageShort20(el) }
+            else { validateValueShort20(el) }
+            }
+
+//     validateValue(el);
+     //validateValueShort5(el);
+     //validateValueShort20(el);
     // console.log(errores);
      console.log(erroresText);
      }
