@@ -26,10 +26,27 @@ const usersControllerApi = {
 			res.json(respuesta)
 		});
 	},
+	
+	// SPRINT 8-API
+profile: (req, res) => {
+	db.User.findByPk(req.params.idUser)
+		
+		.then(users => {
+			let respuesta = {
+				meta: {
+					status: 200,
+					total: users.length,
+					url: 'api/users/:idUser'
+				},
+				data: users
+			}
+			res.json(respuesta);
+		});
+},
+
+// SPRINT 8-API FIN.
 // para renderizar userDetail
-	profile: (req,res)=>{
-		res.render('userDetail',{userLogged: req.session.userLogged});
-	},
+	
 // para renderizar register
 	register: (req, res) => {    
 		res.render("register",{userLogged: req.session.userLogged});
