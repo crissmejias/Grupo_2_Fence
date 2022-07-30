@@ -45,9 +45,10 @@ function createMessage(el){
 function validateValue(el){
   let div = el.parentElement;
   if(el.value.length >= 1){
+    errores--;
     let errorMessage = div.querySelector('span');
     errorMessage?
-    errorMessage.remove() 
+    errorMessage.remove()
     : null; 
   }
 }
