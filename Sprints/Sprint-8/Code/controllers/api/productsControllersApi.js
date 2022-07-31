@@ -2,7 +2,8 @@
 const db = require('../../database-db/models');
 const sequelize = db.sequelize;
 const path = require('path');
-
+const { dirname } = require('path');
+const pathMulter=path.join(__dirname,"../../public")
 
 const productsControllersApi = {
     productsList: (req, res) => {
@@ -34,6 +35,23 @@ detalleProduct: (req, res) => {
                     data: products
                 }
                 res.json(respuesta);
+            });
+           
+    },
+    photoProduct: (req, res) => {
+        db.Product.findByPk(req.params.idProduct,
+         
+            )
+            .then(products => {
+                let respuesta = {
+                    meta: {
+                        status: 200,
+                        total: products.length,
+                        url: "api/products/photoproduct/:idProduct"
+                    },
+                    data: products
+                }
+                res.sendFile(path.join(pathMulter,respuesta.data.imagen));
             });
            
     },
