@@ -65,7 +65,7 @@ const productsControllersDb = {
         where: { id_products: req.params.idProduct },
       }
     ).then((resultado) => {
-      res.redirect("/");
+      res.redirect("/products");
     });
   },
 

@@ -12,14 +12,13 @@
   <main class="np-newProduct">
    
 <!--  Faltababa el   enctype="multipart/form-data"  para que el PUT pase por el middleware de Multer-->
-      <% console.log(product) %> 
       <form action="/products/<%=product.id_products %>/edit?_method=PUT" method="POST"   class="np-new-product-form" enctype="multipart/form-data">
         <div class="np-main-features">
           <input type="text" name="nombre" value="<%=product.nombre%>">
           <input type="text" name="precio" value="<%=product.precio%>">
           <input type="text" name="material" value="<%=product.material%>">
           <!-- <input type="text" name="material-base" placeholder="Material Base"> -->
-          <input type="text" name="tipo" value="<%=product.categoria.%>">
+          <input type="text" name="tipo" value="<%=product.id_categoria%>">
           <input type="text" name="descripcion" value="<%=product.descripcion%>">
         </div>
 
