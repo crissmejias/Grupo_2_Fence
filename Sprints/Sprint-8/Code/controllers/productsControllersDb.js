@@ -34,7 +34,7 @@ const productsControllersDb = {
 
   recordProduct: (req, res) => {
     db.Product.create({
-      tipo: req.body.tipo,
+      id_categoria: req.body.tipo,
       material: req.body.material,
       nombre: req.body.nombre,
       precio: req.body.precio,
@@ -54,7 +54,7 @@ const productsControllersDb = {
   putProduct: function (req, res) {
     db.Product.update(
       {
-        tipo: req.body.tipo,
+        id_categoria: req.body.tipo,
         material: req.body.material,
         nombre: req.body.nombre,
         precio: req.body.precio,
