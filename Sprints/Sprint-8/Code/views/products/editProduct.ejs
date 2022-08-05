@@ -18,7 +18,15 @@
           <input type="text" name="precio" value="<%=product.precio%>">
           <input type="text" name="material" value="<%=product.material%>">
           <!-- <input type="text" name="material-base" placeholder="Material Base"> -->
-          <input type="text" name="tipo" value="<%=product.id_categoria%>">
+          <!--  -->
+          <div class="control-formulario"><select name="tipo">
+            <option value="<%=product.id_categoria%>" selected>no modificar</option>
+            <option value="1">Peatonal</option>
+            <option value="2" >Vial</option>
+            <option value="3">Eventos</option>
+          </select></div>
+
+
           <input type="text" name="descripcion" value="<%=product.descripcion%>">
         </div>
 
