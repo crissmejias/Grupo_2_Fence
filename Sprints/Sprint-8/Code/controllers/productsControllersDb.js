@@ -13,12 +13,7 @@ const productsControllersDb = {
   detalleProduct: (req, res) => {
     const { idProduct } = req.params;
     db.Product.findOne({
-      where: { id_product: idProduct },
-      include: [
-        {
-          association: "categoria",
-        },
-      ],
+      where: { id_products: idProduct },
     }).then((productos) => {
       res.render("productDetail", { productos });
     });

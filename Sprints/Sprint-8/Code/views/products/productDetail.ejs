@@ -8,7 +8,6 @@
     <!-- HEADER -->
 
     <%- include('./partials/header') %>
-
     <main class="product-detail">
       <p class="page-index">Productos / Título de productos</p>
       <div class="product-detail-container">
@@ -23,15 +22,14 @@
             <%=productos.descripcion  %> 
           </p>
           <p>
-           <%= productos.id_categoria %> 
           </p>
           <p>
             <%= productos.material %> 
            </p>
         </details>
         <figure>
-          <img src="<%= productos.imagen  %> " alt="" />
         </figure>
+        <img src="<%= productos.imagen%>" alt="" />
       </div>
 
       <div class="actions-container">
