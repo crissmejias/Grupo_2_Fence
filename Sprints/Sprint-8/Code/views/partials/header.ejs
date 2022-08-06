@@ -8,8 +8,10 @@
     <li class="item-menu-header"><a href="/">Inicio</a></li>
     <li class="item-menu-header"><a href="/quoter">Cotizaciones</a></li>
     <% if(!locals.userLogged) {%> 
+    <li class="item-menu-header"><a href="http://localhost:3001">Dashboard</a></li> 
     <li class="item-menu-header"><a href="/register">Registro</a></li>
     <li class="item-menu-header"><a href="/login">Ingresar</a></li>
+    
       <% } else {%> 
           <form action="/users/logout" method="GET">
         <button type="submit" class="item-menu-header">Logout</button> 
