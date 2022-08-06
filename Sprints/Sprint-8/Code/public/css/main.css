@@ -1582,7 +1582,7 @@ form.formulario-login {
   align-items: center;
   width: 100%;
 /*  justify-content: baseline;*/
-  border: solid red 3px;
+/*  border: solid red 3px;*/
 }
 .product-List .options-container {
   width: 100%;
@@ -1735,7 +1735,7 @@ img.pl-product-image:hover {
 
 .newProductView {
   display: flex;
-  border: solid yellow 3px;
+  /*border: solid yellow 3px;*/
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
@@ -1763,7 +1763,7 @@ img.pl-product-image:hover {
 .np-newProduct {
   background-color: (var(--white));
   padding: 5px;
-  border: solid green 3px;
+  border: solid var(--secondary-color) 1px;
   display: flex;
   align-self:center;
   align-items:center;
@@ -1776,7 +1776,7 @@ img.pl-product-image:hover {
   flex-direction: column;
   align-items:center;
   gap: 24px;
-  border: solid blue 3px;
+/*  border: solid blue 3px;*/
 }
 
 .np-new-product-form input {
@@ -1787,7 +1787,7 @@ img.pl-product-image:hover {
 
 .np-new-product-form.control-formulario-descripcion  {
   height: 100px;
-  border: solid red 3px;
+/*  border: solid red 3px;*/
 }
 
 
@@ -1812,7 +1812,7 @@ img.pl-product-image:hover {
   height: 0.1px;
   width: 0.1px;
   z-index: -1;
-  border: solid red 3px;
+/*  border: solid red 3px;*/
 }
 .np-new-product-form label {
   cursor: pointer;
@@ -1898,9 +1898,9 @@ img.pl-product-image:hover {
     align-self: flex-start;
     
   }
-  .avatar-image{
+/*  .avatar-image{
     height: 100px !important;
-  }
+  }*/
 
   .image-edit {
 /*    border: solid red 3px;*/
