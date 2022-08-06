@@ -18,23 +18,25 @@
 
       <div class="pl-productos-container">
         <% for(let i=0; i < productos.length; i++) { %>
-          <a href="/products/<%=productos[i].id_products %> ">
+
             
         <article class="pl-product">
           
+          <a href="/products/<%=productos[i].id_products %>">
           <img
             src="<%=productos[i].imagen  %>"
             alt=""
             class="pl-product-image"
             width="180px"
             height="150px"
-          />
+            >
+          </a>
 
           <div class="pl-product-description">
             
-            <h5 class="pl-product-title"><%=productos[i].nombre %></h5>
+            <h5 class="pl-product-title"><a href="/products/<%=productos[i].id_products %>"><%=productos[i].nombre %></a></h5>
             
-            <p>$<%=productos[i].precio %></p>
+            <p class="pl-product-price">$<%=productos[i].precio %></p>
             
             <div class="button-modificar"><a href="/products/<%= productos[i].id_products %>/edit" class="pl-product-add-to-cart">Modificar</a></div>
             
@@ -46,7 +48,7 @@
 
           </div>
         </article>
-      </a>
+      
         <% } %> 
       </div>
     </main>
