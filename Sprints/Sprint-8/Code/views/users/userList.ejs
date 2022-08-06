@@ -4,7 +4,7 @@
 
   <body class="product-list">
     <%- include("./partials/header") %>
-
+    <div class="detras-header"></div> 
     <main class="product-List">
       <aside class="options-container">
         <ul>
@@ -14,7 +14,7 @@
       </aside>
       <div class="pl-productos-container">
         <% for(let i=0; i < user.length; i++) { %>
-          <a href="">
+      
             
         <article class="pl-product">
           <img
@@ -40,7 +40,6 @@
           </form>
           </div>
         </article>
-      </a>
         <% } %> 
       </div> 
     </main>

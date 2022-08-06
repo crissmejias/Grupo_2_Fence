@@ -16,9 +16,15 @@ body {
   background-color: var(--primary-color);
 }
 .cabecera {
+  position: fixed;
   background-color: var(--secondary-color);
   color: var(--white);
   margin: 0px 0;
+  width: 100%;
+  z-index: 999999;
+}
+.detras-header {
+  height: 85px;
   width: 100%;
 }
 li.item-menu-header a {
