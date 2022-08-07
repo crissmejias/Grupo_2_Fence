@@ -1907,3 +1907,29 @@ img.pl-product-image:hover {
     object-fit: contain;
   }
 }
+
+
+
+/*ERROR 404*/
+
+body h1.errorNotFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:var(--secondary-color);
+  background-image: url("../images/404-not-found.png");
+    }
+
+.imagenDeError{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid red 3px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 280px;
+
+    }
+ 

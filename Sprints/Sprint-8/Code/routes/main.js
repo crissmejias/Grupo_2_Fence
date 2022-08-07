@@ -9,5 +9,5 @@ router.get("/quoter", mainControllers.quoter);
 router.get("/register", guestMiddleware, mainControllers.register);
 router.get("/productList", mainControllers.products);
 router.get("/newProduct", mainControllers.newProduct);
-
+router.get("/*", mainControllers.error);
 module.exports = router;

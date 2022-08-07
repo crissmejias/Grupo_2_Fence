@@ -49,6 +49,8 @@ const mainControllers = {
   newProduct: (req, res) => {
     res.render("newProduct",{user: req.session.userLogged}  );
   },
+  error: (req, res) => {
+    res.render("error")
+},
 };
-
 module.exports = mainControllers;
