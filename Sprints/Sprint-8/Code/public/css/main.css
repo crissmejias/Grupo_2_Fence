@@ -1928,7 +1928,7 @@ img.pl-product-image:hover {
 }
 
 .carrousel .grande {
-  width: 200%;
+  width: 400%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -1945,7 +1945,7 @@ img.pl-product-image:hover {
 }
 
 .carrousel .img01 {
-  width: calc( 100% / 2 - 2em);
+  width: calc( 100% / 4 - 2em);
   min-height: 400px;
   color: var(--negro);
   transition: all 0.4s ease;
@@ -1963,7 +1963,25 @@ img.pl-product-image:hover {
 }
 
 .carrousel .img02 {
-  width: calc( 100% / 2 - 2em);
+  width: calc( 100% / 4 - 2em);
+  min-height: 400px;
+  color: var(--negro);
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: var(--blanco);
+  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  background-image: url("/images/carrousel-05.jpg");
+  border: solid #fad85b 1px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrousel .img03 {
+  width: calc( 100% / 4 - 2em);
   min-height: 400px;
   color: var(--negro);
   transition: all 0.4s ease;
@@ -1971,7 +1989,25 @@ img.pl-product-image:hover {
   background-color: var(--blanco);
   box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
   background-image: url("/images/home-ciudad-03.jpg");
-  border: solid gray 3px;
+  border: solid #fad85b 1px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrousel .img04 {
+  width: calc( 100% / 4 - 2em);
+  min-height: 400px;
+  color: var(--negro);
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: var(--blanco);
+  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  background-image: url("/images/carrousel-06.jpg");
+  border: solid #fad85b 1px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
