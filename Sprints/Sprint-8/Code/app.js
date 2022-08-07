@@ -54,3 +54,8 @@ app.use("/api/products", productsRouterApi);
 app.use(userCookie);
 //app.use("/products", productRouterDb);
 app.use("/api/categories", categoriesApi);
+
+
+//"ErrorDocument 404 /404.ejs"
+
+app.get ("*",function(req,res){res.status(404).render('error')});
