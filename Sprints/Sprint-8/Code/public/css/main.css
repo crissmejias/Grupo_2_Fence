@@ -47,7 +47,8 @@ li.item-menu-header {
 /* ----------------- HEADER SOLO PARA EL HOME --------------------*/
 
 .imagen-principal {
-  display: flex;
+/*  display: flex;*/
+  display: none;
   flex-direction: column;
   width: 100%;
   height: 420px;
@@ -1915,14 +1916,15 @@ img.pl-product-image:hover {
   width: 100%;
   margin: auto;
 /*  max-width: 120em;*/
-  padding: 2em;
+/*  padding: 0,5em;*/
   color: var(--negro);
   transition: all 0.4s ease;
   border-radius: 1em;
   background-color: var(--blanco);
   box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
   overflow: hidden;
-  border: solid red 3px;
+  border: solid #fad85b 1px;
+/*  background-color: #5e5d5a;*/
 }
 
 .carrousel .grande {
@@ -1939,7 +1941,7 @@ img.pl-product-image:hover {
   padding: 2em;
   transition: all 0.5s ease;
   transform: translateX(0%);
-  border: solid blue 3px;
+  /*border: solid blue 3px;*/
 }
 
 .carrousel .img01 {
@@ -1951,10 +1953,13 @@ img.pl-product-image:hover {
   background-color: var(--blanco);
   box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
   background-image: url("/images/home-ciudad-02.jpg");
-  border: solid yellow 3px;
+  border: solid #fad85b 1px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .carrousel .img02 {
@@ -1965,13 +1970,30 @@ img.pl-product-image:hover {
   border-radius: 1em;
   background-color: var(--blanco);
   box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-  background-image: url("/images/home-ciudad-02.jpg");
+  background-image: url("/images/home-ciudad-03.jpg");
   border: solid gray 3px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.slogan-container {
+  background-color: rgba(1, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  border: solid #fad85b 1px;
+
+}
+
+.slogan {
+  font-size: 24px;
+  color: white;
+  justify-content: flex-end;
+  /*margin-right: 3%;*/
+}
 
 .carrousel .puntos {
   width: 100%;
@@ -1981,19 +2003,25 @@ img.pl-product-image:hover {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  /*border: solid red 3px;*/
 }
 
 .carrousel .punto {
-  width: 2em;
-  height: 2em;
+  width: 12px;
+  height: 12px;
   margin: 1em 1em 0;
   color: var(--negro);
   transition: all 0.4s ease;
   border-radius: 1em;
   background-color: var(--blanco);
   box-shadow: 0.6em 0.6em 1.2em var(--sombra-ppal), -0.6em -0.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  border: solid #fad85b 1px;
+  list-style-type: none;
 }
 
 .carrousel .punto.activo {
-  background-color: lightblue;
+  background-color: var(--secondary-color);
+  box-shadow: 10px 5px 5px black;
+  font-weight: bold;
+  border: solid #fad85b 1px;
 }
