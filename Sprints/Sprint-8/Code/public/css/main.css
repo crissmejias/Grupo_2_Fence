@@ -1910,6 +1910,7 @@ img.pl-product-image:hover {
 }
 
 
+
 /* CARROUSEL */
 
 .carrousel {
@@ -2061,3 +2062,70 @@ img.pl-product-image:hover {
   font-weight: bold;
   border: solid #fad85b 1px;
 }
+
+
+/*ERROR 404*/
+
+.error-view {
+  /*border: solid yellow 3px;*/
+  width: 100%;
+  height: 620px;
+  margin: auto;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.error-image {
+  /*border: solid blue 3px;*/
+  background-image: url("../images/404-not-found.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*opacity: 0.5;*/
+}
+
+.message-container {
+  background-color: rgba(1, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid #fad85b 1px;
+}
+
+.message-text {
+  color: #ebecea;
+  font-size: larger;
+}
+
+body h1.errorNotFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:var(--secondary-color);
+  background-image: url("../images/404-not-found.png");
+    }
+
+.imagenDeError{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid red 3px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 280px;
+
+    }
+ 
+

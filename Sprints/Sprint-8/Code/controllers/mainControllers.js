@@ -49,6 +49,6 @@ const mainControllers = {
   newProduct: (req, res) => {
     res.render("newProduct",{user: req.session.userLogged}  );
   },
-};
 
+};
 module.exports = mainControllers;
