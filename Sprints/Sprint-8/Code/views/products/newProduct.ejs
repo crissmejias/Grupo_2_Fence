@@ -2,24 +2,26 @@
 <html lang="en">
   <%- include("./partials/head", {tituloWeb: "Listado de productos"}) %>
 
-  <body class="product-list">
+  <body>
     <%- include("./partials/header") %> 
-    <main class="product-List">
-        <aside class="options-container">
+    <div class="detras-header"></div> 
+
+    <main class="newProductView">
+
+      <aside class="options-container">
           <ul>
-            <li class="button"><a href="/products/createProduct"> Crear producto</a></li>
+            <li> Crear producto</li>
             <li class="button"><a href="/products">Listado de productos</a></li>
           </ul>
         </aside>
-    <main class="np-newProduct">
-        <form action="/products/createProduct"   method="POST"     class="np-new-product-form" enctype="multipart/form-data" >
-          <div class="np-main-features">
+
+        <div class="np-newProduct">
+
+          <form action="/products/createProduct"   method="POST"     class="np-new-product-form" enctype="multipart/form-data" >
             
             <div class="control-formulario"><input type="text" name="nombre"placeholder="Título del producto" ></div>
-            
-            <div class="control-formulario"><input type="text" name="precio" placeholder="Precio " ></div>
-            
-            <div class="control-formulario"><input type="text" name="material" placeholder="Material"></div>
+            <div class="control-formulario"><input type="text" name="precio" placeholder="Precio " ></div>           
+            <div class="control-formulario-descripcion"><input type="text" name="material" placeholder="Material"></div>
             
             <!-- <input type="text" name="material-base" placeholder="Material Base"> -->
             <div class="control-formulario"><select name="tipo">
@@ -33,9 +35,7 @@
             
             <div class="control-formulario"><input type="text" name="descripcion" placeholder="Descripción"></div>
           
-          </div>
           
-          <div class="np-add-features" color="red">
           
             <!-- <textarea placeholder="Agrega características adicionales"name="" id="" cols="30" rows="10"></textarea> -->
             <div class="control-formulario">
@@ -50,7 +50,8 @@
          
 
           </form>
-
+        </div>
+        </div>
     </main>
     <%- include("./partials/footer") %>
         <script src="/js/products-validation.js"></script>

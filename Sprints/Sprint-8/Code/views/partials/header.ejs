@@ -2,18 +2,18 @@
 <header class="cabecera">
     <nav class="elementos-header"><img class="logotipo" src="/images/logo-fence-white.svg">
   <ul class="menu-header">
-    <% if(locals.userLogged && userLogged.nombre) { %>
-      <li class="item-menu-header">Usuario: <%= userLogged.nombre  %> <%= userLogged.apellido  %> </li>
-      <% } %>  
     <li class="item-menu-header"><a href="/">Inicio</a></li>
     <li class="item-menu-header"><a href="/quoter">Cotizaciones</a></li>
+    <% if(locals.userLogged && userLogged.nombre) { %>
+      <li class="item-menu-header"><%= userLogged.nombre  %> <%= userLogged.apellido  %> <p class="espacio">.   .</p> <img class="image-menu-header" width="30" height="30" src="<%= userLogged.imagen  %>"> </li>
+      <% } %>  
     <% if(!locals.userLogged) {%> 
     <li class="item-menu-header"><a href="http://localhost:3001">Dashboard</a></li> 
     <li class="item-menu-header"><a href="/register">Registro</a></li>
     <li class="item-menu-header"><a href="/login">Ingresar</a></li>
     
       <% } else {%> 
-          <form action="/users/logout" method="GET">
+          <form class="form-header" action="/users/logout" method="GET">
         <button type="submit" class="item-menu-header">Logout</button> 
          </form> 
         <% } %> 

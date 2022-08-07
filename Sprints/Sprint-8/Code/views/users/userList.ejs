@@ -4,17 +4,17 @@
 
   <body class="product-list">
     <%- include("./partials/header") %>
-
+    <div class="detras-header"></div> 
     <main class="product-List">
       <aside class="options-container">
         <ul>
-          <li class="button">Panel de Control para Usuarios</li>
+          <li >Panel de Control para Usuarios</li>
          
         </ul>
       </aside>
       <div class="pl-productos-container">
         <% for(let i=0; i < user.length; i++) { %>
-          <a href="">
+      
             
         <article class="pl-product">
           <img
@@ -26,6 +26,8 @@
           />
           <div class="pl-product-description">
             <h5 class="pl-product-title"><%=user[i].nombre  %> </h5>
+            <h5 class="pl-product-title"><%=user[i].email  %> </h5>
+            <h5 class="pl-product-title"><%=user[i].categoria  %> </h5>
             <p></p>
             
             <div class="button-modificar"><a href="<%= user[i].id_users%> /edit" class="pl-product-add-to-cart">Modificar</a></div>
@@ -38,7 +40,6 @@
           </form>
           </div>
         </article>
-      </a>
         <% } %> 
       </div> 
     </main>

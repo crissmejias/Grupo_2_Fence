@@ -89,6 +89,7 @@ li.item-menu-header {
   color: var(--white);
   font-size: 0.7rem;
   text-decoration: none;
+  z-index: 0;
 }
 
 .boton-catalogo :hover {
@@ -110,8 +111,8 @@ li.item-menu-header {
 article.home-boton-01 {
   display: flex;
   justify-content: center;
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
   background-image: url("/images/home-valla en ciudad-01.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -130,8 +131,8 @@ article.home-boton-01:hover {
 }
 
 article.home-boton-02 {
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
   background-image: url("/images/home-valla en ciudad-02.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -147,8 +148,8 @@ article.home-boton-02 {
 article.home-boton-03 {
   display: flex;
   justify-content: center;
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
   background-image: url("/images/home-valla en ciudad-03.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -169,8 +170,8 @@ article.home-boton-03:hover {
 article.home-boton-04 {
   display: flex;
   justify-content: center;
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
   background-image: url("/images/home-valla en ciudad-04.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -203,7 +204,7 @@ article .home-boton {
   border: solid #5e5d5a;
   background-color: #5e5d5a;
   width: 250px;
-  opacity: 0.6;
+  opacity: 0.8;
   border-radius: 8px;
   justify-content: center;
   /*-webkit-text-stroke: 1px white;*/
@@ -559,13 +560,14 @@ main .page-index {
   font-size: 12px;
   padding-top: 12px;
 }
-main .product-detail-container {
-  width: 65%;
-  display: flex;
+.product-detail-container {
+  width: 55%;
+  align-items: center;
+  display: grid;
   justify-content: center;
   align-self: center;
   padding-top: 12px;
-  flex-direction: column;
+  flex-direction: row;
   gap: 12px;
   border: solid #5e5d5a 1px;
   border-radius: 8px;
@@ -574,6 +576,53 @@ main .product-detail-container {
 main .product-detail-container .detalles-container {
   display: none;
 }
+
+.product-card-nombre {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding-top: 12px;
+  gap: 12px;
+  /*border: solid red 3px;*/
+}
+
+.product-card-precio {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding-top: 12px;
+  gap: 12px;
+  /*border: solid red 3px;*/
+}
+
+.product-card-detalle {
+  width: 100%;
+  text-align: justify;
+  font-size: smaller;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding-top: 12px;
+  gap: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+/*  border: solid red 3px;*/
+}
+
+
+.product-card-imagen {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding-top: 12px;
+  gap: 12px;
+/*  border: solid red 3px;*/
+}
+
+
 main figure {
   padding-top: 20px;
   background: var(--white);
@@ -744,8 +793,10 @@ footer {
 @media screen and (min-width: 768px) {
   main .product-detail-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto 1fr;
+    flex-direction: row;
+    align-items: center;
+/*    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr; */
     padding-top: 12px;
     gap: 12px;
   }
@@ -1388,6 +1439,25 @@ li.item-menu-header {
   text-align: right;
   color: #fad85b;
   align-self: center;
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+/*  border: solid red 3px;*/
+}
+
+img.image-menu-header {
+  border: solid black 1.5px;
+  border-radius: 50%;
+}
+
+.espacio {
+  color: #5e5d5a;
+}
+
+.form-header {
+/*  border: solid red 3px;*/
+  display: flex;
+  align-items: center;
 }
 
 body.login {
@@ -1509,9 +1579,10 @@ form.formulario-login {
 .product-List {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
-  justify-content: baseline;
-  /*border: solid red 3px;*/
+/*  justify-content: baseline;*/
+/*  border: solid red 3px;*/
 }
 .product-List .options-container {
   width: 100%;
@@ -1527,16 +1598,7 @@ form.formulario-login {
   height: 150px;
   /*border: solid #ccc4ba 1px;*/
 }
-/*.product-List .options-container ul li:hover {
-  opacity: 0.4;
-}
-.product-List .options-container ul li {
-  list-style: none;
-  background-color: var(--secondary-color);
-  padding: 10px;
-  border-radius: 8px;
-  transition: all 2000ms;
-}*/
+
 .product-List .options-container ul li a {
   color: var(--black);
   text-decoration: none;
@@ -1569,7 +1631,7 @@ img.pl-product-image {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 55%;
+  /*border-radius: 55%;*/
 }
 
 img.pl-product-image:hover {
@@ -1586,9 +1648,24 @@ img.pl-product-image:hover {
   padding: 15px;
   border-radius: 8px;
   letter-spacing: inherit;    /*no se verifica efecto*/
-  text-decoration: none;
   /*border: solid pink 3px;*/
   font-size: 12px;
+}
+
+.pl-product-price
+  {
+  width: 50%;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 8px;
+  letter-spacing: inherit;    /*no se verifica efecto*/
+  /*border: solid pink 3px;*/
+  font-size: 12px;
+}
+
+.pl-product-price :visited
+  {
+  text-decoration: none;
 }
 
 .pl-product-description .pl-product-add-to-cart {
@@ -1655,38 +1732,76 @@ img.pl-product-image:hover {
   }
 }
 /* NEW PRODUCT */
+
+.newProductView {
+  display: flex;
+  /*border: solid yellow 3px;*/
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.newProductView .options-container {
+  width: 100%;
+}
+.newProductView .options-container ul {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  height: 150px;
+}
+
+.newProductView .options-container ul li a {
+  color: var(--black);
+  text-decoration: none;
+  font-size:small;
+}
+
 .np-newProduct {
   background-color: (var(--white));
-  padding: 70px;
+  padding: 5px;
+  border: solid var(--secondary-color) 1px;
+  display: flex;
+  align-self:center;
+  align-items:center;
+  justify-items: center;
+  flex-wrap: wrap;
 }
 .np-new-product-form {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  width: 100%;
   align-items:center;
   gap: 24px;
-  justify-content: space-evenly;
+/*  border: solid blue 3px;*/
 }
-.np-new-product-form .np-main-features {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
+
 .np-new-product-form input {
   padding: 10px;
   border-radius: 8px;
-  width: 80%;
+  width: 100%;
 }
+
+.np-new-product-form.control-formulario-descripcion  {
+  height: 100px;
+/*  border: solid red 3px;*/
+}
+
+
+.np-new-product-form span {
+  font-size: 11px;
+}
+
 .np-new-product-form .np-add-features {
   display: flex;
   flex-direction: column;
-  height:100px;
-  width:200px;
-  justify-content: space-evenly;
-  align-items: center;
+  /*height:100px;
+  width:200px;*/
+/*  justify-content: space-evenly;
+  align-items: center;*/
 }
 .np-newProduct .np-new-product-form textarea {
   padding: 10px;
@@ -1697,6 +1812,7 @@ img.pl-product-image:hover {
   height: 0.1px;
   width: 0.1px;
   z-index: -1;
+/*  border: solid red 3px;*/
 }
 .np-new-product-form label {
   cursor: pointer;
@@ -1712,7 +1828,7 @@ img.pl-product-image:hover {
 @media (min-width: 480px) {
   .np-new-product-form {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     align-items: center;
     gap: 24px;
@@ -1720,7 +1836,7 @@ img.pl-product-image:hover {
   }
   .np-new-product-form .np-main-features {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 24px;
     justify-self: center;
     flex-wrap: wrap;
@@ -1733,8 +1849,8 @@ img.pl-product-image:hover {
 @media (min-width: 768px) {
   .np-new-product-form {
     display: flex;
-    height:350px;
-    flex-direction: row;
+    /*height:350px;*/
+    flex-direction: column;
     width: 100%;
     align-items: center;
     gap:20px;
@@ -1743,7 +1859,7 @@ img.pl-product-image:hover {
   .np-new-product-form .np-main-features {
     padding-top:24px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 32px;
     flex-wrap: wrap;
     width: 40%;
@@ -1782,7 +1898,12 @@ img.pl-product-image:hover {
     align-self: flex-start;
     
   }
-  .avatar-image{
+/*  .avatar-image{
     height: 100px !important;
+  }*/
+
+  .image-edit {
+/*    border: solid red 3px;*/
+    object-fit: contain;
   }
 }

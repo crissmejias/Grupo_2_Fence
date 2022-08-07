@@ -8,29 +8,42 @@
     <!-- HEADER -->
 
     <%- include('./partials/header') %>
+    <div class="detras-header"></div> 
     <main class="product-detail">
       <p class="page-index">Productos / Título de productos</p>
+      
+      <!-- PRODUCT CARD -->
       <div class="product-detail-container">
+
+                  <!-- SECTION 1 - NAME -->
+      <div class="product-card-nombre">
         <h1><%=productos.nombre%> </h1>
+      </div>
        
-        <p>
-         $ <%=productos.precio%> 
-        </p>
-        <details class="detalles-container">
-          <summary>Detalles</summary>
+                  <!-- SECTION 2 - PRECIO -->
+      <div class="product-card-precio">
+                  <h3>
+        Precio: $ <%=productos.precio%> 
+        </h3>
+      </div>
+                  <!-- SECTION 3 - DETALLE -->
+        <div class="product-card-detalle">
           <p>
             <%=productos.descripcion  %> 
           </p>
-          <p>
-          </p>
+
           <p>
             <%= productos.material %> 
            </p>
-        </details>
-        <figure>
-        </figure>
-        <img src="<%= productos.imagen%>" alt="" />
+        </div>
+
+                  <!-- SECTION 4 - IMAGEN -->
+      <div class="product-card-imagen">
+                  <img src="<%= productos.imagen%>" alt="" />
+
       </div>
+
+    </div>
 
       <div class="actions-container">
         <div class="share-container">
@@ -58,7 +71,7 @@
           <button class="button">Agregar</button>
         </div>
       </div>
-      <div class="products-container">
+    <!--  <div class="products-container">
         <h3>Productos Relacionados</h3>
         <div class="products-cards-container">
           <% for(i =0; i< productos.length; i++) {%> 
@@ -71,7 +84,7 @@
             </div>
           </div>
           <% } %>       
-        </div>
+        </div>      -->
       </div>
     </main>
 
