@@ -8,15 +8,18 @@
     <main class="product-List">
       <aside class="options-container">
         <ul>
+          <% if(locals && locals.userLogged.categoria == 'Admin') {%> 
           <li class="button"><a href="/products/createProduct"> Crear producto</a></li>
     <!--      <li class="button"><a href="/products">Listado de productos</a></li>  -->
           <li class="button"><a href="/users/userList"> Listado de usuarios</a></li>
-         
+          <% } %> 
+          <li class="button">Listado de productos</li>
          
         </ul>
       </aside>
-
+     
       <div class="pl-productos-container">
+     
         <% for(let i=0; i < productos.length; i++) { %>
 
             
@@ -51,8 +54,8 @@
             
 
 
-
-
+            <% if(locals && locals.userLogged.categoria == 'Admin') {%> 
+            
             <div class="button-modificar"><a href="/products/<%= productos[i].id_products %>/edit" class="pl-product-add-to-cart">Modificar</a></div>
             
           <br>
@@ -60,23 +63,12 @@
               <form class="button-eliminar" action="/products/<%=productos[i].id_products%> ?_method=DELETE" method="POST" >
             <button type="submit" class="pl-product-add-to-cart" value="<%=productos[i].id%>">Eliminar</button>
           </form>
-
+<%}%>
           </div>
         </article>
       
         <% } %> 
       </div>
-
-      <aside class="options-container">
-        <ul>
-          <li class="button"><a href="/products/createProduct"> Crear producto</a></li>
-    <!--      <li class="button"><a href="/products">Listado de productos</a></li>  -->
-          <li class="button"><a href="/users/userList"> Listado de usuarios</a></li>
-         
-         
-        </ul>
-      </aside>
-
     </main>
 
     <%- include("./partials/footer") %>

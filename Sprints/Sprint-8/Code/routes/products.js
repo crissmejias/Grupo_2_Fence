@@ -9,6 +9,7 @@ const multer = require('multer');
 
 const productsController = require("../controllers/productsControllers");
 const authMiddleware = require("../middlewares/authMiddleware");
+const userGuest = require('../middlewares/userGuest')
 
 //multer paso 3
 var storage = multer.diskStorage({
@@ -25,17 +26,16 @@ var storage = multer.diskStorage({
 
 
 router.get("/", authMiddleware,productsControllers.productsList);
-router.get("/createProduct",authMiddleware, productsControllers.createProduct);
-router.get("/:idProduct",authMiddleware, productsControllers.detalleProduct);
+router.get("/createProduct",authMiddleware,userGuest, productsControllers.createProduct);
+router.get("/:idProduct",authMiddleware,productsControllers.detalleProduct);
 //multer paso 5
-router.post("/createProduct",authMiddleware, upload.single('file'), productsControllers.recordProduct)
+router.post("/createProduct",authMiddleware, userGuest, upload.single('file'), productsControllers.recordProduct)
 
-router.get("/:idProduct/edit",authMiddleware,productsControllers.editProduct);
+router.get("/:idProduct/edit",authMiddleware,userGuest,productsControllers.editProduct);
 //multer paso 5 
-router.put("/:idProduct/edit",authMiddleware, upload.single('newImage'), productsControllers.putProduct); //No coincidia con el name del input en el FORM 
+router.put("/:idProduct/edit",authMiddleware,userGuest, upload.single('newImage'), productsControllers.putProduct); //No coincidia con el name del input en el FORM 
 
-router.delete("/:idProduct",authMiddleware ,productsControllers.deleteProduct);
-    
+router.delete("/:idProduct",authMiddleware, userGuest ,productsControllers.deleteProduct);
     
 
 module.exports = router;

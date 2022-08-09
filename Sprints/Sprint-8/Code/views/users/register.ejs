@@ -77,13 +77,13 @@
         </div>
         <br>
 
-        <div class="control-formulario">
+        <div class="control-formulario" style="display:none">
           <label for="cuit">Categoria</label>
           <input  type="text" 
                   name="categoria" 
                   id="cuit" 
                   class="control"
-                  value="<%= locals.oldData ? oldData.categoria : null %>"
+                  value="<%= locals.oldData ? oldData.categoria : 'Guest' %>"
                   >
                   <% if (locals.errors && errors.categoria) { %>
                     <div class="text-danger">
@@ -146,7 +146,7 @@
                   name="password-verify" 
                   id="password-verify" 
                   class="control" 
-                  onblur="validarPassword()">
+          >
         </div>
 
         <div> <span id="password-error-message"></span></div>
@@ -163,15 +163,7 @@
      <!-- FOOTER -->
 
     <%- include('./partials/footer') %>
-    <script>
-      function validarPassword(){
-       let firstPassword = document.getElementById('password').value;
-       let passwordVerify = document.getElementById('password-verify').value;
-       if(firstPassword != passwordVerify){
-         alert('Las contraseñas no coinciden');
-       } 
-      }
-    </script>
+   
     <script src="js/register-validation.js"></script>
   </body>
 </html>

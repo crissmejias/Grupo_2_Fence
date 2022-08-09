@@ -25,7 +25,7 @@ const upload = multer({ storage });
 const validations = require('../middlewares/validateRegisterMiddleware');
 const guestMiddleware = require('../middlewares/guestMiddleware');
 const authMiddleware = require('../middlewares/authMiddleware');
-
+const userGuest = require('../middlewares/userGuest')
 // // Formulario de registro
 router.get('/register', guestMiddleware, usersController.register);
 //router.get('/register',usersController.register);
@@ -44,7 +44,7 @@ router.post('/userList', userControllers.loginProcess);
 
 
 //Ruta Lista usuarios
-router.get('/userList',authMiddleware,userControllers.userList);
+router.get('/userList',authMiddleware,userGuest,userControllers.userList);
 
 // Ruta de edición de perfil
 // router.get('/userDetail', authMiddleware, usersController.userDetail);
@@ -54,12 +54,12 @@ router.get('/userList',authMiddleware,userControllers.userList);
 // router.get('/logout/', usersController.logout);
 
 //edicion de usuarios
-router.get("/:idUser/edit",authMiddleware, userControllers.editUser);
+router.get("/:idUser/edit",authMiddleware, userGuest, userControllers.editUser);
 
 router.put("/:idUser/edit",authMiddleware, upload.single('newImage'), userControllers.putUser);  
 
 // borrar usuario
-router.delete('/:idUser/delete',authMiddleware, userControllers.deleteUser);
+router.delete('/:idUser/delete',authMiddleware, userGuest, userControllers.deleteUser);
 
 //logout
 router.get('/logout', usersController.logout);

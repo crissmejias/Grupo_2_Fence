@@ -111,7 +111,12 @@ const usersController = {
 					if(req.body.recordar != undefined){
 						res.cookie('user', userToLogin.email, {maxAge: 60000})	;
 					}
+					if(userToLogin.categoria == 'Admin'){
 					return res.render('userList', { userLogged: userToLogin, user: usuarios}); 
+					}
+					else if( userToLogin.categoria == 'Guest'){
+						return res.redirect('/'); 
+					}
 	
 				} 
 				else

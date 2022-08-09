@@ -9,7 +9,7 @@ const multer = require('multer');
 
 //const productsController = require("../controllers/productsControllers");
 const authMiddleware = require("../middlewares/authMiddleware");
-
+const guestUser = require('../middlewares/userGuest');
 //multer paso 3
 var storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -25,16 +25,16 @@ var storage = multer.diskStorage({
 
 
 router.get("/",productsControllersDb.productsList);
-router.get("/createProduct", productsControllersDb.createProduct);
+router.get("/createProduct",guestUser ,productsControllersDb.createProduct);
 router.get("/:idProduct", productsControllersDb.detalleProduct);
 //multer paso 5
 router.post("/createProduct", productsControllersDb.recordProduct)
 
-router.get("/:idProduct/edit",authMiddleware,productsControllersDb.editProduct);
+router.get("/:idProduct/edit",authMiddleware, guestUser,productsControllersDb.editProduct);
 //multer paso 5 
-router.put("/:idProduct/edit", productsControllersDb.putProduct); 
+router.put("/:idProduct/edit",guestUser, productsControllersDb.putProduct); 
 
-router.delete("/delete/:idProduct",productsControllersDb.deleteProduct);
+router.delete("/delete/:idProduct", guestUser,productsControllersDb.deleteProduct);
     
     
 
