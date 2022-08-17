@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "nombre": "Saul ",
+    "apellido": "Goodman",
+    "email": "yyyy@gmail.com",
+    "password": "$2a$10$uyRu4IC/sZLviLzJL4qw/urSgn/.roXLJT8H.QqnXTRvB55skZO3y",
+    "categoria": "",
+    "imagen": "\\images-multer\\avatar-1655074331281.webp"
+  },
+  {
+    "id": 2,
+    "nombre": "Walter",
+    "apellido": "White",
+    "email": "yyyy@gmail.com",
+    "password": "$2a$10$P7VF9WBqXnlWcNjk4tbfuOwRYvC/Ob9NQI.wc4w9XvPfIcwP7sXZe",
+    "categoria": "",
+    "imagen": "\\images-multer\\avatar-1655074464820.webp"
+  },
+  {
+    "id": 3,
+    "nombre": "Rick",
+    "apellido": "Sanchez",
+    "email": "yyyy@gmail.com",
+    "password": "$2a$10$VwdwQxAEv8anzx.WmsAIJ.0jP8fyU8D3.kmbwIsttk.JhGYkQS8gK",
+    "categoria": "",
+    "imagen": "\\images-multer\\avatar-1655075321640.png"
+  },
+  {
+    "id": 4,
+    "nombre": "Daenetis",
+    "apellido": "Targerian",
+    "email": "yyyy@gmail.com",
+    "password": "$2a$10$HWN0h/qknloRhUCUBrtw2eCx0UaXNIxRZyr3opu.6WPDtptlUOfry",
+    "categoria": "",
+    "imagen": "\\images-multer\\avatar-1655074646343.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Kenny",
+    "apellido": "McKormic",
+    "email": "aaa@aa.com",
+    "password": "$2a$10$Y5NBlR8hWM3SMCfXpGL3.OpZH5WJAcsqPZVKRDeC0mTxV3k.iRbMe",
+    "categoria": "categ prueba 1",
+    "imagen": "\\images-multer\\avatar-1655074687968.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Butters",
+    "apellido": "Stoch",
+    "email": "vvv@aaa.com",
+    "password": "$2a$10$FIz620htmzGMV4ll7LCfq.7RCqSFVVxzA1mqVbfBK66L6OOk3vKqu",
+    "categoria": "rrr",
+    "imagen": "\\images-multer\\avatar-1655074725178.jpg"
+  },
+  {
+    "id": 9,
+    "nombre": "Erik",
+    "apellido": "Cartman",
+    "email": "prueba4@gmail.com",
+    "password": "$2a$10$h2WYdPWH36azMNyQoHOiv.lhC0Blqf/o.3icrVVEu.9CSN2jH5VDe",
+    "categoria": "",
+    "imagen": "\\images-multer\\avatar-1654727603044.webp"
+  },
+  {
+    "id": 15,
+    "nombre": "Clay",
+    "apellido": "Morrow",
+    "email": "prueba@gmail.com",
+    "password": "$2a$10$YKJuwKQh3S8C043a1BEhMeJv0WhpuW3kI6ZMeNypd3EbCGK3uCL06",
+    "categoria": "soa",
+    "imagen": "\\images-multer\\avatar-1654727563153.jpg"
+  },
+  {
+    "id": 16,
+    "nombre": "Vito",
+    "apellido": "Corleone",
+    "email": "prueba2@gmail.com",
+    "password": "$2a$10$C5FQXUy2GwdPINK.f5Z/JO2RqCdIcoiWEuAyqICEy9dD3mLF3YZi2",
+    "categoria": "eee",
+    "imagen": "\\images-multer\\avatar-1655075643328.jpg"
+  },
+  {
+    "id": 17,
+    "nombre": "Cristhian",
+    "apellido": "Mejias",
+    "email": "cristhianmejias495@gmail.com",
+    "password": "$2a$10$kbFRXpEIqG.3Q/yZ5//NcOEVv.8k6unmggqTAiPL5tCv8P7LZfGqW",
+    "categoria": "prueba",
+    "imagen": "/images/users/avatar-1655941875784.png"
+  }
+]

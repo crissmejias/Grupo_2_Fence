@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<!-- HEAD  --> 
+
+<%- include('./partials/head',{tituloWeb: 'Home Fence' } ) %>
+
+  <body>
+
+      <!-- ----------IMAGEN DE BIENVENIDA Y SLOGAN------------- -->
+
+      <!-- HEADER -->
+
+      <%- include('./partials/header') %>
+  <div class="detras-header"></div> 
+
+  <div class="imagen-principal">
+        <div class="slogan">
+          <p>Especialistas en vallado para seguridad y</p>
+          <p>protección en espacios industriales y urbanos</p>
+        </div>
+        <button class="boton-catalogo">
+            <a href="/products" class="texto-boton-catalogo">Ver catálogo</a>
+        </button>
+      </div>
+    </header>
+
+      <!-- CARROUSEL -->
+
+      <div class="carrousel">
+        <div class="grande">
+
+          <div class="img01">
+            <div class="slogan-container">
+            <div class="slogan">
+              <p>Especialistas en vallados urbanos e industriales</p>
+              <p>Conocé nuestros productos</p>
+            </div>
+            <button class="boton-catalogo">
+                <a href="/products" class="texto-boton-catalogo">Ver catálogo</a>
+            </button>
+          </div>
+          </div>
+
+          <div class="img02">
+            <div class="slogan-container">
+            <div class="slogan">
+              <p>Regístrate y solicitá tu cotización</p>
+              <p></p>
+            </div>
+            <button class="boton-catalogo">
+                <a href="/register" class="texto-boton-catalogo">Registrarse</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="img03">
+          <div class="slogan-container">
+          <div class="slogan">
+            <p>Formá parte de nuestra cadena de valor</p>
+            <p></p>
+          </div>
+          <button class="boton-catalogo">
+              <a href="/login" class="texto-boton-catalogo">Loguearse</a>
+          </button>
+        </div>
+        </div>
+
+        <div class="img04">
+          <div class="slogan-container">
+          <div class="slogan">
+            <p>Creá un entorno seguro</p>
+            <p>Conocé nuestros productos</p>
+          </div>
+          <button class="boton-catalogo">
+              <a href="/register" class="texto-boton-catalogo">Ver catálogo</a>
+          </button>
+        </div>
+      </div>
+
+        </div>
+
+        <ul class="puntos">
+            <li class="punto activo"></li>
+            <li class="punto"></li>
+            <li class="punto"></li>
+            <li class="punto"></li>
+        </ul>
+    </div>      
+
+      <br>
+      <br>
+
+      <!-- FIN CARROUSEL -->
+
+    <main>
+      <section class="container-botones-navegacion">
+        <!-- ----------SECCION DE OPCIONES PARA NAVEGAR------------- -->
+
+        <article class="home-boton-01">
+          <form action="/login">
+          <button type="submit">
+          <p class="home-boton">Nuestros Productos</p>
+          <!--<p class="home-descripcion-boton">Conocé nuestra línea completa</p>-->
+        </button>
+        </form>
+        </article>
+
+        <article class="home-boton-03">
+          <form action="/quoter">
+          <button type="submit">
+          <p class="home-boton">Cotización</p>
+          <!--<p class="home-descripcion-boton">de nuestros productos</p>-->
+        </button>
+        </form>
+        </article>
+
+        <article class="home-boton-04">
+          <form action="/register">
+          <button type="submit">
+          <p class="home-boton">Registrate</p>
+          <!--<p class="home-descripcion-boton">Integrá nuestra cadena de valor</p>-->
+        </button>
+          </form>
+        </article>
+      </section>
+
+      <!-- <section>
+        <!-- ----------SECCION DE PRODUCTOS DESTACADOS------------- -->
+
+        <!-- <div>
+          <p class="titulo-product-destac">PRODUCTOS DESTACADOS</p>
+        </div>
+
+        <div>
+          <p class="subtitulo-product-destac">CONOCE NUESTRA LÍNEA COMPLETA</p>
+        </div> -->
+
+        <!-- <ul class="columna" type="none"> -->
+          <!-- <li> -->
+            <!-- ----------PRODUCTO DESTACADO 1------------- -->
+            <!-- <div class="imagen-product-destac-01"></div> -->
+            <!-- <div class="contenedor-texto-product-destac"> -->
+              <!-- <p class="texto-product-destac"> -->
+                <!-- <a href="/productDetail">Valla Plástica Tipo 1</a> -->
+              <!-- </p> -->
+            <!-- </div> -->
+          <!-- </li> -->
+
+          <!-- <li> -->
+            <!-- ----------PRODUCTO DESTACADO 2------------- -->
+            <!-- <div class="imagen-product-destac-02"></div>
+            <div class="contenedor-texto-product-destac">
+              <p class="texto-product-destac">
+                <a href="/products/">Valla Plástica Tipo 2</a>
+              </p>
+            </div>
+          </li> -->
+
+          <!-- <li> -->
+            <!-- ----------PRODUCTO DESTACADO 3------------- -->
+            <!-- <div class="imagen-product-destac-03"></div>
+            <div class="contenedor-texto-product-destac">
+              <p class="texto-product-destac">
+                <a href="/productDetail">Valla Plástica Tipo 3</a>
+              </p>
+            </div>
+          </li> -->
+
+          <!-- <li>
+            ----------PRODUCTO DESTACADO 4------------- -->
+            <!-- <div class="imagen-product-destac-04"></div>
+            <div class="contenedor-texto-product-destac">
+              <p class="texto-product-destac">
+                <a href="/productDetail">Valla Plástica Tipo 4</a>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section> -->
+    </main>
+    <br>
+    <br>
+     <!-- FOOTER -->
+
+    <%- include('./partials/footer') %>
+  </script>
+  <script src="js/carrousel.js"></script>
+
+  </body>
+</html>

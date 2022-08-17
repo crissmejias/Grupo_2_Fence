@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head", {tituloWeb: "Listado de productos"}) %>
+
+  <body>
+    <%- include("./partials/header") %> 
+    <div class="detras-header"></div> 
+
+    <main class="newProductView">
+
+      <aside class="options-container">
+          <ul>
+            <li class="button"><a href="/products">Listado de productos</a></li>
+          </ul>
+        </aside>
+
+        <div class="np-newProduct">
+
+          <form action="/products/createProduct"   method="POST"     class="np-new-product-form" enctype="multipart/form-data" >
+            
+            <div class="control-formulario"><input type="text" name="nombre"placeholder="Título del producto" ></div>
+            <div class="control-formulario"><input type="text" name="precio" placeholder="Precio "></div>           
+            <div class="control-formulario-descripcion"><input type="text" name="material" placeholder="Material"></div>
+            
+            <!-- <input type="text" name="material-base" placeholder="Material Base"> -->
+            <div class="control-formulario"><select name="tipo">
+              <option value="1" selected >Peatonal</option>
+              <option value="2" >Vial</option>
+              <option value="3">Eventos</option>
+              <option value="4">Construcción</option>
+              <option value="5">Residencial</option>
+            </select></div>
+            
+            
+            <div class="control-formulario"><input type="text" name="descripcion" placeholder="Descripción"></div>
+          
+          
+          
+            <!-- <textarea placeholder="Agrega características adicionales"name="" id="" cols="30" rows="10"></textarea> -->
+            <div class="control-formulario">
+            <input type="file" name="file" id="file" class="input-file"> 
+          
+          <label class="button" for="file">Agrega una imagen</label></div>
+
+          <input class="button" id="btn-form" type="submit" value="Crear"> 
+          
+          
+        </div>
+         
+
+          </form>
+        </div>
+        </div>
+    </main>
+    <%- include("./partials/footer") %>
+        <script src="/js/products-validation.js"></script>
+  </body>
+</html>
